@@ -1,4 +1,5 @@
 <html>
+<?php echo 'aici'?>
 <?php
     require "../components/Header.php";
 ?>
