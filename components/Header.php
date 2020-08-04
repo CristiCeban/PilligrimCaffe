@@ -10,14 +10,16 @@
 <div class="search-box">
 	<i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
 	<i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
-<a href="index.php"> <img src="../images/logo_final.jpg" class="logo"></a>
+<a href="index.php"> <img src="images/logo_final.jpg" class="logo"></a>
 <input type="text" class="form-control">
 <span class="input-group-text"><i class="fa fa-search"></i></span>
 </div>
 <div class="menu-bar">
 <ul>
  <a href="shopping-cart.php"><li><i class="fa fa-shopping-cart"></i></li></a>
-
+</ul>
+<ul>
+    <a href="auth.php">Auth</a>
 </ul>
 </div>
 </div>
