@@ -66,11 +66,11 @@
 	}
 	</script>
 <!-- Footer-->
-    <section>
+    
     <?php
     require "../components/Footer.php";
 ?>
-    </section>
+
 </body>
 </html>
 
