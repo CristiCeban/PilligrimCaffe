@@ -18,9 +18,12 @@
 <ul>
  <a href="shopping-cart.php"><li><i class="fa fa-shopping-cart"></i></li></a>
 </ul>
-<ul>
-    <a href="auth.php">Auth</a>
-</ul>
+    <ul>
+        <a href="auth.php">Auth</a>
+    </ul>
+    <ul>
+        <a href="auth.php">SIgn</a>
+    </ul>
 </div>
 </div>
 </head>
