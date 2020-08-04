@@ -46,7 +46,7 @@ class user
     }
 
     private function createUserUtil(string $username,string $password){
-        $this->db->query('insert into users(login, mdp,role) value(:username, :password, "user")');
+        $this->db->query('insert into users(login, password,role) value(:username, :password, "user")');
         //insert into users(login, mdp,role) value('temp','temp1','user');
         $this->db->bind('username',$username);
         $this->db->bind('password',$password);

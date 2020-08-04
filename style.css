@@ -112,7 +112,7 @@ body
 	}
 	.menu-bar ul li
 	{
-		height 57px;
+		height: 57px;
 		width: 100%;
 	}
 }
@@ -154,7 +154,7 @@ body
 .side-menu ul li:hover ul
 {
 	display: block;
-	z-index: 400px;
+	z-index: 400 px;
 	margin-left: 14%;
 	padding: 0 100px 10px 10px;
 	position: fixed;

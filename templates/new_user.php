@@ -14,21 +14,22 @@
     <link href="css/login.css" rel="stylesheet" type="text/css">
     <title>New User</title>
 </head>
+
 <body>
 <?php
 if(isset($alert_msg)){
     if($alert_msg==USER_NOT_FOUND){
         $msg = "User with this username already exist";
-//        alertPHP($msg);
+        alertPHP($msg);
     }
     elseif($alert_msg==PASSWORD_NOT_MATCH){
         $msg = "Password doesn't match!";
-//        alertPHP($msg);
+        alertPHP($msg);
     }
     elseif($alert_msg==NEW_USER_OK){
         $msg = "User create with success";
-//        setcookie('username',$user,time()+3600,'/');
-//        alertPHPBack($msg);
+        setcookie('username',$user,time()+3600,'/');
+        alertPHPBack($msg);
     }
 }
 ?>
@@ -41,7 +42,7 @@ if(isset($alert_msg)){
             </div>
 
             <div class="col-12 form-input">
-                <form action="../server/new_user_check.php" method="post">
+                <form action="server/new_user_check.php" method="post">
                     <div class="form-group">
                         <input type="text" name="username" class="form-control" placeholder="Enter Username" required>
                     </div>
