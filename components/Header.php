@@ -17,12 +17,11 @@
 <div class="menu-bar">
 <ul>
  <a href="shopping-cart.php"><li><i class="fa fa-shopping-cart"></i></li></a>
-</ul>
-    <ul>
-        <a href="auth.php">Auth</a>
-    </ul>
-    <ul>
-        <a href="auth.php">SIgn</a>
+
+
+        <li><a href="auth.php">SignUp</a></li>
+
+           <li><a href="auth.php">SignIn</a></li>
     </ul>
 </div>
 </div>
