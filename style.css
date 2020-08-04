@@ -267,7 +267,7 @@ body
 }
 #txt-box
 {
-    border: 10x solid #ccc;
+    border: 10px solid #ccc;
     font-weight: bold;
     height: 33px;
     text-align: center;
