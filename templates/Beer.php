@@ -3,21 +3,7 @@
     require "../components/Header.php";
 ?>
 <body>
-<div class="top-nav-bar">
-<div class="search-box">
-	<i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
-	<i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
-<a href="index.php"> <img src="../images/logo_final.jpg" class="logo"></a>
-<input type="text" class="form-control">
-<span class="input-group-text"><i class="fa fa-search"></i></span>
-</div>
-<div class="menu-bar">
-<ul>
- <a href="shopping-cart.html"><li><i class="fa fa-shopping-cart"></i></li></a>
 
-</ul>
-</div>
-</div>
     <!-----------------catalogue------------>
     <section>
 <div class="item">
