@@ -1,5 +1,7 @@
 <html>
-
+<?php
+    require "../components/Header.php";
+?>
 <body>
 <div class="top-nav-bar">
 <div class="search-box">
@@ -78,7 +80,12 @@
 		document.getElementById("close-btn").style.display="none";
 	}
 	</script>
-  
+<!-- Footer-->
+    <section>
+    <?php
+    require "../components/Footer.php";
+?>
+    </section>
 </body>
 </html>
 

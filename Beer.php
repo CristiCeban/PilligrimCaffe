@@ -1,5 +1,7 @@
 <html>
-
+<?php
+    require "../components/Header.php";
+?>
 <body>
 <div class="top-nav-bar">
 <div class="search-box">
@@ -52,7 +54,10 @@
         </div>
     </section>
 
-
+<!--  Footer-->
+<?php
+    require "../components/Footer.php";
+?>
 
    </body>
 </html>
