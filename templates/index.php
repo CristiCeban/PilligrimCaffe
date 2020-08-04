@@ -1,7 +1,8 @@
 <html>
 <?php echo 'aici'?>
 <?php
-    require "../components/Header.php";
+	require "../components/Header.php";
+	require "../components/bar.php";
 ?>
 
 <section class="header">

@@ -1,4 +1,4 @@
-   <section class="footer">
+   <section class="footer bg-primary">
         <div class="container tex-center">
             <div class="row">
                 <div class="col-md-3">
