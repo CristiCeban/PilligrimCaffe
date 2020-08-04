@@ -7,7 +7,7 @@
 <div class="search-box">
 	<i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
 	<i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
-<a href="index.html"> <img src="images/logo_final.jpg" class="logo"></a>
+<a href="index.html"> <img src="../images/logo_final.jpg" class="logo"></a>
 <input type="text" class="form-control">
 <span class="input-group-text"><i class="fa fa-search"></i></span>
 </div>

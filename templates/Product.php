@@ -7,7 +7,7 @@
 <div class="search-box">
 	<i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
 	<i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
-<a href="index.html"> <img src="images/logo_final.jpg" class="logo"></a>
+<a href="index.html"> <img src="../images/logo_final.jpg" class="logo"></a>
 <input type="text" class="form-control">
 <span class="input-group-text"><i class="fa fa-search"></i></span>
 </div>
@@ -25,13 +25,13 @@
 	<div id="product-slider" class="carousel slide carousel-fade" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="images/chio_barbecue.jpg" class="d-block w-100">
+      <img src="../images/chio_barbecue.jpg" class="d-block w-100">
     </div>
     <div class="carousel-item">
-      <img src="images/chio_paprika.jpg" class="d-block w-100" >
+      <img src="../images/chio_paprika.jpg" class="d-block w-100" >
     </div>
     <div class="carousel-item">
-      <img src="images/chio_salt.jpg" class="d-block w-100">
+      <img src="../images/chio_salt.jpg" class="d-block w-100">
     </div>
         </div>
                <a class="carousel-control-prev" href="#product-slider" role="button" data-slide="prev">

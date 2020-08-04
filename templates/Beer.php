@@ -7,7 +7,7 @@
 <div class="search-box">
 	<i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
 	<i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
-<a href="index.html"> <img src="images/logo_final.jpg" class="logo"></a>
+<a href="index.php"> <img src="../images/logo_final.jpg" class="logo"></a>
 <input type="text" class="form-control">
 <span class="input-group-text"><i class="fa fa-search"></i></span>
 </div>
@@ -21,13 +21,13 @@
     <!-----------------catalogue------------>
     <section>
 <div class="item">
-  <img src="images/kozel.jpg" alt="Beer" style="width:100%">
+  <img src="../images/kozel.jpg" alt="Beer" style="width:100%">
   <h1 class="shop-item-title">Kozel Beer</h1>
   <p class="shop-item-price">20.00MDL</p>
   <p><button class="shop-item-button">Add to Cart</button></p>
 </div>
         <div class="item">
-  <img src="images/chisinau.jpg" alt="Beer" style="width:100%">
+  <img src="../images/chisinau.jpg" alt="Beer" style="width:100%">
   <h1 class="shop-item-title">Chisinau Beer</h1>
   <p class="shop-item-price">18.00MDL</p>
   <p><button class="shop-item-button">Add to Cart</button></p>
