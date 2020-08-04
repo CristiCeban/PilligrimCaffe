@@ -1,5 +1,4 @@
 
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -40,9 +39,8 @@ if(isset($alert_msg)){
             <div class="col-12 user-img">
                 <img src="images/icon.svg">
             </div>
-
             <div class="col-12 form-input">
-                <form action="server/new_user_check.php" method="post">
+                <form action="../server/new_user_check.php" method="post">
                     <div class="form-group">
                         <input type="text" name="username" class="form-control" placeholder="Enter Username" required>
                     </div>

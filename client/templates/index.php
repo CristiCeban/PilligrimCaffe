@@ -1,5 +1,4 @@
 <html>
-<?php echo 'aici'?>
 <?php
 	require "../components/Header.php";
 	require "../components/bar.php";
@@ -38,10 +37,10 @@
       <img src="../images/nutline.png" class="d-block w-100">
     </div>
     <div class="carousel-item">
-      <img src="images/chio.jpg" class="d-block w-100">
+      <img src="../images/chio.jpg" class="d-block w-100">
     </div>
     <div class="carousel-item">
-      <img src="images/kozel.jpg" class="d-block w-100">
+      <img src="../images/kozel.jpg" class="d-block w-100">
     </div>
   </div>
   <ol class="carousel-indicators">
