@@ -9,21 +9,54 @@ require "../components/Header.php"
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
-                    <div class="hero__categories">
-                        <div class="hero__categories__all">
-                            <i class="fa fa-bars"></i>
-                            <span>Toate categorii</span>
-                        </div>
-                        <ul >
-                            <li ><a href="#" data-toggle="collapse">Bauturi nealc</a>
-                                
-                            </li>
-                            <li><a href="#">Bauturi alc</a></li>
-                            <li><a href="#">Brutarie</a></li>
-                            <li><a href="#">Caffea</a></li>
-                            <li><a href="#">Produse</a></li>                           
+                    <nav class="navbar navbar-expand-lg bg-success">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                <div class="collapse navbar-collapse" id="main_nav">
+
+                <ul class="navbar-nav">
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">  Toate Categorii  </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"> Caffea,ceai</a></li>
+                    <li><a class="dropdown-item" href="#"> Brutarie</a></li>
+                    <li><a class="dropdown-item" href="#"> Bauturi nealc </a>
+                        <ul class="submenu dropdown-menu">
+                            <li><a class="dropdown-item" href=""> Cafea rece</a></li>
+                            <li><a class="dropdown-item" href="">Apa potabila</a></li>
+                            <li><a class="dropdown-item" href=""> Sucuri </a></li>
+                            <li><a class="dropdown-item" href=""> Second level  4</a></li>                          
                         </ul>
-                    </div>
+                    </li>
+                    <li><a class="dropdown-item" href="#"> Bauturi alc </a>
+                    <ul class="submenu dropdown-menu">
+                            <li><a class="dropdown-item" href=""> Vin</a></li>
+                            <li><a class="dropdown-item" href="">Coniac</a></li>
+                            <li><a class="dropdown-item" href=""> Vodka </a></li>
+                            <li><a class="dropdown-item" href=""> Visky</a></li>                          
+                            <li><a class="dropdown-item" href=""> Bere</a></li>                          
+                        </ul>
+                    </li>
+                    
+                    
+                    <li><a class="dropdown-item" href="#"> Produse </a>
+                    <ul class="submenu dropdown-menu">
+                            <li><a class="dropdown-item" href=""> Snack-uri</a></li>
+                            <li><a class="dropdown-item" href="">La o bere</a></li>
+                            <li><a class="dropdown-item" href="">Arahide </a></li>
+                                                      
+                        </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="#"> Tigari </a></li>
+                    </ul>
+                </li>
+                
+                </ul>
+
+                </div> <!-- navbar-collapse.// -->
+                </nav>
                 </div>
                 <div class="col-lg-9">
                     <div class="hero__search">
@@ -119,7 +152,7 @@ require "../components/Footer.php"
     <script src="js/mixitup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-    <script src= "js/alter_bar.js"></script>
+    <script src= "js/bar-alter.js"></script>
 
 
 </body>
