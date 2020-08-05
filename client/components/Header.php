@@ -42,7 +42,7 @@
     </div>
     <div class="humberger__menu__widget">
         <div class="header__top__right__language">
-            <img src="img/language.png" alt="">
+            <img src="img/moldova.png" alt="">
             <div>Română</div>
             <span class="arrow_carrot-down"></span>
             <ul>
@@ -50,24 +50,35 @@
                 <li><a href="#">Română</a></li>
             </ul>
         </div>
-        <div class="header__top__right__auth">
-            <a href="#"><i class="fa fa-user"></i> Login</a>
-        </div>
-        <div class="header__top__right__auth">
-            <a href="#"><i class="fa fa-user"></i> SignUp</a>
-        </div>
+        <?php if(isAdmin()): ?>
+            <div class="header__top__right__auth">
+                <a href="admin_dashboard.php"><i class="fa fa-user"></i>DashBoard</a>
+            </div>
+        <?php endif ?>
+        <?php
+        if(isLoggedIn()):
+            ?>
+            <div class="header__top__right__auth">
+                <a href="../server/disc.php"><i class="fa fa-user"></i>Disconnect</a>
+            </div>
+        <?php
+        else:
+            ?>
+            <div class="header__top__right__auth">
+                <a href="auth.php"><i class="fa fa-user"></i> Login</a>
+            </div>
+            <div class="header__top__right__auth">
+                <a href="new_user.php"><i class="fa fa-user"></i> SignUp</a>
+            </div>
+        <?php endif;?>
     </div>
     <nav class="humberger__menu__nav mobile-menu">
         <ul>
                 <ul class="header__menu__dropdown">
-                    <li><a href="shop-details.php">Shop Details</a></li>
                     <li><a href="shoping-cart.php">Shoping Cart</a></li>
-                    <li><a href="checkout.php">Check Out</a></li>
-                    <li><a href="blog-details.php">Blog Details</a></li>
                 </ul>
             </li>
-            <li><a href="blog.php">Blog</a></li>
-            <li><a href="contact.php">Contact</a></li>
+            <li><a href="contact.php">Contacte</a></li>
         </ul>
     </nav>
     <div id="mobile-menu-wrap"></div>
