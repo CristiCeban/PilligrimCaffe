@@ -408,7 +408,8 @@ ol {
 }
 
 .header__logo {
-	padding: 15px 0;
+	width: 58%;
+
 }
 
 .header__logo a {
