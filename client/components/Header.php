@@ -105,16 +105,19 @@
                             <a href="#"><i class="fa fa-pinterest-p"></i></a>
                         </div>
                         <div class="header__top__right__language">
-                            <img src="../img/language.png" alt="">
+                            <img src="img/language.png" alt="">
                             <div>English</div>
                             <span class="arrow_carrot-down"></span>
                             <ul>
-                                <li><a href="#">Spanis</a></li>
-                                <li><a href="#">English</a></li>
+                                <li><a href="#">Русский</a></li>
+                                <li><a href="#">Română</a></li>
                             </ul>
                         </div>
                         <div class="header__top__right__auth">
-                            <a href="#"><i class="fa fa-user"></i> Login</a>
+                            <a href="auth.php"><i class="fa fa-user"></i> Login</a>
+                        </div>
+                        <div class="header__top__right__auth">
+                            <a href="new_user.php"><i class="fa fa-user"></i> SignUp</a>
                         </div>
                     </div>
                 </div>
