@@ -12,8 +12,7 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="auth.php">Sign</a>
-      </li>
-      
+      </li
       
     </ul>
     <!-- <div class="search-box">
