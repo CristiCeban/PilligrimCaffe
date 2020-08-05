@@ -1,7 +1,9 @@
 <html>
 <?php
-    require "../components/Header.php";
+require "../components/Header.php";
+require "../components/bar.php";
 ?>
+
 <body>
 
 
