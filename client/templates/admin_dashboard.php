@@ -37,7 +37,7 @@ require "../components/header_admin.php";
             <h2>Manage <b>Products</b></h2>
         </div>
         <div class="col-sm-2 float-right">
-            <button onClick="addFunction('uid=true','Add Product',600,600)" class="btn btn-success" style="width: 150px">Add Product</button>
+            <button onClick="addFunction('idProdus=true','Add Product',600,600)" class="btn btn-success" style="width: 150px">Add Product</button>
         </div>
     </div>
     <table class="table table-striped" style="padding-top: 50px">
@@ -61,9 +61,9 @@ require "../components/header_admin.php";
                 <td><?php echo '<img src="'.$product->ImagePath.'";style="max-width:300px;width:100%">'?></td>
                 <td><?php echo $product->ImagePath;?></td>
                 <td><?php echo $product->categorie;?></td>
-                <td><a href="#" onclick="editFunction(<?php echo "'uid=".$product->idProdus."'"?>,'Edit User',600,600);return false"
+                <td><a href="#" onclick="editFunction(<?php echo "'idProdus=".$product->idProdus."'"?>,'Edit Produs',600,600);return false"
                         <?php echo 'id=product'.$product->idProdus?> ><i class="fas fa-edit"></i></a>
-                    <a href="#" style="color: red" onclick="deleteFunction(<?php echo "'uid=".$product->idProdus."'";echo ','; echo "'".$user->login."'"?>);return false">
+                    <a href="#" style="color: red" onclick="deleteFunction(<?php echo "'idProdus=".$product->idProdus."'";echo ','; echo "'".$product->NumeProdus."'"?>);return false">
                         <i class="fas fa-trash-alt"></i></a></td>
             </tr>
         <?php endforeach;?>

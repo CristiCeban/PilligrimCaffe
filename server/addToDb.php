@@ -7,8 +7,17 @@ if(isset($_POST['btn_add_user'])){
     $role = filter_var(trim($_POST['role']),FILTER_SANITIZE_STRING);
     $manager->addUser($login,$mdp,$role);
 }
+elseif(isset($_POST['btn_add_product'])){
+    $name = filter_var(trim($_POST['NumeProdus']),FILTER_SANITIZE_STRING);
+    $price = filter_var(trim($_POST['Pret']),FILTER_SANITIZE_STRING);
+    $imagePath = filter_var(trim($_POST['ImagePath']),FILTER_SANITIZE_STRING);
+    $category = filter_var(trim($_POST['category']),FILTER_SANITIZE_STRING);
+    echo "name = " . $name . " ; price = " . $price . " ;imagePath = " .$imagePath .
+    "category = " . $category;
 
-echo "<script>window.close();</script>";
+}
+
+#echo "<script>window.close();</script>";
 ?>
 
 

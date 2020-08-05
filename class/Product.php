@@ -21,7 +21,7 @@ class Product
         return $this->db->single();
     }
     public function deleteProduct($id){
-        $this->db->query('delete from produs where idProdus:=id');
+        $this->db->query('delete from produs where idProdus=:id');
         $this->db->bind('id',$id);
         $this->db->execute();
     }
