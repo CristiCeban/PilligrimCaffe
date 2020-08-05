@@ -30,42 +30,82 @@ require "../components/header_admin.php";
 </nav>
 
 
-<?php if($this->category === 'Users'):?>
+<?php if($this->category === 'Products'):?>
 <div class="container" style="padding-top: 50px">
     <div class="row">
         <div class="col-sm-5">
-            <h2>Manage <b>Users</b></h2>
+            <h2>Manage <b>Products</b></h2>
         </div>
         <div class="col-sm-2 float-right">
-            <button onClick="addFunction('uid=true','Add User',600,600)" class="btn btn-success" style="width: 150px">Add User</button>
+            <button onClick="addFunction('uid=true','Add Product',600,600)" class="btn btn-success" style="width: 150px">Add Product</button>
         </div>
     </div>
     <table class="table table-striped" style="padding-top: 50px">
         <thead>
         <tr>
             <th>ID</th>
-            <th>login</th>
-            <th>Password</th>
-            <th>role</th>
-            <th>action</th>
+            <th>Nume Produs</th>
+            <th>Pret</th>
+            <th>Image</th>
+            <th>ImagePath</th>
+            <th>Categorie</th>
+            <th>Action</th>
         </tr>
         </thead>
         <tbody>
-        <?php foreach($this->users as $user):?>
+        <?php foreach($this->products as $product):?>
             <tr>
-                <td><?php echo $user->idUtilizator;?></td>
-                <td><?php echo $user->login;?></td>
-                <td><?php echo $user->password;?></td>
-                <td><?php echo $user->role;?></td>
-                <td><a href="#" onclick="editFunction(<?php echo "'uid=".$user->idUtilizator."'"?>,'Edit User',600,600);return false"
-                        <?php echo 'id=user'.$user->idUtilizator?> ><i class="fas fa-edit"></i></a>
-                    <a href="#" style="color: red" onclick="deleteFunction(<?php echo "'uid=".$user->id."'";echo ','; echo "'".$user->login."'"?>);return false">
+                <td><?php echo $product->idProdus;?></td>
+                <td><?php echo $product->NumeProdus;?></td>
+                <td><?php echo $product->Pret;?></td>
+                <td><?php echo '<img src="'.$product->ImagePath.'";style="max-width:300px;width:100%">'?></td>
+                <td><?php echo $product->ImagePath;?></td>
+                <td><?php echo $product->categorie;?></td>
+                <td><a href="#" onclick="editFunction(<?php echo "'uid=".$product->idProdus."'"?>,'Edit User',600,600);return false"
+                        <?php echo 'id=product'.$product->idProdus?> ><i class="fas fa-edit"></i></a>
+                    <a href="#" style="color: red" onclick="deleteFunction(<?php echo "'uid=".$product->idProdus."'";echo ','; echo "'".$user->login."'"?>);return false">
                         <i class="fas fa-trash-alt"></i></a></td>
             </tr>
         <?php endforeach;?>
         </tbody>
     </table>
 </div>
+<?php elseif($this->category === 'Users'):?>
+    <div class="container" style="padding-top: 50px">
+        <div class="row">
+            <div class="col-sm-5">
+                <h2>Manage <b>Users</b></h2>
+            </div>
+            <div class="col-sm-2 float-right">
+                <button onClick="addFunction('uid=true','Add Product',600,600)" class="btn btn-success" style="width: 150px">Add User</button>
+            </div>
+        </div>
+        <table class="table table-striped" style="padding-top: 50px">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>login</th>
+                <th>Password</th>
+                <th>role</th>
+                <th>action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <?php foreach($this->users as $user):?>
+                <tr>
+                    <td><?php echo $user->idUtilizator;?></td>
+                    <td><?php echo $user->login;?></td>
+                    <td><?php echo $user->password;?></td>
+                    <td><?php echo $user->role;?></td>
+                    <td><a href="#" onclick="editFunction(<?php echo "'uid=".$user->idUtilizator."'"?>,'Edit User',600,600);return false"
+                            <?php echo 'id=user'.$user->idUtilizator?> ><i class="fas fa-edit"></i></a>
+                        <a href="#" style="color: red" onclick="deleteFunction(<?php echo "'idUtilizator".$user->idUtilizator."'";echo ','; echo "'".$user->login."'"?>);return false">
+                            <i class="fas fa-trash-alt"></i></a></td>
+                </tr>
+            <?php endforeach;?>
+            </tbody>
+        </table>
+    </div>
 
 <?php endif ?>
 <?php
@@ -74,12 +114,6 @@ require "../components/Footer.php"
 
 
 <script>
-    function assign(id, title, w, h){
-        let url = "../server/assignTool.php?"+id;
-        let left = (screen.width/2)-(w/2);
-        let top = (screen.height/2)-(h/2);
-        return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
-    }
     function editFunction(id, title, w, h) {
         let url = "../server/editTool.php?"+id;
         let left = (screen.width/2)-(w/2);

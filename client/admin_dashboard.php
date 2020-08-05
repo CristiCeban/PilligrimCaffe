@@ -16,17 +16,9 @@ elseif (!isAdmin()) {
     $template->manager = $product;
     if ($template->category === 'Users') {
         $template->users = $template->manager->getAllUsers();
-        }
-//    } elseif ($template->category === 'Teachers') {
-//        $template->teachers = $manager->getAllTeachers();
-//    } elseif ($template->category === 'Modules') {
-//        $template->modules = $manager->getAllModules();
-//    } elseif ($template->category === 'Groups') {
-//        $template->groups = $manager->getAllGroups();
-//    } elseif ($template->category === 'Gtypes') {
-//        $template->gtypes = $manager->getAllGtypes();
-//    } elseif ($template->category === 'Assigments') {
-//        $template->affectations = $manager->getAllAffectations();
-//    }
+    } elseif ($template->category === 'Products') {
+        $template->products = $template->manager->getAllProducts();
+    }
+
     echo $template;
 }

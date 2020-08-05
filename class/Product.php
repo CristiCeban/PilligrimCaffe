@@ -22,6 +22,8 @@ class Product
     }
     public function deleteProduct($id){
         $this->db->query('delete from produs where idProdus:=id');
+        $this->db->bind('id',$id);
+        $this->db->execute();
     }
 
     public function updateProduct($id,$price) {
@@ -59,7 +61,7 @@ class Product
         return $this->db->single();
     }
     public function deleteUser($uid){
-        $this->db->query('delete from users where uid=:uid');
+        $this->db->query('delete from users where idUtilizator=:uid');
         $this->db->bind('uid',$uid);
         $this->db->execute();
     }

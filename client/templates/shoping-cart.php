@@ -102,7 +102,7 @@ require "../components/Header.php"
                                     <td class="shoping__cart__quantity">
                                         <div class="quantity">
                                             <div class="pro-qty">
-                                                <input type="text" value="1">
+                                                <input type="number" value="1">
                                             </div>
                                         </div>
                                     </td>
@@ -114,7 +114,7 @@ require "../components/Header.php"
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="shoping__cart__item">
+                                    <td class="shoping__cart__item" id="<?php $row->id?>">
                                         <img src="../img/cart/cart-2.jpg" alt="">
                                         <h5>Fresh Garden Vegetable</h5>
                                     </td>
