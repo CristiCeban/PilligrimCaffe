@@ -25,9 +25,9 @@
 
 <body>
 <!-- Page Preloder -->
-<div id="preloder">
-    <div class="loader"></div>
-</div>
+<!--<div id="preloder">-->
+<!--    <div class="loader"></div>-->
+<!--</div>-->
 
 <!-- Humberger Begin -->
 <div class="humberger__menu__overlay"></div>
@@ -59,9 +59,6 @@
     </div>
     <nav class="humberger__menu__nav mobile-menu">
         <ul>
-            <li class="active"><a href="./index.php">Home</a></li>
-            <li><a href="shop-grid.php">Shop</a></li>
-            <li><a href="#">Pages</a>
                 <ul class="header__menu__dropdown">
                     <li><a href="shop-details.php">Shop Details</a></li>
                     <li><a href="shoping-cart.php">Shoping Cart</a></li>
@@ -92,7 +89,7 @@
                     <div class="header__top__right">
 
                         <div class="header__top__right__language">
-                            <img src="img/language.png" alt="">
+                            <img src="images/moldova.png" alt="">
                             <div>Română</div>
                             <span class="arrow_carrot-down"></span>
                             <ul>
@@ -120,24 +117,12 @@
             </div>
             <div class="col-lg-6">
                 <nav class="header__menu">
-                    <ul>
-                        <li class="active"><a href="index.php">Home</a></li>
-                        <li><a href="shop-grid.php">Shop</a></li>
-                        <li><a href="#">Pages</a>
-                            <ul class="header__menu__dropdown">
-                                <li><a href="shop-details.php">Shop Details</a></li>
-                                <li><a href="shoping-cart.php">Shoping Cart</a></li>
-                                <li><a href="checkout.php">Check Out</a></li>
-                                <li><a href="blog-details.php">Blog Details</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <ul><li><a href="./contact.php">Contacte</a></li></ul>
                 </nav>
             </div>
             <div class="col-lg-3">
                 <div class="header__cart">
                     <ul>
-
                         <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
                     </ul>
 
