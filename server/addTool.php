@@ -67,4 +67,67 @@ if(isset($_GET['idUtilizator'])&&$_GET['idUtilizator']==='true') {
         </form>
     </div>
     <?php
+} elseif (isset($_GET['idProdus'])&&$_GET['idProdus']==='true') {
+    ?>
+<div class="container justify-content-center padding-top">
+    <form class="padding-top" method="post" action="addToDb.php">
+        <!---------------------1 row---------------->
+        <div class="row">
+            <div class="col-md-12 col-lg-3">
+                <p>NumeProdus</p>
+            </div>
+            <div class="col-md-12 col-lg-3">
+                <div class="form-group">
+                    <input required name="NumeProdus" type="text" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-3">
+                <p>Pret</p>
+            </div>
+            <div class="col-md-12 col-lg-3">
+                <div class="form-group">
+                    <input required name="Pret" type="number" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-3">
+                <p>ImagePath</p>
+            </div>
+            <div class="col-md-12 col-lg-3">
+                <div class="form-group">
+                    <input required name="ImagePath" type="text" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-3">
+                <select class="list-group-item" style="text-align-last: center" name="category">
+                    <option selected>Горячие Напитки</option>
+                    <option>Б/А напитки:Холодный Коффе</option>
+                    <option>Б/А напитки:Вода</option>
+                    <option>Б/А напитки:Сок</option>
+                    <option>Б/А напитки:Энергетик</option>
+                    <option>Алкоол. напитки:Вино</option>
+                    <option>Алкоол. напитки:Коньяк</option>
+                    <option>Алкоол. напитки:Виски</option>
+                    <option>Алкоол. напитки:Водка</option>
+                    <option>Алкоол. напитки:Пиво</option>
+                    <option>Продукты:Снэки</option>
+                    <option>Продукты:Закуска к пиву</option>
+                    <option>Продукты:Орешки</option>
+                    <option>Продукты:Сладости</option>
+                    <option>Сигареты</option>
+                </select>
+            </div>
+        </div>
+        <!----------Button------------->
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <div class="col text-center padding-bottom">
+                    <button name="btn_add_product" class="btn btn-primary">Add</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<?php
 }
+?>
