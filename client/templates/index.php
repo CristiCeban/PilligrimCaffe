@@ -9,17 +9,17 @@ require "../components/Header.php"
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
-        <nav class="navbar navbar-expand-lg" id="category-bar">
+        <nav class="navbar navbar-expand-lg mt-lg-1" id="category-bar">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                 <div class="collapse navbar-collapse" id="main_nav">
 
-                <ul class="navbar-nav">
+                <ul class="navbar-nav mt-sm-1">
                 
                     <li class="nav-item dropdown">
                         
-                            <a class="dropdown-toggle" href="#" data-toggle="dropdown">  Toate Categorii  </a>
+                            <a class=" nav-link dropdown-toggle " href="#" data-toggle="dropdown">  Toate Categorii  </a>
                         
                         <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#"> Caffea,ceai</a></li>
