@@ -138,7 +138,7 @@
             <div class="col-lg-3">
                 <div class="menu-bar">
                     <ul>
-                        <a href="shopping-cart.html"><li><i class="fa fa-shopping-cart"></i></li></a>
+                        <li> <a href="./shoping-cart.php"><i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
                 </div>
             </div>
