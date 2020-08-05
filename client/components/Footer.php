@@ -4,7 +4,7 @@
             <div class="col-lg-5 col-md-4 col-sm-6 ">
                 <div class="footer__about">
                     <div class="footer__about__logo">
-                        <a href="./index.php"><img src="images/logo_final.jpg" alt="" style="max-height: 50% ;width: 50%"></a>
+                        <a href="./index.php"><img src="images/logocolor.svg" alt="" style="max-height: 50% ;width: 50%"></a>
                     </div>
                     <ul>
                         <li>Adresă: Str. Chișinăului, 68 Anenii Noi, Moldova</li>

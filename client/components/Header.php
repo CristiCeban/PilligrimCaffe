@@ -138,7 +138,7 @@
         <div class="row">
             <div class="col-lg-3">
                 <div class="header__logo">
-                    <a href="./index.php"><img src="images/logo_final.jpg" alt=""></a>
+                    <a href="./index.php"><object type="image/svg+xml" data="images/logocolor.svg" id="logocolor"></object>
                 </div>
             </div>
             <div class="col-lg-6">

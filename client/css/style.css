@@ -407,9 +407,8 @@ ol {
 	margin-right: 6px;
 }
 
-.header__logo {
-	width: 58%;
-
+#logocolor{
+	width: 250px;
 }
 
 .header__logo a {
@@ -3557,7 +3556,7 @@ ol {
 	}
 	.menu-bar ul li
 	{
-		height 57px;
+		height: 57px;
 		width: 100%;
 	}
 }
