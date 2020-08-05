@@ -97,12 +97,27 @@
                                 <li><a href="#">Română</a></li>
                             </ul>
                         </div>
+                        <?php if(isAdmin()): ?>
+                            <div class="header__top__right__auth">
+                                <a href="admin_dashboard.php"><i class="fa fa-user"></i>DashBoard</a>
+                            </div>
+                        <?php endif ?>
+                        <?php
+                            if(isLoggedIn()):
+                        ?>
+                        <div class="header__top__right__auth">
+                            <a href="../server/disc.php"><i class="fa fa-user"></i>Disconnect</a>
+                        </div>
+                        <?php
+                            else:
+                                ?>
                         <div class="header__top__right__auth">
                             <a href="auth.php"><i class="fa fa-user"></i> Login</a>
                         </div>
                         <div class="header__top__right__auth">
                             <a href="new_user.php"><i class="fa fa-user"></i> SignUp</a>
                         </div>
+                        <?php endif;?>
                     </div>
                 </div>
             </div>

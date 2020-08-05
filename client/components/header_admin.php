@@ -25,7 +25,6 @@
 </head>
 
 
-<!-- Humberger Begin -->
 <div class="humberger__menu__overlay"></div>
 <div class="humberger__menu__wrapper">
     <div class="humberger__menu__logo">
@@ -55,15 +54,12 @@
     </div>
     <nav class="humberger__menu__nav mobile-menu">
         <ul>
-            <li class="active"><a href="./index.php">Home</a></li>
-            <li><a href="shop-grid.php">Shop</a></li>
-            <li><a href="#">Pages</a>
-                <ul class="header__menu__dropdown">
-                    <li><a href="shop-details.php">Shop Details</a></li>
-                    <li><a href="shoping-cart.php">Shoping Cart</a></li>
-                    <li><a href="checkout.php">Check Out</a></li>
-                    <li><a href="blog-details.php">Blog Details</a></li>
-                </ul>
+            <ul class="header__menu__dropdown">
+                <li><a href="shop-details.php">Shop Details</a></li>
+                <li><a href="shoping-cart.php">Shoping Cart</a></li>
+                <li><a href="checkout.php">Check Out</a></li>
+                <li><a href="blog-details.php">Blog Details</a></li>
+            </ul>
             </li>
             <li><a href="blog.php">Blog</a></li>
             <li><a href="contact.php">Contact</a></li>
@@ -74,7 +70,6 @@
     </div>
 </div>
 <!-- Humberger End -->
-
 
 <!-- Header Section Begin -->
 <header class="header">
@@ -89,7 +84,7 @@
                     <div class="header__top__right">
 
                         <div class="header__top__right__language">
-                            <img src="img/language.png" alt="">
+                            <img src="images/moldova.png" alt="">
                             <div>Română</div>
                             <span class="arrow_carrot-down"></span>
                             <ul>
@@ -97,12 +92,27 @@
                                 <li><a href="#">Română</a></li>
                             </ul>
                         </div>
-                        <div class="header__top__right__auth">
-                            <a href="auth.php"><i class="fa fa-user"></i> Login</a>
-                        </div>
-                        <div class="header__top__right__auth">
-                            <a href="new_user.php"><i class="fa fa-user"></i> SignUp</a>
-                        </div>
+                        <?php if(isAdmin()): ?>
+                            <div class="header__top__right__auth">
+                                <a href="admin_dashboard.php"><i class="fa fa-user"></i>DashBoard</a>
+                            </div>
+                        <?php endif ?>
+                        <?php
+                        if(isLoggedIn()):
+                            ?>
+                            <div class="header__top__right__auth">
+                                <a href="../server/disc.php"><i class="fa fa-user"></i>Disconnect</a>
+                            </div>
+                        <?php
+                        else:
+                            ?>
+                            <div class="header__top__right__auth">
+                                <a href="auth.php"><i class="fa fa-user"></i> Login</a>
+                            </div>
+                            <div class="header__top__right__auth">
+                                <a href="new_user.php"><i class="fa fa-user"></i> SignUp</a>
+                            </div>
+                        <?php endif;?>
                     </div>
                 </div>
             </div>
@@ -117,25 +127,13 @@
             </div>
             <div class="col-lg-6">
                 <nav class="header__menu">
-                    <ul>
-                        <li class="active"><a href="index.php">Home</a></li>
-                        <li><a href="shop-grid.php">Shop</a></li>
-                        <li><a href="#">Pages</a>
-                            <ul class="header__menu__dropdown">
-                                <li><a href="shop-details.php">Shop Details</a></li>
-                                <li><a href="shoping-cart.php">Shoping Cart</a></li>
-                                <li><a href="checkout.php">Check Out</a></li>
-                                <li><a href="blog-details.php">Blog Details</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <ul><li><a href="./contact.php">Contacte</a></li></ul>
                 </nav>
             </div>
             <div class="col-lg-3">
                 <div class="header__cart">
                     <ul>
-
-                        <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                        <li><a href="./shoping-cart.php"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
                     </ul>
 
                 </div>
