@@ -2,6 +2,7 @@
 <html lang="zxx">
 
 <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="description" content="Ogani Template">
     <meta name="keywords" content="Ogani, unica, creative, html">
@@ -23,11 +24,6 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
-<body>
-<!-- Page Preloder -->
-<!--<div id="preloder">-->
-<!--    <div class="loader"></div>-->
-<!--</div>-->
 
 <!-- Humberger Begin -->
 <div class="humberger__menu__overlay"></div>
@@ -59,6 +55,9 @@
     </div>
     <nav class="humberger__menu__nav mobile-menu">
         <ul>
+            <li class="active"><a href="./index.php">Home</a></li>
+            <li><a href="shop-grid.php">Shop</a></li>
+            <li><a href="#">Pages</a>
                 <ul class="header__menu__dropdown">
                     <li><a href="shop-details.php">Shop Details</a></li>
                     <li><a href="shoping-cart.php">Shoping Cart</a></li>
@@ -76,6 +75,7 @@
 </div>
 <!-- Humberger End -->
 
+
 <!-- Header Section Begin -->
 <header class="header">
     <div class="header__top">
@@ -89,7 +89,7 @@
                     <div class="header__top__right">
 
                         <div class="header__top__right__language">
-                            <img src="images/moldova.png" alt="">
+                            <img src="img/language.png" alt="">
                             <div>Română</div>
                             <span class="arrow_carrot-down"></span>
                             <ul>
@@ -117,12 +117,24 @@
             </div>
             <div class="col-lg-6">
                 <nav class="header__menu">
-                    <ul><li><a href="./contact.php">Contacte</a></li></ul>
+                    <ul>
+                        <li class="active"><a href="index.php">Home</a></li>
+                        <li><a href="shop-grid.php">Shop</a></li>
+                        <li><a href="#">Pages</a>
+                            <ul class="header__menu__dropdown">
+                                <li><a href="shop-details.php">Shop Details</a></li>
+                                <li><a href="shoping-cart.php">Shoping Cart</a></li>
+                                <li><a href="checkout.php">Check Out</a></li>
+                                <li><a href="blog-details.php">Blog Details</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </nav>
             </div>
             <div class="col-lg-3">
                 <div class="header__cart">
                     <ul>
+
                         <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
                     </ul>
 
