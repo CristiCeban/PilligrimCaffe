@@ -5,13 +5,13 @@ if (document.readyState == 'loading') {
 }
 
 function ready() {
-    var removeCartItemButtons = document.getElementsByClassName('btn-danger')
+    var removeCartItemButtons = document.getElementsByClassName('icon_close')
     for (var i = 0; i < removeCartItemButtons.length; i++) {
         var button = removeCartItemButtons[i]
         button.addEventListener('click', removeCartItem)
     }
 
-    var quantityInputs = document.getElementsByClassName('cart-quantity-input')
+    var quantityInputs = document.getElementsByClassName('shoping__cart__quantity')
     for (var i = 0; i < quantityInputs.length; i++) {
         var input = quantityInputs[i]
         input.addEventListener('change', quantityChanged)
@@ -83,7 +83,7 @@ function addItemToCart(title, price, imageSrc) {
     cartRow.innerHTML = cartRowContents
     cartItems.append(cartRow)
     cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
-    cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
+    cartRow.getElementsByClassName('shoping__cart__quantity')[0].addEventListener('change', quantityChanged)
 }
 
 function updateCartTotal() {
@@ -92,14 +92,14 @@ function updateCartTotal() {
     var total = 0
     for (var i = 0; i < cartRows.length; i++) {
         var cartRow = cartRows[i]
-        var priceElement = cartRow.getElementsByClassName('cart-price')[0]
-        var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
-        var price = parseFloat(priceElement.innerText.replace('MDL', ''))
+        var priceElement = cartRow.getElementsByClassName('shoping__cart__price ')[0]
+        var quantityElement = cartRow.getElementsByClassName('shoping__cart__quantity')[0]
+        // var price = parseFloat(priceElement.innerText.replace('MDL', ''))
         var quantity = quantityElement.value
         total = total + (price * quantity)
     }
     total = Math.round(total * 100) / 100
-    document.getElementsByClassName('cart-total-price')[0].innerText = 'MDL' + total
+    document.getElementsByClassName('shoping__cart__total')[0].innerText = 'MDL' + total
 }
 localStorage.setItem('Name', document.getElementsByClassName('shop-item-title') )
 console.log(localStorage.getItem('Name'))
