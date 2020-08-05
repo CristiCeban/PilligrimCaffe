@@ -77,7 +77,7 @@ require "../components/header_admin.php";
                 <h2>Manage <b>Users</b></h2>
             </div>
             <div class="col-sm-2 float-right">
-                <button onClick="addFunction('uid=true','Add Product',600,600)" class="btn btn-success" style="width: 150px">Add User</button>
+                <button onClick="addFunction('idUtilizator=true','Add User',600,600)" class="btn btn-success" style="width: 150px">Add User</button>
             </div>
         </div>
         <table class="table table-striped" style="padding-top: 50px">
@@ -97,9 +97,8 @@ require "../components/header_admin.php";
                     <td><?php echo $user->login;?></td>
                     <td><?php echo $user->password;?></td>
                     <td><?php echo $user->role;?></td>
-                    <td><a href="#" onclick="editFunction(<?php echo "'uid=".$user->idUtilizator."'"?>,'Edit User',600,600);return false"
-                            <?php echo 'id=user'.$user->idUtilizator?> ><i class="fas fa-edit"></i></a>
-                        <a href="#" style="color: red" onclick="deleteFunction(<?php echo "'idUtilizator".$user->idUtilizator."'";echo ','; echo "'".$user->login."'"?>);return false">
+                    <td>
+                        <a href="#" style="color: red" onclick="deleteFunction(<?php echo "'idUtilizator=".$user->idUtilizator."'";echo ','; echo "'".$user->login."'"?>);return false">
                             <i class="fas fa-trash-alt"></i></a></td>
                 </tr>
             <?php endforeach;?>
