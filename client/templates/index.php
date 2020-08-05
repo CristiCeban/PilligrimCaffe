@@ -12,20 +12,16 @@ require "../components/Header.php"
                     <div class="hero__categories">
                         <div class="hero__categories__all">
                             <i class="fa fa-bars"></i>
-                            <span>All departments</span>
+                            <span>Toate categorii</span>
                         </div>
-                        <ul>
-                            <li><a href="#">Fresh Meat</a></li>
-                            <li><a href="#">Vegetables</a></li>
-                            <li><a href="#">Fruit & Nut Gifts</a></li>
-                            <li><a href="#">Fresh Berries</a></li>
-                            <li><a href="#">Ocean Foods</a></li>
-                            <li><a href="#">Butter & Eggs</a></li>
-                            <li><a href="#">Fastfood</a></li>
-                            <li><a href="#">Fresh Onion</a></li>
-                            <li><a href="#">Papayaya & Crisps</a></li>
-                            <li><a href="#">Oatmeal</a></li>
-                            <li><a href="#">Fresh Bananas</a></li>
+                        <ul >
+                            <li ><a href="#" data-toggle="collapse">Bauturi nealc</a>
+                                
+                            </li>
+                            <li><a href="#">Bauturi alc</a></li>
+                            <li><a href="#">Brutarie</a></li>
+                            <li><a href="#">Caffea</a></li>
+                            <li><a href="#">Produse</a></li>                           
                         </ul>
                     </div>
                 </div>
@@ -34,7 +30,7 @@ require "../components/Header.php"
                         <div class="hero__search__form">
                             <form action="#">
                                 <div class="hero__search__categories">
-                                    All Categories
+                                Toate categorii
                                     <span class="arrow_carrot-down"></span>
                                 </div>
                                 <input type="text" placeholder="What do yo u need?">
@@ -123,7 +119,7 @@ require "../components/Footer.php"
     <script src="js/mixitup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-
+    <script src= "js/alter_bar.js"></script>
 
 
 </body>
