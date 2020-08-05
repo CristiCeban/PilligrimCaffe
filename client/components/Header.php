@@ -136,11 +136,10 @@
                 </nav>
             </div>
             <div class="col-lg-3">
-                <div class="header__cart">
+                <div class="menu-bar">
                     <ul>
-                        <li><a href="./shoping-cart.php"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                        <a href="shopping-cart.html"><li><i class="fa fa-shopping-cart"></i></li></a>
                     </ul>
-
                 </div>
             </div>
         </div>
