@@ -9,58 +9,58 @@ require "../components/Header.php"
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
-        <nav class="navbar navbar-expand-lg mt-sm-3 mt-lg-0 justify-content-center" id="category-bar">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
-                            <!-- <span class="navbar-toggler-icon"></span> -->
-                            <i class="fa fa-bars" aria-hidden="true"></i>
-                            Categorii
-                        </button>
-                <div class="collapse navbar-collapse" id="main_nav">
+                    <nav class="navbar navbar-expand-lg mt-sm-3 mt-lg-0 justify-content-center" id="category-bar">
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
+                                        <!-- <span class="navbar-toggler-icon"></span> -->
+                                        <i class="fa fa-bars" aria-hidden="true"></i>
+                                        Categorii
+                                    </button>
 
-                <ul class="navbar-nav">
-                
-                    <li class="nav-item dropdown">    
-                            <a class="nav-link" id="category-dropdown" href="#" data-toggle="dropdown">  Toate Categorii  </a>
-                            
-                            
-                        <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#"> Caffea,ceai</a></li>
-                        <li><a class="dropdown-item" href="#"> Brutarie</a></li>
-                        <li><a class="dropdown-item" href="#"> Bauturi nealc </a>
-                            <ul class="submenu dropdown-menu">
-                                <li><a class="dropdown-item" href=""> Cafea rece</a></li>
-                                <li><a class="dropdown-item" href="">Apa potabila</a></li>
-                                <li><a class="dropdown-item" href=""> Sucuri </a></li>
-                                <li><a class="dropdown-item" href=""> Energizante</a></li>                          
-                            </ul>
-                        </li>
-                        <li><a class="dropdown-item" href="#"> Bauturi alc </a>
-                        <ul class="submenu dropdown-menu">
-                                <li><a class="dropdown-item" href=""> Vin</a></li>
-                                <li><a class="dropdown-item" href="">Coniac</a></li>
-                                <li><a class="dropdown-item" href=""> Vodka </a></li>
-                                <li><a class="dropdown-item" href=""> Visky</a></li>                          
-                                <li><a class="dropdown-item" href=""> Bere</a></li>                          
-                            </ul>
-                        </li>
-                        
-                        
-                        <li><a class="dropdown-item" href="#"> Produse </a>
-                        <ul class="submenu dropdown-menu">
-                                <li><a class="dropdown-item" href=""> Snack-uri</a></li>
-                                <li><a class="dropdown-item" href="">La o bere</a></li>
-                                <li><a class="dropdown-item" href="">Arahide </a></li>
-                                                        
-                            </ul>
-                        </li>
-                        <li><a class="dropdown-item" href="#"> Tigari </a></li>
-                        </ul>
-                    </li>
-                
-                </ul>
 
-                </div> <!-- navbar-collapse.// -->
-                </nav>
+                            <div class="collapse navbar-collapse" id="main_nav">
+
+                                <ul class="navbar-nav">
+                                
+                                    <li class="nav-item dropdown">    
+                                            <a class="nav-link" id="category-dropdown" href="#" data-toggle="dropdown">  Toate Categorii  </a>
+                                        <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#"> Caffea,ceai</a></li>
+                                        <li><a class="dropdown-item" href="#"> Brutarie</a></li>
+                                        <li><a class="dropdown-item" href="#"> Bauturi nealc </a>
+                                            <ul class="submenu dropdown-menu">
+                                                <li><a class="dropdown-item" href=""> Cafea rece</a></li>
+                                                <li><a class="dropdown-item" href="">Apa potabila</a></li>
+                                                <li><a class="dropdown-item" href=""> Sucuri </a></li>
+                                                <li><a class="dropdown-item" href=""> Energizante</a></li>                          
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#"> Bauturi alc </a>
+                                        <ul class="submenu dropdown-menu">
+                                                <li><a class="dropdown-item" href=""> Vin</a></li>
+                                                <li><a class="dropdown-item" href="">Coniac</a></li>
+                                                <li><a class="dropdown-item" href=""> Vodka </a></li>
+                                                <li><a class="dropdown-item" href=""> Visky</a></li>                          
+                                                <li><a class="dropdown-item" href=""> Bere</a></li>                          
+                                            </ul>
+                                        </li>
+                                        
+                                        
+                                        <li><a class="dropdown-item" href="#"> Produse </a>
+                                        <ul class="submenu dropdown-menu">
+                                                <li><a class="dropdown-item" href=""> Snack-uri</a></li>
+                                                <li><a class="dropdown-item" href="">La o bere</a></li>
+                                                <li><a class="dropdown-item" href="">Arahide </a></li>
+                                                                        
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#"> Tigari </a></li>
+                                        </ul>
+                                    </li>
+                                
+                                </ul>
+
+                            </div> <!-- navbar-collapse.// -->
+                    </nav>
                 </div>
                 <div class="col-lg-9">
                     <div class="hero__search">

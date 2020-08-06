@@ -33,7 +33,7 @@
 <div class="humberger__menu__overlay"></div>
 <div class="humberger__menu__wrapper">
     <div class="humberger__menu__logo">
-        <a href="#"><img src="images/logocolor.svg" alt=""></a>
+        <a href="#"><img src="images/logo_color.png" alt=""></a>
     </div>
     <div class="humberger__menu__cart">
     </div>
@@ -137,8 +137,10 @@
                 <div class="header__logo">
 
                     <a href="./index.php">
+  
 
                          <img src="images/logo_color.png" alt="" style=" width: 160px;">
+
                     </a>
                 </div>
 
