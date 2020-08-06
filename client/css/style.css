@@ -3563,7 +3563,7 @@ ol {
 
 #category-dropdown{
 	color:black;
-	
+	font-family: "Arial Black", Gadget, sans-serif;
 }
 #category-dropdown:hover{
 	color:white;

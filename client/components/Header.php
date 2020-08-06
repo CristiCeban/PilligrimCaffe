@@ -138,8 +138,10 @@
                 <div class="header__logo">
 
                     <a href="./index.php">
-                        <!-- <object data="images/logocolor.svg" type="image/svg+xml" height="75" weight="100"></object> -->
-                        <img src="images/logocolor.svg" alt="" style=" width: 160px;">
+  
+
+                         <img src="images/logo_color.png" alt="" style=" width: 160px;">
+
                     </a>
                 </div>
 
