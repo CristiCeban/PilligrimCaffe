@@ -7,7 +7,7 @@ elseif (!isAdmin()) {
 }
 
 
-require "../components/header_admin.php";
+require "../components/header.php";
 
 ?>
 
@@ -44,12 +44,12 @@ require "../components/header_admin.php";
         <thead>
         <tr>
             <th>ID</th>
-            <th>Nume Produs</th>
-            <th>Pret</th>
-            <th>Image</th>
-            <th>ImagePath</th>
-            <th>Categorie</th>
-            <th>Action</th>
+            <th>Названия</th>
+            <th>Цена</th>
+            <th>Картинка</th>
+            <th>Путь Картинки</th>
+            <th>Категория</th>
+            <th>Действие</th>
         </tr>
         </thead>
         <tbody>
@@ -60,7 +60,7 @@ require "../components/header_admin.php";
                 <td><?php echo $product->Pret;?></td>
                 <td><?php echo '<img src="'.$product->ImagePath.'";style="max-width:300px;width:100%">'?></td>
                 <td><?php echo $product->ImagePath;?></td>
-                <td><?php echo $product->categorie;?></td>
+                <td><?php echo ro_to_rus_cat($product->categorie);?></td>
                 <td><a href="#" onclick="editFunction(<?php echo "'idProdus=".$product->idProdus."'"?>,'Edit Produs',600,600);return false"
                         <?php echo 'id=product'.$product->idProdus?> ><i class="fas fa-edit"></i></a>
                     <a href="#" style="color: red" onclick="deleteFunction(<?php echo "'idProdus=".$product->idProdus."'";echo ','; echo "'".$product->NumeProdus."'"?>);return false">

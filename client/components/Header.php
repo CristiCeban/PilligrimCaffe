@@ -7,6 +7,7 @@
     <meta name="keywords" content="Ogani, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
     <title>Piligrim Cafe</title>
 
     <!-- Google Font -->
@@ -138,7 +139,6 @@
         <div class="row">
             <div class="col-lg-3">
                 <div class="header__logo">
-
 
                     <a href="./index.php">
                                 <object data="images/logocolor.svg" type="image/svg+xml" height="75" weight="100"></object>

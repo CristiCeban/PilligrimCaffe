@@ -58,3 +58,79 @@ function alertChangedPass($alert_msg){
         alertPHP($msg);
     }
 }
+
+function rus_to_ro_cat($category){
+    switch($category) {
+        case "Горячие Напитки":
+            return "bauturi calde";
+        case "Б/А напитки:Холодный Коффе":
+            return "cafea rece";
+        case "Б/А напитки:Вода":
+            return "apa";
+        case "Б/А напитки:Сок":
+            return "sucuri";
+        case "Б/А напитки:Энергетик":
+            return "energizante";
+        case "Алкоол. напитки:Вино":
+            return "vin";
+        case "Алкоол. напитки:Коньяк":
+            return "coniac";
+        case "Алкоол. напитки:Водка":
+            return "vodka";
+        case "Алкоол. напитки:Виски":
+            return "wiski";
+        case "Алкоол. напитки:Пиво":
+            return "bere";
+        case "Продукты:Снэки":
+            return "Snack-uri";
+        case "Продукты:Закуска к пиву":
+            return "Zakuska la bere";
+        case "Продукты:Орешки":
+            return "arahide";
+        case "Продукты:Сладости":
+            return "dulciuri";
+        case "Сигареты":
+            return "tigari";
+        default:
+            return null;
+    }
+}
+
+function ro_to_rus_cat($category){
+    switch ($category) {
+        case "bauturi calde":
+            return "Горячие Напитки";
+        case "cafea rece":
+            return "Б/А напитки:Холодный Коффе";
+        case "apa":
+            return "Б/А напитки:Вода";
+        case "sucuri":
+            return "Б/А напитки:Сок";
+        case "energizante":
+            return "Б/А напитки:Энергетик";
+        case "vin":
+            return "Алкоол. напитки:Вино";
+        case "coniac":
+            return "Алкоол. напитки:Коньяк";
+        case "vodka":
+            return "Алкоол. напитки:Водка";
+        case "wiski":
+            return "Алкоол. напитки:Виски";
+        case "bere":
+            return "Алкоол. напитки:Пиво";
+        case "Snack-uri":
+            return "Продукты:Снэки";
+        case "Zakuska la bere":
+            return "Продукты:Закуска к пиву";
+        case "arahide":
+            return "Продукты:Орешки";
+        case "dulciuri":
+            return "Продукты:Сладости";
+        case "tigari":
+            return "Сигареты";
+
+
+        default:
+            return null;
+    }
+}
