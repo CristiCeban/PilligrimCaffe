@@ -167,7 +167,7 @@ ol {
 	color: #ffffff;
 	text-transform: uppercase;
 	font-weight: 700;
-	background: #7fad39;
+	background: #b54616;
 	letter-spacing: 2px;
 }
 
@@ -407,7 +407,7 @@ ol {
 	margin-right: 6px;
 }
 
-}
+
 
 .header__logo a {
 	display: inline-block;
@@ -3543,7 +3543,7 @@ ol {
 	.menu-bar
 	{
 		width: 100%;
-		padding: ;
+
 	}
 	.menu-bar ul
 	{
@@ -3568,4 +3568,7 @@ ol {
 #category-dropdown:hover{
 	color:white;
 	
+}
+.shoping__cart__table{
+	font-family: "Times New Roman", Times, serif;
 }
