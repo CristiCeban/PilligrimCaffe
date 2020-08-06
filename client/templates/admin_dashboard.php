@@ -15,10 +15,10 @@ require "../components/header.php";
     <div class="container-fluid">
         <ul class="navbar-nav ">
             <li class="nav-item">
-                <a class="nav-link" href="admin_dashboard.php?category=Products">Products</a>
+                <a class="nav-link" href="admin_dashboard.php?category=Products">Товары</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="admin_dashboard.php?category=Users">Users</a>
+                <a class="nav-link" href="admin_dashboard.php?category=Users">Пользователи</a>
             </li>
         </ul>
     </div>
@@ -34,7 +34,7 @@ require "../components/header.php";
 <div class="container" style="padding-top: 50px">
     <div class="row">
         <div class="col-sm-5">
-            <h2>Manage <b>Products</b></h2>
+            <h2>Управление <b>Товарами</b></h2>
         </div>
         <div class="col-sm-2 float-right">
             <button onClick="addFunction('idProdus=true','Add Product',600,600)" class="btn btn-success" style="width: 150px">Add Product</button>
@@ -74,20 +74,20 @@ require "../components/header.php";
     <div class="container" style="padding-top: 50px">
         <div class="row">
             <div class="col-sm-5">
-                <h2>Manage <b>Users</b></h2>
+                <h2>Управление <b>Пользователями</b></h2>
             </div>
             <div class="col-sm-2 float-right">
-                <button onClick="addFunction('idUtilizator=true','Add User',600,600)" class="btn btn-success" style="width: 150px">Add User</button>
+                <button onClick="addFunction('idUtilizator=true','Add User',600,600)" class="btn btn-success" style="width: 150px">Добавить пользователя</button>
             </div>
         </div>
         <table class="table table-striped" style="padding-top: 50px">
             <thead>
             <tr>
                 <th>ID</th>
-                <th>login</th>
-                <th>Password</th>
-                <th>role</th>
-                <th>action</th>
+                <th>Логин</th>
+                <th>Криптованный пароль</th>
+                <th>Роль</th>
+                <th>Действия</th>
             </tr>
             </thead>
             <tbody>

@@ -8,38 +8,73 @@ $manager = new Product();
 <?php
 
 if(isset($_GET['idProdus'])) {
-    $user = $manager->getUser($_GET['uid']);
+    $product = $manager->getProduct($_GET['idProdus']);
 
     ?>
 
     <!----------------------------------------USER---------------------------------------->
 
     <div class="container justify-content-center padding-top">
-        <form action="editToDb.php?<?php echo 'uid='.$_GET['uid']; ?>" class="padding-top" method="post">
+        <form action="editToDb.php?<?php echo 'idProdus='.$_GET['idProdus']; ?>" class="padding-top" method="post">
             <!---------------------1 row---------------->
             <div class="row">
                 <div class="col-md-12 col-lg-3">
-                    <p>Login</p>
+                    <p>Названия продукта</p>
                 </div>
                 <div class="col-md-12 col-lg-3">
                     <div class="form-group">
-                        <input name="login" type="text" class="form-control" value="<?php echo $user->login?>">
+                        <input name="login" type="text" class="form-control" value="<?php echo $product->NumeProdus?>">
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-3">
-                    <p>Mdp</p>
+                    <p>Цена</p>
                 </div>
                 <div class="col-md-12 col-lg-3">
                     <div class="form-group">
-                        <input name="mdp" type="text" class="form-control" value="<?php echo $user->mdp?>">
+                        <input name="mdp" type="text" class="form-control" value="<?php echo $product->Pret?>">
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-3">
-                    <p>Role</p>
+                    <p>Путь до Картинки</p>
                 </div>
                 <div class="col-md-12 col-lg-3">
                     <div class="form-group">
-                        <input name="role" type="text" class="form-control" value="<?php echo $user->role?>">
+                        <input name="role" type="text" class="form-control" value="<?php echo $product->ImagePath?>">
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-3">
+                    <p>Картинка</p>
+                </div>
+                <div class="col-md-12 col-lg-3">
+                    <div class="form-group">
+                        <img src = <?php echo $product->ImagePath?>>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-3">
+                    <p>Категория</p>
+                </div>
+                <div class="col-md-12 col-lg-3">
+                    <div class="form-group">
+                        <div class="col-md-12 col-lg-3">
+                            <select class="list-group-item" style="text-align-last: center" name="category">
+                                <option selected><?php echo $product->categorie?></option>
+                                <option>Горячие Напитки</option>
+                                <option>Б/А напитки:Холодный Коффе</option>
+                                <option>Б/А напитки:Вода</option>
+                                <option>Б/А напитки:Сок</option>
+                                <option>Б/А напитки:Энергетик</option>
+                                <option>Алкоол. напитки:Вино</option>
+                                <option>Алкоол. напитки:Коньяк</option>
+                                <option>Алкоол. напитки:Виски</option>
+                                <option>Алкоол. напитки:Водка</option>
+                                <option>Алкоол. напитки:Пиво</option>
+                                <option>Продукты:Снэки</option>
+                                <option>Продукты:Закуска к пиву</option>
+                                <option>Продукты:Орешки</option>
+                                <option>Продукты:Сладости</option>
+                                <option>Сигареты</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
             </div>
