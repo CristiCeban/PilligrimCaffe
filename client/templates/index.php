@@ -8,8 +8,8 @@ require "../components/Header.php"
     <section class="hero">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
-                    <nav class="navbar navbar-expand-lg mt-sm-3 mt-lg-0 justify-content-center" id="category-bar">
+                <div class="col-lg-3 mb-sm-2">
+                    <nav class="navbar navbar-expand-lg mb-sm-2 mb-md" id="category-bar">
                                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
                                         <!-- <span class="navbar-toggler-icon"></span> -->
                                         <i class="fa fa-bars" aria-hidden="true"></i>
@@ -62,19 +62,19 @@ require "../components/Header.php"
                             </div> <!-- navbar-collapse.// -->
                     </nav>
                 </div>
-                <div class="col-lg-9">
-                    <div class="hero__search">
+                <div class="col-lg-7">
+                     <div class="hero__search mt-sm-4 mt-lg-1">
                         <div class="hero__search__form">
                             <form action="#">
-                                <div class="hero__search__categories">
+                                <!-- <div class="hero__search__categories">
                                 Toate categorii
                                     <span class="arrow_carrot-down"></span>
-                                </div>
+                                </div> -->
                                 <input type="text" placeholder="What do yo u need?">
-                                <button type="submit" class="site-btn">SEARCH</button>
+                                <button type="submit" class="site-btn" style="color:black;">SEARCH</button>
                             </form>
                         </div>
-                        <div class="hero__search__phone">
+                        <!-- <div class="hero__search__phone">
                             <div class="hero__search__phone__icon">
                                 <i class="fa fa-phone"></i>
                             </div>
@@ -82,16 +82,31 @@ require "../components/Header.php"
                                 <h5>+65 11.188.888</h5>
                                 <span>support 24/7 time</span>
                             </div>
-                        </div>
+                        </div> -->
+
                     </div>
-                    <div class="hero__item set-bg" data-setbg="img/hero/banner.jpg">
+                
+                    
+                        
+                    <!-- <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form> -->
+                </div>
+                <div class="col-lg-2">
+                    <div class="menu-bar">
+                        <ul class="mt-sm-0">
+                            <li> <a href="./shoping-cart.php"><i class="fa fa-shopping-cart"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="hero__item set-bg" data-setbg="img/hero/banner.jpg">
                         <div class="hero__text">
                             <span>FRUIT FRESH</span>
                             <h2>Vegetable <br />100% Organic</h2>
                             <p>Free Pickup and Delivery Available</p>
                             <a href="#" class="primary-btn">SHOP NOW</a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

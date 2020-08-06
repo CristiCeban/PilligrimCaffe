@@ -36,6 +36,7 @@ body {
 	font-family: "Cairo", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
+	
 }
 
 h1,
@@ -634,7 +635,7 @@ ol {
 
 .hero__search {
 	overflow: hidden;
-	margin-bottom: 30px;
+	/* margin-bottom: 30px; */
 }
 
 .hero__search__form {
@@ -3163,7 +3164,8 @@ ol {
 		margin-bottom: 30px;
 	}
 	.hero__search {
-		margin-bottom: 30px;
+		/* margin-bottom: 30px; */
+		margin: 10px 0;
 	}
 	.hero__search__form {
 		width: 100%;

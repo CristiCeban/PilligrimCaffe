@@ -9,9 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
     <title>Piligrim Cafe</title>
-
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+    <link type="text/javascript"  href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
 
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -152,11 +151,11 @@
                 </nav>
             </div>
             <div class="col-lg-3">
-                <div class="menu-bar">
+                <!-- <div class="menu-bar">
                     <ul>
                         <li> <a href="./shoping-cart.php"><i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="humberger__open">
