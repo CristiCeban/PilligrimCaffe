@@ -19,13 +19,10 @@ require "../components/Header.php"
 
                 <ul class="navbar-nav">
                 
-                    <li class="nav-item dropdown">
-                        <div class="container">
-                            
+                    <li class="nav-item dropdown">    
                             <a class="nav-link" id="category-dropdown" href="#" data-toggle="dropdown">  Toate Categorii  </a>
-
-                        </div>
-                        
+                            
+                            
                         <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#"> Caffea,ceai</a></li>
                         <li><a class="dropdown-item" href="#"> Brutarie</a></li>
