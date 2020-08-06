@@ -3572,3 +3572,10 @@ ol {
 .shoping__cart__table{
 	font-family: "Times New Roman", Times, serif;
 }
+/*Map on contacts*/
+@media only screen and (max-width: 992px)
+{
+	.mapouter{
+		width: 100%;
+	}
+}

@@ -62,10 +62,10 @@ require "../components/Header.php"
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>Shopping Cart</h2>
+                        <h2>Coș de cumpărături</h2>
                         <div class="breadcrumb__option">
-                            <a href="index.php">Home</a>
-                            <span>Shopping Cart</span>
+                            <a href="index.php">Pagina principală</a>
+                            <span>Coș de cumpărături</span>
                         </div>
                     </div>
                 </div>
@@ -185,8 +185,8 @@ require "../components/Header.php"
                     <div class="shoping__checkout">
                         <h5>Total</h5>
                         <ul>
-                            <li>Subtotal <span>$454.98</span></li>
-                            <li>Total <span>$454.98</span></li>
+<!--                            <li>Subtotal <span>$454.98</span></li>-->
+                            <li>Suma: <span>$454.98</span></li>
                         </ul>
                         <a href="#" class="primary-btn">Continuă Comanda</a>
                     </div>
