@@ -12,7 +12,7 @@ elseif (!isAdmin()) {
 
     $product = new Product();
     $template = new Template('templates/admin_dashboard.php');
-    $template->category = isset($_GET['category']) ? $_GET['category'] : 'Users';
+    $template->category = isset($_GET['category']) ? $_GET['category'] : 'Products';
     $template->manager = $product;
     if ($template->category === 'Users') {
         $template->users = $template->manager->getAllUsers();
