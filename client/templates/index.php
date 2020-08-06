@@ -8,8 +8,8 @@ require "../components/Header.php"
     <section class="hero">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
-                    <nav class="navbar navbar-expand-lg mt-sm-3 mt-lg-0 justify-content-center" id="category-bar">
+                <div class="col-lg-3 mb-sm-2">
+                    <nav class="navbar navbar-expand-lg mb-sm-2 mb-md" id="category-bar">
                                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
                                         <!-- <span class="navbar-toggler-icon"></span> -->
                                         <i class="fa fa-bars" aria-hidden="true"></i>
@@ -62,7 +62,7 @@ require "../components/Header.php"
                             </div> <!-- navbar-collapse.// -->
                     </nav>
                 </div>
-                <div class="col-lg-7 col-md-12">
+                <div class="col-lg-7">
                      <div class="hero__search mt-sm-4 mt-lg-1">
                         <div class="hero__search__form">
                             <form action="#">
