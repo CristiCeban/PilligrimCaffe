@@ -20,6 +20,16 @@ class Product
         $this->db->bind('id',$id);
         return $this->db->single();
     }
+
+    public function addProduct($nume,$pret,$imagePath,$categorie){
+        $this->db->query('insert into produs(NumeProdus, Pret,ImagePath,categorie) value(:nume, :pret, :imagePath,:categorie)');
+        $this->db->bind('nume',$nume);
+        $this->db->bind('pret',$pret);
+        $this->db->bind('imagePath',$imagePath);
+        $this->db->bind('categorie',$categorie);
+        $this->db->execute();
+    }
+
     public function deleteProduct($id){
         $this->db->query('delete from produs where idProdus=:id');
         $this->db->bind('id',$id);
