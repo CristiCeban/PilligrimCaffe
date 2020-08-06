@@ -36,8 +36,8 @@ class Product
         $this->db->execute();
     }
 
-    public function updateProduct($id,$price) {
-        $this->db->query('update produs set pret=:price where idProdus=:id');
+    public function updateProduct($id,$nume,$price,$imagePath,$category) {
+        $this->db->query('update users set login=:login, mdp=:mdp, role=:role where uid =:uid;');
         $this->db->bind('id',$id);
         $this->db->bind('price',$price);
         $this->db->execute();

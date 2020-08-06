@@ -23,7 +23,7 @@ if(isset($_GET['idProdus'])) {
                 </div>
                 <div class="col-md-12 col-lg-3">
                     <div class="form-group">
-                        <input name="login" type="text" class="form-control" value="<?php echo $product->NumeProdus?>">
+                        <input name="numeProdus" type="text" class="form-control" value="<?php echo $product->NumeProdus?>">
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-3">
@@ -31,7 +31,7 @@ if(isset($_GET['idProdus'])) {
                 </div>
                 <div class="col-md-12 col-lg-3">
                     <div class="form-group">
-                        <input name="mdp" type="text" class="form-control" value="<?php echo $product->Pret?>">
+                        <input name="pret" type="text" class="form-control" value="<?php echo $product->Pret?>">
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-3">
@@ -39,15 +39,15 @@ if(isset($_GET['idProdus'])) {
                 </div>
                 <div class="col-md-12 col-lg-3">
                     <div class="form-group">
-                        <input name="role" type="text" class="form-control" value="<?php echo $product->ImagePath?>">
+                        <input name="imagePath" type="text" class="form-control" value="<?php echo $product->ImagePath?>">
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-3">
                     <p>Картинка</p>
                 </div>
                 <div class="col-md-12 col-lg-3">
-                    <div class="form-group">
-                        <img src = <?php echo $product->ImagePath?>>
+                    <div class="form-group" style="width: 200px;">
+                        <img style="max-width:100%;height:auto;" src = <?php echo $product->ImagePath?> >
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-3">
@@ -82,7 +82,7 @@ if(isset($_GET['idProdus'])) {
             <div class="row">
                 <div class="col-md-12 col-lg-12">
                     <div class="col text-center padding-bottom">
-                        <button name="btn_edit_user" class="btn btn-primary">Update</button>
+                        <button name="btn_edit_product" class="btn btn-primary">Update</button>
                     </div>
                 </div>
             </div>
