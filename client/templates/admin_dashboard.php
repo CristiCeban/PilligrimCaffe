@@ -24,7 +24,7 @@ require "../components/header.php";
     </div>
     <form class="form-inline">
         <div class="md-form my-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <input class="form-control mr-sm-2" type="text" id="searchText" placeholder="Search" aria-label="Search" onkeyup="searchFunction()">
         </div>
     </form>
 </nav>
@@ -37,13 +37,12 @@ require "../components/header.php";
             <h2>Управление <b>Товарами</b></h2>
         </div>
         <div class="col-sm-2 float-right">
-            <button onClick="addFunction('idProdus=true','Add Product',600,600)" class="btn btn-success" style="width: 150px">Add Product</button>
+            <button onClick="addFunction('idProdus=true','Add Product',600,600)" class="btn btn-success" style="width: 150px">Добавить Товар</button>
         </div>
     </div>
-    <table class="table table-striped" style="padding-top: 50px">
+    <table class="table table-striped" id="table" style="padding-top: 50px">
         <thead>
         <tr>
-            <th>ID</th>
             <th>Названия</th>
             <th>Цена</th>
             <th>Картинка</th>
@@ -55,10 +54,9 @@ require "../components/header.php";
         <tbody>
         <?php foreach($this->products as $product):?>
             <tr>
-                <td><?php echo $product->idProdus;?></td>
                 <td><?php echo $product->NumeProdus;?></td>
                 <td><?php echo $product->Pret;?></td>
-                <td><?php echo '<img src="'.$product->ImagePath.'";style="max-width:300px;width:100%">'?></td>
+                <td><div style="width: 200px; overflow:hidden"><?php echo '<img src="'.$product->ImagePath.'";style="style="max-width:100%;height:auto;"">'?></div></td>
                 <td><?php echo $product->ImagePath;?></td>
                 <td><?php echo ro_to_rus_cat($product->categorie);?></td>
                 <td><a href="#" onclick="editFunction(<?php echo "'idProdus=".$product->idProdus."'"?>,'Edit Produs',600,600);return false"
@@ -80,10 +78,9 @@ require "../components/header.php";
                 <button onClick="addFunction('idUtilizator=true','Add User',600,600)" class="btn btn-success" style="width: 150px">Добавить пользователя</button>
             </div>
         </div>
-        <table class="table table-striped" style="padding-top: 50px">
+        <table class="table table-striped" id="table" style="padding-top: 50px">
             <thead>
             <tr>
-                <th>ID</th>
                 <th>Логин</th>
                 <th>Криптованный пароль</th>
                 <th>Роль</th>
@@ -93,7 +90,6 @@ require "../components/header.php";
             <tbody>
             <?php foreach($this->users as $user):?>
                 <tr>
-                    <td><?php echo $user->idUtilizator;?></td>
                     <td><?php echo $user->login;?></td>
                     <td><?php echo $user->password;?></td>
                     <td><?php echo $user->role;?></td>
@@ -130,4 +126,26 @@ require "../components/Footer.php"
         let top = (screen.height/2)-(h/2);
         return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
     }
+    function searchFunction() {
+        // Declare variables
+        let input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("searchText");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("table");
+        tr = table.getElementsByTagName("tr");
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+
 </script>
