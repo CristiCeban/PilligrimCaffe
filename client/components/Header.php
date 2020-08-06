@@ -141,8 +141,8 @@
 
 
                     <a href="./index.php">
-                                <object data="images/logocolor.svg" type="image/svg+xml" height="75" weight="100"></object>
-                        <!-- <img src="images/logocolor.svg" alt="" style=" width: 160px;"> -->
+                        <!-- <object data="images/logocolor.svg" type="image/svg+xml" height="75" weight="100"></object> -->
+                        <img src="images/logocolor.svg" alt="" style=" width: 160px;">
                     </a>
                 </div>
 
