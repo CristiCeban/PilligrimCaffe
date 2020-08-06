@@ -12,9 +12,10 @@ elseif(isset($_POST['btn_add_product'])){
     $price = filter_var(trim($_POST['Pret']),FILTER_SANITIZE_STRING);
     $imagePath = filter_var(trim($_POST['ImagePath']),FILTER_SANITIZE_STRING);
     $category = filter_var(trim($_POST['category']),FILTER_SANITIZE_STRING);
-    echo "name = " . $name . " ; price = " . $price . " ;imagePath = " .$imagePath .
-    "category = " . $category;
-
+    $ro_category = rus_to_ro_cat($category);
+    if($ro_category){
+        $manager->addProduct($name,$price,$imagePath,$ro_category);
+    }
 }
 
 #echo "<script>window.close();</script>";

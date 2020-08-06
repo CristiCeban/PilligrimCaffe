@@ -83,9 +83,9 @@ require "../components/Header.php"
                         <table>
                             <thead>
                                 <tr>
-                                    <th class="shoping__product">Products</th>
-                                    <th>Price</th>
-                                    <th>Quantity</th>
+                                    <th class="shoping__product">Produse</th>
+                                    <th>Preț</th>
+                                    <th>Cantitate</th>
                                     <th>Total</th>
                                     <th></th>
                                 </tr>
@@ -172,23 +172,23 @@ require "../components/Header.php"
                 </div>
                 <div class="col-lg-6">
                     <div class="shoping__continue">
-                        <div class="shoping__discount">
-                            <h5>Discount Codes</h5>
-                            <form action="#">
-                                <input type="text" placeholder="Enter your coupon code">
-                                <button type="submit" class="site-btn">APPLY COUPON</button>
-                            </form>
-                        </div>
+<!--                        <div class="shoping__discount">-->
+<!--                            <h5>Discount Codes</h5>-->
+<!--                            <form action="#">-->
+<!--                                <input type="text" placeholder="Enter your coupon code">-->
+<!--                                <button type="submit" class="site-btn">APPLY COUPON</button>-->
+<!--                            </form>-->
+<!--                        </div>-->
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="shoping__checkout">
-                        <h5>Cart Total</h5>
+                        <h5>Total</h5>
                         <ul>
                             <li>Subtotal <span>$454.98</span></li>
                             <li>Total <span>$454.98</span></li>
                         </ul>
-                        <a href="#" class="primary-btn">PROCEED TO CHECKOUT</a>
+                        <a href="#" class="primary-btn">Continuă Comanda</a>
                     </div>
                 </div>
             </div>

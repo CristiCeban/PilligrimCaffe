@@ -7,6 +7,7 @@
     <meta name="keywords" content="Ogani, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
     <title>Piligrim Cafe</title>
 
     <!-- Google Font -->
@@ -33,12 +34,9 @@
 <div class="humberger__menu__overlay"></div>
 <div class="humberger__menu__wrapper">
     <div class="humberger__menu__logo">
-        <a href="#"><img src="img/logo.png" alt=""></a>
+        <a href="#"><img src="images/logocolor.svg" alt=""></a>
     </div>
     <div class="humberger__menu__cart">
-        <ul>
-            <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
-        </ul>
     </div>
     <div class="humberger__menu__widget">
         <div class="header__top__right__language">
@@ -138,7 +136,6 @@
         <div class="row">
             <div class="col-lg-3">
                 <div class="header__logo">
-
 
                     <a href="./index.php">
                         <!-- <object data="images/logocolor.svg" type="image/svg+xml" height="75" weight="100"></object> -->
