@@ -3559,3 +3559,13 @@ ol {
 
 	}
 }
+
+
+#category-dropdown{
+	color:black;
+	
+}
+#category-dropdown:hover{
+	color:white;
+	
+}
