@@ -5,10 +5,12 @@ $userName = filter_var(trim($_POST['username']),FILTER_SANITIZE_STRING);
 $password = filter_var(trim($_POST['password']),FILTER_SANITIZE_STRING);
 
 $user = new User;
+$password = md5($password);
+
 
 $result = $user->login($userName,$password);
 
-//echo $result;
+
 if($result==USER_NOT_FOUND){
     header('Location: ../client/auth.php?alert_msg='.USER_NOT_FOUND);
 }
