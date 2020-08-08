@@ -110,21 +110,21 @@ require "../components/Header.php"
             <div class="row">
                 <div class="col-lg-12">
                     <div class="contact__form__title">
-                        <h2>Leave Message</h2>
+                        <h2>Lasa un mesaj</h2>
                     </div>
                 </div>
             </div>
             <form action="#">
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
-                        <input type="text" placeholder="Your name">
+                        <input type="text" placeholder="Numele tau">
                     </div>
                     <div class="col-lg-6 col-md-6">
-                        <input type="text" placeholder="Your Email">
+                        <input type="email" placeholder="Email-ul tau">
                     </div>
                     <div class="col-lg-12 text-center">
-                        <textarea placeholder="Your message"></textarea>
-                        <button type="submit" class="site-btn">SEND MESSAGE</button>
+                        <textarea placeholder="Mesajul tau"></textarea>
+                        <button type="submit" class="site-btn">Trimite mesaj</button>
                     </div>
                 </div>
             </form>

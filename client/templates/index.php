@@ -119,28 +119,33 @@ require "../components/Header.php"
             <div class="row">
                 <div class="categories__slider owl-carousel">
                     <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-1.jpg">
-                            <h5><a href="#">Fresh Fruit</a></h5>
+                        <div class="categories__item set-bg" data-setbg="images/categories/latte_macchiato.jpg">
+                            <h5><a href="#">Bauturi calde</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-2.jpg">
-                            <h5><a href="#">Dried Fruit</a></h5>
+                        <div class="categories__item set-bg" data-setbg="images/categories/brutarie.jpg">
+                            <h5><a href="#">Brutarie</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-3.jpg">
-                            <h5><a href="#">Vegetables</a></h5>
+                        <div class="categories__item set-bg" data-setbg="images/categories/soft_drinks1.jpg">
+                            <h5><a href="#">Bauturi Nealcoolice</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-4.jpg">
-                            <h5><a href="#">drink fruits</a></h5>
+                        <div class="categories__item set-bg" data-setbg="images/categories/alc_drinks.jpg">
+                            <h5><a href="#">Bauturi Alcoolice</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-5.jpg">
-                            <h5><a href="#">drink fruits</a></h5>
+                        <div class="categories__item set-bg" data-setbg="images/categories/prod_alim.jpg">
+                            <h5><a href="#">Produse Alimentare</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="images/categories/ciggit.jpg">
+                            <h5><a href="#">Tigari</a></h5>
                         </div>
                     </div>
                 </div>

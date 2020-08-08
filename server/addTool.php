@@ -28,7 +28,7 @@ if(isset($_GET['idUtilizator'])&&$_GET['idUtilizator']==='true') {
             <!---------------------1 row---------------->
             <div class="row">
                 <div class="col-md-12 col-lg-3">
-                    <p>Login</p>
+                    <p>Логин</p>
                 </div>
                 <div class="col-md-12 col-lg-3">
                     <div class="form-group">
@@ -36,7 +36,7 @@ if(isset($_GET['idUtilizator'])&&$_GET['idUtilizator']==='true') {
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-3">
-                    <p>Password</p>
+                    <p>Пароль</p>
                 </div>
                 <div class="col-md-12 col-lg-3">
                     <div class="form-group">
@@ -44,7 +44,7 @@ if(isset($_GET['idUtilizator'])&&$_GET['idUtilizator']==='true') {
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-3">
-                    <p>Role</p>
+                    <p>Роль</p>
                 </div>
                 <div class="col-md-12 col-lg-3">
                     <select class="list-group-item" style="text-align-last: center" name="role">
@@ -74,7 +74,7 @@ if(isset($_GET['idUtilizator'])&&$_GET['idUtilizator']==='true') {
         <!---------------------1 row---------------->
         <div class="row">
             <div class="col-md-12 col-lg-3">
-                <p>NumeProdus</p>
+                <p>Названия</p>
             </div>
             <div class="col-md-12 col-lg-3">
                 <div class="form-group">
@@ -82,7 +82,7 @@ if(isset($_GET['idUtilizator'])&&$_GET['idUtilizator']==='true') {
                 </div>
             </div>
             <div class="col-md-12 col-lg-3">
-                <p>Pret</p>
+                <p>Цена</p>
             </div>
             <div class="col-md-12 col-lg-3">
                 <div class="form-group">
@@ -90,7 +90,7 @@ if(isset($_GET['idUtilizator'])&&$_GET['idUtilizator']==='true') {
                 </div>
             </div>
             <div class="col-md-12 col-lg-3">
-                <p>ImagePath</p>
+                <p>Путь до картинки (URL)</p>
             </div>
             <div class="col-md-12 col-lg-3">
                 <div class="form-group">
