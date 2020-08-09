@@ -62,10 +62,10 @@
         else:
             ?>
             <div class="header__top__right__auth">
-                <a href="auth.php"><i class="fa fa-user"></i> Login</a>
+                <a href="auth.php"><i class="fa fa-user"></i>Intră în cont</a>
             </div>
             <div class="header__top__right__auth">
-                <a href="new_user.php"><i class="fa fa-user"></i> SignUp</a>
+                <a href="new_user.php"><i class="fa fa-user"></i>Înregistrează-te</a>
             </div>
         <?php endif;?>
     </div>
@@ -120,10 +120,10 @@
                             else:
                                 ?>
                         <div class="header__top__right__auth">
-                            <a href="auth.php"><i class="fa fa-user"></i> Login</a>
+                            <a href="auth.php"><i class="fa fa-user"></i>Intră în cont</a>
                         </div>
                         <div class="header__top__right__auth">
-                            <a href="new_user.php"><i class="fa fa-user"></i> SignUp</a>
+                            <a href="new_user.php"><i class="fa fa-user"></i>Înregistrează-te</a>
                         </div>
                         <?php endif;?>
                     </div>
