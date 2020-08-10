@@ -70,8 +70,8 @@ require "../components/Header.php"
                                 Toate categorii
                                     <span class="arrow_carrot-down"></span>
                                 </div> -->
-                                <input type="text" placeholder="What do yo u need?">
-                                <button type="submit" class="site-btn" style="color:black;">SEARCH</button>
+                                <input type="text" placeholder="Termen de căutat">
+                                <button type="submit" class="site-btn" style="color:black;">Caută</button>
                             </form>
                         </div>
                         <!-- <div class="hero__search__phone">
@@ -107,10 +107,43 @@ require "../components/Header.php"
                             <a href="#" class="primary-btn">SHOP NOW</a>
                         </div>
                     </div> -->
+
                 </div>
+
             </div>
+
         </div>
     </section>
+<!--Banner-->
+<div class="slider">
+<div id="slider" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#slider" data-slide-to="0" class="active"></li>
+        <li data-target="#slider" data-slide-to="1"></li>
+        <li data-target="#slider" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/banner4.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="images/banner1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="images/banner2.jpg" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+</div>
+<!--Bannner end-->
     <!-- Hero Section End -->
 
     <!-- Categories Section Begin -->
