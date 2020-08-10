@@ -144,7 +144,7 @@ require "../components/Header.php"
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="images/categories/ciggit.jpg">
+                        <div class="categories__item set-bg" data-setbg="images/categories/cig.jpg">
                             <h5><a href="#">Tigari</a></h5>
                         </div>
                     </div>
