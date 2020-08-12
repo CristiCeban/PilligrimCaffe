@@ -62,45 +62,7 @@ require "../components/Header.php"
                             <!-- </div> navbar-collapse.// -->
                     <!-- </nav> -->
 
-                    <section>
-                        <div class="side-menu">
-                                    <ul>
-                                        <li><a class="menu-item" href="shop_grid.php?cat=bc"> Caffea,ceai</a></li>
-                                        <li><a class="menu-item" href="shop_grid.php?cat=br"> Brutarie</a></li>
-                                        <li><a class="menu-item" href="shop_grid.php?cat=bn"> Bauturi nealc </a>
-                                            <ul class="submenu">
-                                                <li><a class="menu-item" href="shop_grid.php?cat=cf"> Cafea rece</a></li>
-                                                <li><a class="menu-item" href="shop_grid.php?cat=ap">Apa potabila</a></li>
-                                                <li><a class="menu-item" href="shop_grid.php?cat=su"> Sucuri </a></li>
-                                                <li><a class="menu-item" href="shop_grid.php?cat=energ"> Energizante</a></li>                          
-                                            </ul>
-                                        </li>
-                                        <li><a class="menu-item" href="shop_grid.php?cat=ba"> Bauturi alc </a>
-                                        <ul class="submenu">
-                                                <li><a class="menu-item" href="shop_grid.php?cat=vin"> Vin</a></li>
-                                                <li><a class="menu-item" href="shop_grid.php?cat=con">Coniac</a></li>
-                                                <li><a class="menu-item" href="shop_grid.php?cat=vod"> Vodka </a></li>
-                                                <li><a class="menu-item" href="shop_grid.php?cat=visk"> Visky</a></li>                          
-                                                <li><a class="menu-item" href="shop_grid.php?cat=ber"> Bere</a></li>                          
-                                            </ul>
-                                        </li>
-                                        
-                                        
-                                        <li><a class="menu-item" href="shop_grid.php?cat=prod"> Produse </a>
-                                            <ul class="submenu">
-                                                    <li><a class="menu-item" href="shop_grid.php?cat=snack"> Snack-uri</a></li>
-                                                    <li><a class="menu-item" href="shop_grid.php?cat=jakuska">La o bere</a></li>
-                                                    <li><a class="menu-item" href="shop_grid.php?cat=arah">Arahide </a></li>
-                                                                            
-                                            </ul>
-                                        </li>
-                                        <li><a class="menu-item" href="shop_grid.php?cat=tig"> Tigari </a></li>
-                                    </ul>
-                                
-                            
-                            
-                        </div>
-                    </section>
+                    
                 </div>
                 <div class="col-lg-7">
                      <div class="hero__search my-sm-1 mt-lg-1">
@@ -138,9 +100,39 @@ require "../components/Header.php"
                 </div>
 
             </div>
-
+            
         </div>
     </section>
+        <!-- <section>
+                        <div class="side-menu" id="side-menu">
+                            <ul>
+                                <li>Еда<i class="fa fa-angle-right"></i>
+                                <ul>
+                                <li>Снэки</li>	
+                                <li>Сладкое</li>
+                                <li>Шоколад</li>
+                                </ul>
+                                </li>
+                            <li>Напитки<i class="fa fa-angle-right"></i>
+                                <ul>
+                                <li>Вода</li>	
+                                <li>Соки, освежающие напитки</li>
+                                    <a href="пиво.html"> <li>Пиво</li></a>
+                                <li>Крепкие напитки</li>
+                                </ul>
+                            </li>
+                            <li>Пекарня<i class="fa fa-angle-right"></i>
+                            <ul>
+                                <li>Форнети</li>	
+                                </ul>
+                            </li>
+                            <li>Авто<i class="fa fa-angle-right"></i></li>
+                            </ul>
+                        </div>
+            </section> -->
+
+
+            
 <!--Banner-->
 
 
