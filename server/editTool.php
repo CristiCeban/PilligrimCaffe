@@ -19,11 +19,19 @@ if(isset($_GET['idProdus'])) {
             <!---------------------1 row---------------->
             <div class="row">
                 <div class="col-md-12 col-lg-3">
-                    <p>Названия продукта</p>
+                    <p>Названия продукта(Ro)</p>
                 </div>
                 <div class="col-md-12 col-lg-3">
                     <div class="form-group">
                         <input name="numeProdus" type="text" class="form-control" value="<?php echo $product->NumeProdus?>">
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-3">
+                    <p>Названия продукта(Ru)</p>
+                </div>
+                <div class="col-md-12 col-lg-3">
+                    <div class="form-group">
+                        <input name="numeProdusRu" type="text" class="form-control" value="<?php echo $product->NumeProdusRu?>">
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-3">

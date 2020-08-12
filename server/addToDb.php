@@ -9,12 +9,13 @@ if(isset($_POST['btn_add_user'])){
 }
 elseif(isset($_POST['btn_add_product'])){
     $name = filter_var(trim($_POST['NumeProdus']),FILTER_SANITIZE_STRING);
+    $nameRu = filter_var(trim($_POST['NumeProdusRu']),FILTER_SANITIZE_STRING);
     $price = filter_var(trim($_POST['Pret']),FILTER_SANITIZE_STRING);
     $imagePath = filter_var(trim($_POST['ImagePath']),FILTER_SANITIZE_STRING);
     $category = filter_var(trim($_POST['category']),FILTER_SANITIZE_STRING);
     $ro_category = rus_to_ro_cat($category);
     if($ro_category){
-        $manager->addProduct($name,$price,$imagePath,$ro_category);
+        $manager->addProduct($name,$nameRu,$price,$imagePath,$ro_category);
     }
 }
 

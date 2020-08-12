@@ -74,11 +74,19 @@ if(isset($_GET['idUtilizator'])&&$_GET['idUtilizator']==='true') {
         <!---------------------1 row---------------->
         <div class="row">
             <div class="col-md-12 col-lg-3">
-                <p>Названия</p>
+                <p>Названия(Ro)</p>
             </div>
             <div class="col-md-12 col-lg-3">
                 <div class="form-group">
                     <input required name="NumeProdus" type="text" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-3">
+                <p>Названия(Ru)</p>
+            </div>
+            <div class="col-md-12 col-lg-3">
+                <div class="form-group">
+                    <input required name="NumeProdusRu" type="text" class="form-control">
                 </div>
             </div>
             <div class="col-md-12 col-lg-3">

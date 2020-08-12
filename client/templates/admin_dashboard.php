@@ -40,10 +40,11 @@ require "../components/header.php";
             <button onClick="addFunction('idProdus=true','Add Product',600,600)" class="btn btn-success" style="width: 150px">Добавить Товар</button>
         </div>
     </div>
-    <table class="table table-striped" id="table" style="padding-top: 50px">
+    <table class="table table-striped" id="table">
         <thead>
         <tr>
-            <th>Названия</th>
+            <th>Названия(Ro)</th>
+            <th>Названия(Ru)</th>
             <th>Цена</th>
             <th>Картинка</th>
             <th>Путь Картинки</th>
@@ -55,6 +56,7 @@ require "../components/header.php";
         <?php foreach($this->products as $product):?>
             <tr>
                 <td><?php echo $product->NumeProdus;?></td>
+                <td><?php echo $product->NumeProdusRu;?></td>
                 <td><?php echo $product->Pret;?></td>
                 <td><div style="width: 200px; overflow:hidden"><?php echo '<img src="'.$product->ImagePath.'";style="style="max-width:100%;height:auto;"">'?></div></td>
                 <td><?php echo $product->ImagePath;?></td>
