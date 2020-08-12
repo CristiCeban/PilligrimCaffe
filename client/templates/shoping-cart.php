@@ -1,5 +1,9 @@
 <?php
-require "../components/Header.php"
+require "../components/Header.php";
+$manager = new Product();
+$ids = isset($_COOKIE['card-list']) ? $_COOKIE['card-list'] : null;
+$rs = $manager->getProductIds($ids);
+
 ?>
     <!-- Header Section End -->
 
@@ -91,9 +95,10 @@ require "../components/Header.php"
                                 </tr>
                             </thead>
                             <tbody>
+                            <?php foreach($rs as $result): ?>
                                 <tr>
                                     <td class="shoping__cart__item">
-                                        <img src="../img/cart/cart-1.jpg" alt="">
+                                        <img src="<?php echo $result->imagePath ?>" alt="">
                                         <h5>Vegetable’s Package</h5>
                                     </td>
                                     <td class="shoping__cart__price">
@@ -102,7 +107,7 @@ require "../components/Header.php"
                                     <td class="shoping__cart__quantity">
                                         <div class="quantity">
                                             <div class="pro-qty">
-                                                <input type="number" value="1">
+                                                <input type="number" min="1" value="1">
                                             </div>
                                         </div>
                                     </td>
@@ -113,50 +118,7 @@ require "../components/Header.php"
                                         <span class="icon_close"></span>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td class="shoping__cart__item" id="<?php $row->id?>">
-                                        <img src="../img/cart/cart-2.jpg" alt="">
-                                        <h5>Fresh Garden Vegetable</h5>
-                                    </td>
-                                    <td class="shoping__cart__price">
-                                        $39.00
-                                    </td>
-                                    <td class="shoping__cart__quantity">
-                                        <div class="quantity">
-                                            <div class="pro-qty">
-                                                <input type="text" value="1">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="shoping__cart__total">
-                                        $39.99
-                                    </td>
-                                    <td class="shoping__cart__item__close">
-                                        <span class="icon_close"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="shoping__cart__item">
-                                        <img src="../img/cart/cart-3.jpg" alt="">
-                                        <h5>Organic Bananas</h5>
-                                    </td>
-                                    <td class="shoping__cart__price">
-                                        $69.00
-                                    </td>
-                                    <td class="shoping__cart__quantity">
-                                        <div class="quantity">
-                                            <div class="pro-qty">
-                                                <input type="number" value="1">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="shoping__cart__total">
-                                        $69.99
-                                    </td>
-                                    <td class="shoping__cart__item__close">
-                                        <span class="icon_close"></span>
-                                    </td>
-                                </tr>
+                            <?php endforeach; ?>
                             </tbody>
                         </table>
                     </div>

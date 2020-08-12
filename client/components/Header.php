@@ -151,11 +151,11 @@
                 </nav>
             </div>
             <div class="col-lg-3">
-                <!-- <div class="menu-bar">
+                <div class="menu-bar">
                     <ul>
                         <li> <a href="./shoping-cart.php"><i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
-                </div> -->
+                </div>
             </div>
         </div>
         <div class="humberger__open">
