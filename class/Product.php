@@ -36,7 +36,14 @@ class Product
         $this->db->bind('id',$id);
         $this->db->execute();
     }
-
+    public function getProductbyCategory($category) {
+        if($category) {
+            $this->db->query('select * from produs where categorie =:categorie;');
+            $this->db->bind('categorie', $category);
+            return $this->db->resultSet();
+        }
+        return null;
+    }
     public function updateProduct($id,$nume,$numeRu,$price,$imagePath,$category) {
         $this->db->query('update produs set pret=:price,numeProdus=:nume,numeProdusRu=:numeRu,imagePath=:imagePath,categorie=:category where idProdus=:id');
         $this->db->bind('id',$id);

@@ -63,6 +63,8 @@ function rus_to_ro_cat($category){
     switch($category) {
         case "Горячие Напитки":
             return "bauturi calde";
+        case "Выпечка" :
+            return "Brutarie";
         case "Б/А напитки:Холодный Коффе":
             return "cafea rece";
         case "Б/А напитки:Вода":
@@ -100,6 +102,8 @@ function ro_to_rus_cat($category){
     switch ($category) {
         case "bauturi calde":
             return "Горячие Напитки";
+        case "Brutarie" :
+            return "Выпечка";
         case "cafea rece":
             return "Б/А напитки:Холодный Коффе";
         case "apa":

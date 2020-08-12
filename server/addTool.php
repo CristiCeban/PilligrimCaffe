@@ -108,6 +108,7 @@ if(isset($_GET['idUtilizator'])&&$_GET['idUtilizator']==='true') {
             <div class="col-md-12 col-lg-3">
                 <select class="list-group-item" style="text-align-last: center" name="category">
                     <option selected>Горячие Напитки</option>
+                    <option>Выпечка</option>
                     <option>Б/А напитки:Холодный Коффе</option>
                     <option>Б/А напитки:Вода</option>
                     <option>Б/А напитки:Сок</option>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Время создания: Авг 04 2020 г., 17:13
+-- Время создания: Авг 12 2020 г., 11:37
 -- Версия сервера: 10.4.13-MariaDB
 -- Версия PHP: 7.4.8
 
@@ -44,11 +44,21 @@ CREATE TABLE `history_delivery` (
 
 CREATE TABLE `produs` (
   `idProdus` int(11) NOT NULL,
-  `NumeProdus` varchar(45) NOT NULL,
+  `NumeProdus` varchar(255) NOT NULL,
   `Pret` int(11) NOT NULL,
   `Image` varchar(45) DEFAULT NULL,
-  `ImagePath` varchar(45) DEFAULT NULL
+  `ImagePath` varchar(2048) DEFAULT NULL,
+  `categorie` varchar(255) DEFAULT NULL,
+  `NumeProdusRu` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `produs`
+--
+
+INSERT INTO `produs` (`idProdus`, `NumeProdus`, `Pret`, `Image`, `ImagePath`, `categorie`, `NumeProdusRu`) VALUES
+(10, 'coca cola 0.3l', 20, NULL, 'https://www.pizzaabi.ro/image/cache/data/coca-cola-330ml-icon-bottle-2015_temp_1-900x900.jpg', 'apa', 'Кока кола 0.3л'),
+(11, 'kent 4', 34, NULL, 'https://img3.zakaz.ua/src.1592498250.ad72436478c_2020-06-18_Tamara/src.1592498250.SNCPSG10.obj.0.1.jpg.oe.jpg.pf.jpg.350nowm.jpg.350x.jpg', 'tigari', 'кент 4');
 
 -- --------------------------------------------------------
 
@@ -68,7 +78,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`idUtilizator`, `login`, `password`, `role`) VALUES
-(1, 'cristi', 'cristi', 'user');
+(3, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin'),
+(8, 'cristi', '0cc175b9c0f1b6a831c399e269772661', 'user');
 
 --
 -- Индексы сохранённых таблиц
@@ -106,13 +117,13 @@ ALTER TABLE `history_delivery`
 -- AUTO_INCREMENT для таблицы `produs`
 --
 ALTER TABLE `produs`
-  MODIFY `idProdus` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idProdus` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
-  MODIFY `idUtilizator` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `idUtilizator` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

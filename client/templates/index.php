@@ -24,36 +24,36 @@ require "../components/Header.php"
                                     <li class="nav-item dropdown">    
                                             <a class="nav-link" id="category-dropdown" href="#" data-toggle="dropdown">  Toate Categorii  </a>
                                         <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="shop_grid.php?cat=bc"> Caffea,ceai</a></li>
-                                        <li><a class="dropdown-item" href="shop_grid.php?cat=br"> Brutarie</a></li>
-                                        <li><a class="dropdown-item" href="shop_grid.php?cat=bn"> Bauturi nealc </a>
+                                        <li><a class="dropdown-item" href="shop_grid.php?cat=bauturi calde"> Caffea,ceai</a></li>
+                                        <li><a class="dropdown-item" href="shop_grid.php?cat=Brutarie"> Brutarie</a></li>
+                                        <li><a class="dropdown-item" href="#"> Bauturi nealc </a>
                                             <ul class="submenu dropdown-menu">
-                                                <li><a class="dropdown-item" href="shop_grid.php?cat=cf"> Cafea rece</a></li>
-                                                <li><a class="dropdown-item" href="shop_grid.php?cat=ap">Apa potabila</a></li>
-                                                <li><a class="dropdown-item" href="shop_grid.php?cat=su"> Sucuri </a></li>
-                                                <li><a class="dropdown-item" href="shop_grid.php?cat=energ"> Energizante</a></li>                          
+                                                <li><a class="dropdown-item" href="shop_grid.php?cat=cafea rece"> Cafea rece</a></li>
+                                                <li><a class="dropdown-item" href="shop_grid.php?cat=apa">Apa potabila</a></li>
+                                                <li><a class="dropdown-item" href="shop_grid.php?cat=sucuri"> Sucuri </a></li>
+                                                <li><a class="dropdown-item" href="shop_grid.php?cat=energizante"> Energizante</a></li>
                                             </ul>
                                         </li>
-                                        <li><a class="dropdown-item" href="shop_grid.php?cat=ba"> Bauturi alc </a>
+                                        <li><a class="dropdown-item" href="#"> Bauturi alc </a>
                                         <ul class="submenu dropdown-menu">
                                                 <li><a class="dropdown-item" href="shop_grid.php?cat=vin"> Vin</a></li>
-                                                <li><a class="dropdown-item" href="shop_grid.php?cat=con">Coniac</a></li>
-                                                <li><a class="dropdown-item" href="shop_grid.php?cat=vod"> Vodka </a></li>
-                                                <li><a class="dropdown-item" href="shop_grid.php?cat=visk"> Visky</a></li>                          
-                                                <li><a class="dropdown-item" href="shop_grid.php?cat=ber"> Bere</a></li>                          
+                                                <li><a class="dropdown-item" href="shop_grid.php?cat=coniac">Coniac</a></li>
+                                                <li><a class="dropdown-item" href="shop_grid.php?cat=vodka"> Vodka </a></li>
+                                                <li><a class="dropdown-item" href="shop_grid.php?cat=wiski"> Wisky</a></li>
+                                                <li><a class="dropdown-item" href="shop_grid.php?cat=bere"> Bere</a></li>
                                             </ul>
                                         </li>
                                         
                                         
-                                        <li><a class="dropdown-item" href="shop_grid.php?cat=prod"> Produse </a>
+                                        <li><a class="dropdown-item" href="#"> Produse </a>
                                         <ul class="submenu dropdown-menu">
-                                                <li><a class="dropdown-item" href="shop_grid.php?cat=snack"> Snack-uri</a></li>
-                                                <li><a class="dropdown-item" href="shop_grid.php?cat=jakuska">La o bere</a></li>
-                                                <li><a class="dropdown-item" href="shop_grid.php?cat=arah">Arahide </a></li>
+                                                <li><a class="dropdown-item" href="shop_grid.php?cat=Snack-uri"> Snack-uri</a></li>
+                                                <li><a class="dropdown-item" href="shop_grid.php?cat=Zakuska la bere">La o bere</a></li>
+                                                <li><a class="dropdown-item" href="shop_grid.php?cat=arahide">Arahide </a></li>
                                                                         
                                             </ul>
                                         </li>
-                                        <li><a class="dropdown-item" href="shop_grid.php?cat=tig"> Tigari </a></li>
+                                        <li><a class="dropdown-item" href="shop_grid.php?cat=tigari"> Tigari </a></li>
                                         </ul>
                                     </li>
                                 
