@@ -47,7 +47,6 @@ require "../components/header.php";
             <th>Названия(Ru)</th>
             <th>Цена</th>
             <th>Картинка</th>
-            <th>Путь Картинки</th>
             <th>Категория</th>
             <th>Действие</th>
         </tr>
@@ -59,7 +58,6 @@ require "../components/header.php";
                 <td><?php echo $product->NumeProdusRu;?></td>
                 <td><?php echo $product->Pret;?></td>
                 <td><div style="width: 200px; overflow:hidden"><?php echo '<img src="'.$product->ImagePath.'";style="style="max-width:100%;height:auto;"">'?></div></td>
-                <td><?php echo $product->ImagePath;?></td>
                 <td><?php echo ro_to_rus_cat($product->categorie);?></td>
                 <td><a href="#" onclick="editFunction(<?php echo "'idProdus=".$product->idProdus."'"?>,'Edit Produs',600,600);return false"
                         <?php echo 'id=product'.$product->idProdus?> ><i class="fas fa-edit"></i></a>
