@@ -21,9 +21,10 @@ class Product
         return $this->db->single();
     }
 
-    public function addProduct($nume,$pret,$imagePath,$categorie){
-        $this->db->query('insert into produs(NumeProdus, Pret,ImagePath,categorie) value(:nume, :pret, :imagePath,:categorie)');
+    public function addProduct($nume,$numeRu,$pret,$imagePath,$categorie){
+        $this->db->query('insert into produs(NumeProdus,numeProdusRu,Pret,ImagePath,categorie) value(:nume,:numeRu, :pret, :imagePath,:categorie)');
         $this->db->bind('nume',$nume);
+        $this->db->bind('numeRu',$numeRu);
         $this->db->bind('pret',$pret);
         $this->db->bind('imagePath',$imagePath);
         $this->db->bind('categorie',$categorie);
@@ -36,10 +37,11 @@ class Product
         $this->db->execute();
     }
 
-    public function updateProduct($id,$nume,$price,$imagePath,$category) {
-        $this->db->query('update produs set pret=:price,numeProdus=:nume,imagePath=:imagePath,categorie=:category where idProdus=:id');
+    public function updateProduct($id,$nume,$numeRu,$price,$imagePath,$category) {
+        $this->db->query('update produs set pret=:price,numeProdus=:nume,numeProdusRu=:numeRu,imagePath=:imagePath,categorie=:category where idProdus=:id');
         $this->db->bind('id',$id);
         $this->db->bind('nume',$nume);
+        $this->db->bind('numeRu',$numeRu);
         $this->db->bind('imagePath',$imagePath);
         $this->db->bind('category',$category);
         $this->db->bind('price',$price);
