@@ -252,7 +252,8 @@ ol {
 -----------------------*/
 
 .header__top {
-	background: #f5f5f5;
+	background: rgba(255, 147, 81, 0.2);
+;
 }
 
 .header__top__left {
@@ -2614,7 +2615,7 @@ ol {
 -----------------------*/
 
 .footer {
-	background: #F3F6FA;
+	background: rgba(255, 147, 81, 0.2);;
 	padding-top: 70px;
 	padding-bottom: 0;
 }
