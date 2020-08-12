@@ -24,36 +24,36 @@ require "../components/Header.php"
                                     <li class="nav-item dropdown">    
                                             <a class="nav-link" id="category-dropdown" href="#" data-toggle="dropdown">  Toate Categorii  </a>
                                         <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#"> Caffea,ceai</a></li>
-                                        <li><a class="dropdown-item" href="#"> Brutarie</a></li>
-                                        <li><a class="dropdown-item" href="#"> Bauturi nealc </a>
+                                        <li><a class="dropdown-item" href="shop_grid.php?cat=bc"> Caffea,ceai</a></li>
+                                        <li><a class="dropdown-item" href="shop_grid.php?cat=br"> Brutarie</a></li>
+                                        <li><a class="dropdown-item" href="shop_grid.php?cat=bn"> Bauturi nealc </a>
                                             <ul class="submenu dropdown-menu">
-                                                <li><a class="dropdown-item" href=""> Cafea rece</a></li>
-                                                <li><a class="dropdown-item" href="">Apa potabila</a></li>
-                                                <li><a class="dropdown-item" href=""> Sucuri </a></li>
-                                                <li><a class="dropdown-item" href=""> Energizante</a></li>                          
+                                                <li><a class="dropdown-item" href="shop_grid.php?cat=cf"> Cafea rece</a></li>
+                                                <li><a class="dropdown-item" href="shop_grid.php?cat=ap">Apa potabila</a></li>
+                                                <li><a class="dropdown-item" href="shop_grid.php?cat=su"> Sucuri </a></li>
+                                                <li><a class="dropdown-item" href="shop_grid.php?cat=energ"> Energizante</a></li>                          
                                             </ul>
                                         </li>
-                                        <li><a class="dropdown-item" href="#"> Bauturi alc </a>
+                                        <li><a class="dropdown-item" href="shop_grid.php?cat=ba"> Bauturi alc </a>
                                         <ul class="submenu dropdown-menu">
-                                                <li><a class="dropdown-item" href=""> Vin</a></li>
-                                                <li><a class="dropdown-item" href="">Coniac</a></li>
-                                                <li><a class="dropdown-item" href=""> Vodka </a></li>
-                                                <li><a class="dropdown-item" href=""> Visky</a></li>                          
-                                                <li><a class="dropdown-item" href=""> Bere</a></li>                          
+                                                <li><a class="dropdown-item" href="shop_grid.php?cat=vin"> Vin</a></li>
+                                                <li><a class="dropdown-item" href="shop_grid.php?cat=con">Coniac</a></li>
+                                                <li><a class="dropdown-item" href="shop_grid.php?cat=vod"> Vodka </a></li>
+                                                <li><a class="dropdown-item" href="shop_grid.php?cat=visk"> Visky</a></li>                          
+                                                <li><a class="dropdown-item" href="shop_grid.php?cat=ber"> Bere</a></li>                          
                                             </ul>
                                         </li>
                                         
                                         
-                                        <li><a class="dropdown-item" href="#"> Produse </a>
+                                        <li><a class="dropdown-item" href="shop_grid.php?cat=prod"> Produse </a>
                                         <ul class="submenu dropdown-menu">
-                                                <li><a class="dropdown-item" href=""> Snack-uri</a></li>
-                                                <li><a class="dropdown-item" href="">La o bere</a></li>
-                                                <li><a class="dropdown-item" href="">Arahide </a></li>
+                                                <li><a class="dropdown-item" href="shop_grid.php?cat=snack"> Snack-uri</a></li>
+                                                <li><a class="dropdown-item" href="shop_grid.php?cat=jakuska">La o bere</a></li>
+                                                <li><a class="dropdown-item" href="shop_grid.php?cat=arah">Arahide </a></li>
                                                                         
                                             </ul>
                                         </li>
-                                        <li><a class="dropdown-item" href="#"> Tigari </a></li>
+                                        <li><a class="dropdown-item" href="shop_grid.php?cat=tig"> Tigari </a></li>
                                         </ul>
                                     </li>
                                 
@@ -115,34 +115,37 @@ require "../components/Header.php"
         </div>
     </section>
 <!--Banner-->
-<div class="slider">
-<div id="slider" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#slider" data-slide-to="0" class="active"></li>
-        <li data-target="#slider" data-slide-to="1"></li>
-        <li data-target="#slider" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="images/banner4.jpg" class="d-block w-100" alt="...">
+
+
+    <div class="slider ">
+    <div id="slider" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#slider" data-slide-to="0" class="active"></li>
+            <li data-target="#slider" data-slide-to="1"></li>
+            <li data-target="#slider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/banner4.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/banner1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/banner2.jpg" class="d-block w-100" alt="...">
+            </div>
         </div>
-        <div class="carousel-item">
-            <img src="images/banner1.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="images/banner2.jpg" class="d-block w-100" alt="...">
-        </div>
+        <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
-    <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
-</div>
+    </div>
+
 <!--Bannner end-->
     <!-- Hero Section End -->
 
