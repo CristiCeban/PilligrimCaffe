@@ -667,9 +667,9 @@ ol {
 	height: 50px;
 }
 
-.hero__search__phone {
-	float: right;
-}
+/*.hero__search__phone {*/
+/*	float: right;*/
+/*}*/
 
 .hero__search__phone__icon {
 	font-size: 18px;
@@ -682,20 +682,22 @@ ol {
 	border-radius: 50%;
 	float: left;
 	margin-right: 20px;
+	margin-top: 3px;
 }
 
 .hero__search__phone__text {
 	overflow: hidden;
 }
 
-.hero__search__phone__text h5 {
+.hero__search__phone__text h6 {
 	color: #1c1c1c;
 	font-weight: 700;
 	margin-bottom: 5px;
+	margin-top: 6px;
 }
 
 .hero__search__phone__text span {
-	font-size: 14px;
+	font-size: 13px;
 	color: #6f6f6f;
 }
 
@@ -3649,6 +3651,3 @@ ol {
 	font-size: 18px;
   }
   
-  .card button:hover {
-	opacity: 0.7;
-  }
