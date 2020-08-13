@@ -640,40 +640,12 @@ ol {
 }
 
 .hero__search__form {
-	width: 610px;
+	/*width: 610px;*/
 	height: 50px;
 	border: 1px solid #ebebeb;
 	position: relative;
-	float: left;
 }
 
-.hero__search__form form .hero__search__categories {
-	width: 30%;
-	float: left;
-	font-size: 16px;
-	color: #1c1c1c;
-	font-weight: 700;
-	padding-left: 18px;
-	padding-top: 11px;
-	position: relative;
-}
-
-.hero__search__form form .hero__search__categories:after {
-	position: absolute;
-	right: 0;
-	top: 14px;
-	height: 20px;
-	width: 1px;
-	background: #000000;
-	opacity: 0.1;
-	content: "";
-}
-
-.hero__search__form form .hero__search__categories span {
-	position: absolute;
-	right: 14px;
-	top: 14px;
-}
 
 .hero__search__form form input {
 	width: 70%;
@@ -690,7 +662,7 @@ ol {
 
 .hero__search__form form button {
 	position: absolute;
-	right: 0;
+	/*right: 0;*/
 	top: -1px;
 	height: 50px;
 }
@@ -3572,6 +3544,82 @@ ol {
 		width: 100%;
 		margin-left: 0;
 	}
+}
+
+/* side menu */
+.side-menu
+{
+	height: 79%;
+	width: 20%;
+	font-size: 18px;
+	float: left;
+	z-index: 2;
+	background-color: #ddd;
+}
+.side-menu ul
+{
+	margin-left:10px;
+}
+.side-menu ul li
+{
+	list-style-type: none;
+	font-weight: bold;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.side-menu ul li:hover
+{
+	color: orange;
+}
+.side-menu ul li ul
+{
+	display: none;
+	position: relative;
+	z-index: 10;
+	top: 77px;
+}
+.side-menu ul li:hover ul
+{
+	display: block;
+	/* z-index: 400px;
+	margin-left: 14%;
+	padding: 0 100px 10px 10px;
+	margin-top: -7px;
+	left:100%;
+	top:0;
+	 position: fixed;
+	background: #ececec;
+	box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.5);
+	 */
+}
+.fa-angle-right
+{
+	margin-top: 4px;
+	margin-right: 8px;
+	float: right;
+}
+
+.side-bar{
+	border:1px solid #000;
+	width: 20%;
+}
+.product-sublist{
+	display: none;
+}
+
+.side-bar  li:hover > ul.product-sublist{
+	display: block;
+
+}
+
+.product-submenu > .product-sublist{
+	top: 0;
+    left: 100%;
+    margin-top:-6px;
+}
+
+.product-submenu{
+	position: relative;
 }
 
 /* shop grid style */
