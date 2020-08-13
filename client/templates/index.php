@@ -12,14 +12,11 @@ require "../components/Header.php"
                 <div class="col-lg-7">
                      <div class="hero__search my-sm-1 mt-lg-1">
                         <div class="hero__search__form">
-                            <form action="#" style="width=100%">
-                                
+                            <form action="#" style="width=100%">    
                                 <input type="text" placeholder="Termen de căutat">
                                 <button type="submit" class="site-btn" style="color:black;">Caută</button>
                             </form>
                         </div>
-                        
-
                     </div>
                 </div>
                     
