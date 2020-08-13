@@ -21,6 +21,11 @@ class Product
         return $this->db->single();
     }
 
+    public function getProductIds($ids) {
+        $this->db->query('select * from produs where idProdus in (:ids)');
+        $this->db->bind('ids',$ids);
+        return $this->db->resultSet();
+    }
     public function addProduct($nume,$numeRu,$pret,$imagePath,$categorie){
         $this->db->query('insert into produs(NumeProdus,numeProdusRu,Pret,ImagePath,categorie) value(:nume,:numeRu, :pret, :imagePath,:categorie)');
         $this->db->bind('nume',$nume);
@@ -38,7 +43,7 @@ class Product
     }
     public function getProductbyCategory($category) {
         if($category) {
-            $this->db->query('select * from produs where categorie =:categorie;');
+            $this->db->query('select * from produs where categorie =:categorie');
             $this->db->bind('categorie', $category);
             return $this->db->resultSet();
         }
