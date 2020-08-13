@@ -1,9 +1,11 @@
 <?php
 require "../components/Header.php";
-$manager = new Product();
 $ids = isset($_COOKIE['card-list']) ? $_COOKIE['card-list'] : null;
-$rs = $manager->getProductIds($ids);
-
+$rs = $this->manager->getProductIds($ids);
+echo '<br>';
+foreach ($rs as $r) {
+    echo $r->idProdus;
+}
 ?>
     <!-- Header Section End -->
 
@@ -40,7 +42,7 @@ $rs = $manager->getProductIds($ids);
                                     All Categories
                                     <span class="arrow_carrot-down"></span>
                                 </div>
-                                <input type="text" placeholder="What do yo u need?">
+                                <input type="text" placeholder="What do you need?">
                                 <button type="submit" class="site-btn">SEARCH</button>
                             </form>
                         </div>
@@ -98,23 +100,23 @@ $rs = $manager->getProductIds($ids);
                             <?php foreach($rs as $result): ?>
                                 <tr>
                                     <td class="shoping__cart__item">
-                                        <img src="<?php echo $result->imagePath ?>" alt="">
-                                        <h5>Vegetable’s Package</h5>
+                                        <img src="<?php echo $result->ImagePath ?>" alt="">
+                                        <h5><?php echo $result->NumeProdus?></h5>
                                     </td>
-                                    <td class="shoping__cart__price">
-                                        $55.00
+                                    <td class="shoping__cart__price" id="pret<?php echo $result->idProdus?>">
+                                        <?php echo $result->Pret ?>
                                     </td>
                                     <td class="shoping__cart__quantity">
                                         <div class="quantity">
                                             <div class="pro-qty">
-                                                <input type="number" min="1" value="1">
+                                                <input oninput="sumOfProduct(<?php echo  $result->idProdus?>)" type="number" min="1" value="1" id="quantity<?php echo $result->idProdus?>">
                                             </div>
                                         </div>
                                     </td>
-                                    <td class="shoping__cart__total">
-                                        $110.00
+                                    <td class="shoping__cart__total" id="sum_item<?php echo $result->idProdus?>">
+                                        0
                                     </td>
-                                    <td class="shoping__cart__item__close">
+                                    <td class="shoping__cart__item__close" >
                                         <span class="icon_close"></span>
                                     </td>
                                 </tr>
@@ -134,13 +136,6 @@ $rs = $manager->getProductIds($ids);
                 </div>
                 <div class="col-lg-6">
                     <div class="shoping__continue">
-<!--                        <div class="shoping__discount">-->
-<!--                            <h5>Discount Codes</h5>-->
-<!--                            <form action="#">-->
-<!--                                <input type="text" placeholder="Enter your coupon code">-->
-<!--                                <button type="submit" class="site-btn">APPLY COUPON</button>-->
-<!--                            </form>-->
-<!--                        </div>-->
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -164,6 +159,9 @@ require "../components/Footer.php"
 ?>
     <!-- Footer Section End -->
 
+    <script>
+
+    </script>
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

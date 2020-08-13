@@ -8,20 +8,23 @@ require "../components/Header.php"
     <section class="hero">
         <div class="container">
             <div class="row">
+                <div class="col-lg-3 mb-sm-2">
+                     <nav class="navbar navbar-expand-lg my-sm-1" id="category-bar">
+                                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
                 <!-- <div class="col-lg-3 mb-sm-2"> -->
                     <!-- <nav class="navbar navbar-expand-lg my-sm-1" id="category-bar"> -->
                                     <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
                                         <span class="navbar-toggler-icon"></span>
                                         <i class="fa fa-bars" aria-hidden="true"></i>
                                         Categorii
-                                    </button> -->
+                                    </button>
 
 
-                            <!-- <div class="collapse navbar-collapse" id="main_nav"> -->
+                            -- <div class="collapse navbar-collapse" id="main_nav"> -
 
-                                <!-- <ul class="navbar-nav">
-                                
-                                    <li class="nav-item dropdown">    
+                                 <ul class="navbar-nav">
+
+                                    <li class="nav-item dropdown">
                                             <a class="nav-link" id="category-dropdown" href="#" data-toggle="dropdown">  Toate Categorii  </a>
                                         <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="shop_grid.php?cat=bauturi calde"> Caffea,ceai</a></li>
@@ -43,27 +46,27 @@ require "../components/Header.php"
                                                 <li><a class="dropdown-item" href="shop_grid.php?cat=bere"> Bere</a></li>
                                             </ul>
                                         </li>
-                                        
-                                        
+
+
                                         <li><a class="dropdown-item" href="#"> Produse </a>
                                         <ul class="submenu dropdown-menu">
                                                 <li><a class="dropdown-item" href="shop_grid.php?cat=Snack-uri"> Snack-uri</a></li>
                                                 <li><a class="dropdown-item" href="shop_grid.php?cat=Zakuska la bere">La o bere</a></li>
                                                 <li><a class="dropdown-item" href="shop_grid.php?cat=arahide">Arahide </a></li>
-                                                                        
+
                                             </ul>
                                         </li>
                                         <li><a class="dropdown-item" href="shop_grid.php?cat=tigari"> Tigari </a></li>
                                         </ul>
                                     </li>
-                                
-                                </ul> -->
 
-                            <!-- </div> navbar-collapse.// -->
-                    <!-- </nav> -->
+                                </ul>
+
+                             </div>
+                     </nav>
 
                     
-                <!-- </div> -->
+                 </div> -->
                 <div class="col-lg-7">
                      <div class="hero__search my-sm-1 mt-lg-1">
                         <div class="hero__search__form">
@@ -99,38 +102,11 @@ require "../components/Header.php"
             
         </div>
     </section>
-        <!-- <section>
-                        <div class="side-menu" id="side-menu">
-                            <ul>
-                                <li>Еда<i class="fa fa-angle-right"></i>
-                                <ul>
-                                <li>Снэки</li>	
-                                <li>Сладкое</li>
-                                <li>Шоколад</li>
-                                </ul>
-                                </li>
-                            <li>Напитки<i class="fa fa-angle-right"></i>
-                                <ul>
-                                <li>Вода</li>	
-                                <li>Соки, освежающие напитки</li>
-                                    <a href="пиво.html"> <li>Пиво</li></a>
-                                <li>Крепкие напитки</li>
-                                </ul>
-                            </li>
-                            <li>Пекарня<i class="fa fa-angle-right"></i>
-                            <ul>
-                                <li>Форнети</li>	
-                                </ul>
-                            </li>
-                            <li>Авто<i class="fa fa-angle-right"></i></li>
-                            </ul>
-                        </div>
-            </section> -->
+        
             <div class="row">
                 <div class="col-lg-3">
                 <div class="contenedor-menu mx-1">
 		        <a href="" class="btnMenu">Menu <i class="fa fa-bars"></i></a>
-
                 <ul class="menu">
                     <li><a href="bauturi calde">Caffea,ceai</a></li>
                     <li><a href="Brutarie">Brutarie</a></li>
@@ -167,6 +143,10 @@ require "../components/Header.php"
                 </div>
                 <div class="col-lg-9">
                     <!--Banner-->
+
+
+
+<!--Banner-->
 
 
     <div class="slider ">
