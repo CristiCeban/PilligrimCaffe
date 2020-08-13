@@ -1,11 +1,11 @@
 <?php
 require "../components/Header.php";
 $ids = isset($_COOKIE['card-list']) ? $_COOKIE['card-list'] : null;
-$rs = $this->manager->getProductIds($ids);
-echo '<br>';
-foreach ($rs as $r) {
-    echo $r->idProdus;
+if($ids) {
+    $rs = $this->manager->getProductIds($ids);
 }
+else $rs = null;
+$sum = 0;
 ?>
     <!-- Header Section End -->
 
@@ -97,24 +97,26 @@ foreach ($rs as $r) {
                                 </tr>
                             </thead>
                             <tbody>
-                            <?php foreach($rs as $result): ?>
+                            <?php if($ids)
+                                foreach($rs as $result):
+                                $sum+=$result->Pret?>
                                 <tr>
                                     <td class="shoping__cart__item">
                                         <img src="<?php echo $result->ImagePath ?>" alt="">
                                         <h5><?php echo $result->NumeProdus?></h5>
                                     </td>
-                                    <td class="shoping__cart__price" id="pret<?php echo $result->idProdus?>">
-                                        <?php echo $result->Pret ?>
+                                    <td class="shoping__cart__price" id="price<?php echo $result->idProdus?>">
+                                        <?php echo $result->Pret .' MDL' ?>
                                     </td>
                                     <td class="shoping__cart__quantity">
                                         <div class="quantity">
                                             <div class="pro-qty">
-                                                <input oninput="sumOfProduct(<?php echo  $result->idProdus?>)" type="number" min="1" value="1" id="quantity<?php echo $result->idProdus?>">
+                                                <input oninput="sumOfProduct(<?php echo  $result->idProdus?>)" type="number" min="1" max="100" value="1" id="quantity<?php echo $result->idProdus?>">
                                             </div>
                                         </div>
                                     </td>
                                     <td class="shoping__cart__total" id="sum_item<?php echo $result->idProdus?>">
-                                        0
+                                        <?php echo $result->Pret.' MDL' ?>
                                     </td>
                                     <td class="shoping__cart__item__close" >
                                         <span class="icon_close"></span>
@@ -127,23 +129,14 @@ foreach ($rs as $r) {
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="shoping__cart__btns">
-                        <a href="#" class="primary-btn cart-btn">CONTINUE SHOPPING</a>
-                        <a href="#" class="primary-btn cart-btn cart-btn-right"><span class="icon_loading"></span>
-                            Upadate Cart</a>
-                    </div>
-                </div>
                 <div class="col-lg-6">
-                    <div class="shoping__continue">
-                    </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="shoping__checkout">
                         <h5>Total</h5>
                         <ul>
 <!--                            <li>Subtotal <span>$454.98</span></li>-->
-                            <li>Suma: <span>$454.98</span></li>
+                            <li>Suma: <span id = "total_sum"><?php echo $sum .' MDL' ?></span></li>
                         </ul>
                         <a href="#" class="primary-btn">Continuă Comanda</a>
                     </div>

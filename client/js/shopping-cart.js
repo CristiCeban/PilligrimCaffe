@@ -17,7 +17,27 @@ function removeCartItem(event) {
 }
 
 function sumOfProduct(id){
-    alert(id);
+    let quantity = document.getElementById('quantity'+id).value;
+    const totalSum = document.getElementById('sum_item'+id);
+    const price = document.getElementById('price'+id).innerHTML.replace ( /[^\d.]/g, '' );
+    const totalSumCheckout = document.getElementById('total_sum');
+    if (quantity < 0){
+        document.getElementById('quantity'+id).value = 1;
+        return;
+        }
+    else if(quantity > 100){
+        document.getElementById('quantity'+id).value = 100;
+        totalSum.innerHTML = (price*100).toString() + ' MDL';
+        return;
+        }
+
+    totalSum.innerHTML = (price*quantity).toString() + ' MDL';
+    const allItemsSum = document.getElementsByClassName('shoping__cart__total');
+    let sum = 0;
+    for(let i = 0;i < allItemsSum.length;i++){
+        sum+=parseInt(allItemsSum[i].innerText.replace ( /[^\d.]/g, '' ));
+    }
+    totalSumCheckout.innerHTML = sum.toString() + ' MDL';
 }
 
 localStorage.setItem('Name', document.getElementsByClassName('shop-item-title') )
