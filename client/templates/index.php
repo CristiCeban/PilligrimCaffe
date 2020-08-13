@@ -8,15 +8,12 @@ require "../components/Header.php"
     <section class="hero">
         <div class="container">
             <div class="row">
-<<<<<<< HEAD
                 <div class="col-lg-3 mb-sm-2">
                      <nav class="navbar navbar-expand-lg my-sm-1" id="category-bar">
                                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
-=======
                 <!-- <div class="col-lg-3 mb-sm-2"> -->
                     <!-- <nav class="navbar navbar-expand-lg my-sm-1" id="category-bar"> -->
                                     <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
->>>>>>> dbf4cd464642525d0907ea774afc5cef9b1e7d38
                                         <span class="navbar-toggler-icon"></span>
                                         <i class="fa fa-bars" aria-hidden="true"></i>
                                         Categorii
@@ -69,7 +66,7 @@ require "../components/Header.php"
                      </nav>
 
                     
-                <!-- </div> -->
+                 </div> -->
                 <div class="col-lg-7">
                      <div class="hero__search my-sm-1 mt-lg-1">
                         <div class="hero__search__form">
@@ -135,7 +132,7 @@ require "../components/Header.php"
                             <li>Авто<i class="fa fa-angle-right"></i></li>
                             </ul>
                         </div>
-            </section> -->
+            </section>
 
 
 
