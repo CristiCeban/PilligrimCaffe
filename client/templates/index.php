@@ -24,7 +24,12 @@ require "../components/Header.php"
                 </div>
                     
                     <div class="col-lg-2">
-                        <a style="color:orange !important"  href="./contact.php">Contacte</a>
+                        <a style=
+                           "color:black !important;
+                            font-family: 'Montserrat', sans-serif;;
+                            font-size: 22px; "
+                            href="./contact.php">
+                        Contacte</a>
                     </div>
                     <div class="col-lg-3">
                         <div class="menu-bar my-sm-1 ">

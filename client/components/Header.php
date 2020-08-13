@@ -25,6 +25,7 @@
 	<link rel="stylesheet" href="css/sidebar-accordion.css">
 	<!-- Demo CSS -->
 	<link rel="stylesheet" href="css/demo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -152,8 +153,8 @@
                                 <i class="fa fa-phone"></i>
                             </div>
                             <div class="hero__search__phone__text">
-                                <h5>+65 11.188.888</h5>
-                                <span>support 24/7 time</span>
+                                <h5>+373123456789</h5>
+                                <span>suport 24/7 </span>
                             </div>
                 </div>
         </div>
