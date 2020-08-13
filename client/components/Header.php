@@ -138,14 +138,14 @@
     </div>
     
     <section class="hero">
-                    <div class="row mt-2">
+                    <div class="row mt-4">
                         <div class="header__logo  col-lg-2 " >
                             <a href="./index.php">
-                                <img src="images/logo_color.png" alt="" style=" width: 160px;">
+                                <img src="images/logo_color.png" alt="" style=" width: 190px;">
                             </a>
                         </div>
 
-                        <div class="col-lg-4">
+                        <div class="col-lg-5 mt-4">
                             <div class="hero__search my-sm-1 mt-lg-1">
                                 <div class="hero__search__form">
                                     <form action="#"">
@@ -156,30 +156,31 @@
                             </div>
                         </div>
 
-                                <div class="col-lg-3">
+                                <div class="col-md-2 mt-4 mr-1">
                                     <div class="hero__search__phone">
                                         <div class="hero__search__phone__icon">
                                             <i class="fa fa-phone"></i>
                                         </div>
                                         <div class="hero__search__phone__text">
-                                            <h5>+373123456789</h5>
+                                            <b><h6>+373123456789</h6></b>
                                             <span>suport 24/7 </span>
                                         </div>
                                     </div>
                                 </div>
 
 
-                                    <div class="col-lg-1 mr-2">
+                                    <div class="col-lg-1 mr-5 mt-4">
                                         <a style=
                                            "color:black !important;
                                             font-family: 'Montserrat', sans-serif;;
-                                            font-size: 20px; "
+                                            font-size: 20px;
+                                            font-weight: 900;"
                                             href="./contact.php">
                                             Contacte</a>
                                     </div>
 
 
-                                    <div class="col-lg-1">
+                                    <div class="col-lg-1 ml-1 mt-4">
                                         <div class="menu-bar my-sm-1 ">
                                             <ul class="mt-sm-0">
                                                 <li> <a href="./shoping-cart.php"><i class="fa fa-shopping-cart"></i></a></li>
