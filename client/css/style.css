@@ -3651,3 +3651,31 @@ ol {
 	font-size: 18px;
   }
   
+<<<<<<< HEAD
+=======
+  .card button:hover {
+	opacity: 0.7;
+  }
+
+
+  /*Pentru Cristi*/
+
+
+.tag_delivery {
+	color: #fff;
+	background-color: #fc6f03;
+	height: 32px;
+	width: 32px;
+	text-align: center;
+	line-height: 32px;
+	font-size: 16px;
+	display: inline-block;
+}
+
+.rand_tag_delivery {
+	vertical-align: middle;
+	margin-left: 16px;
+	text-transform: capitalize;
+	font-size: 2.4rem;
+}
+>>>>>>> 7ef8ac33f846e10ae2f979bb2d118be9437b2403
