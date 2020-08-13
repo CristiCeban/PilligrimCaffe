@@ -5,8 +5,6 @@ require "../components/Header.php"
     <!-- Header Section End -->
 
     <!-- Hero Section Begin -->
-<<<<<<< HEAD
-=======
     <section class="hero">
         <div class="container">
             <div class="row">
@@ -48,7 +46,6 @@ require "../components/Header.php"
             
         </div>
     </section>
->>>>>>> 5f83983923dd326d68732b0e6bfc159a9779878a
         
             <div class="row">
                 <div class="col-lg-3">

@@ -50,7 +50,7 @@ $sum = 0;
                                 $sum+=$result->Pret?>
                                 <tr>
                                     <td class="shoping__cart__item">
-                                        <img class="img-thumbnail rouded" src="<?php echo $result->ImagePath ?>" alt="">
+                                        <img class="shop-cart-img" src="<?php echo $result->ImagePath ?>" alt="">
                                         <h5><?php echo $result->NumeProdus?></h5>
                                     </td>
                                     <td class="shoping__cart__price" id="price<?php echo $result->idProdus?>">
@@ -58,7 +58,7 @@ $sum = 0;
                                     </td>
                                     <td class="shoping__cart__quantity">
                                         <div class="quantity">                                           
-                                                <input oninput="sumOfProduct(<?php echo  $result->idProdus?>)" type="number" min="1" max="100" value="1" id="quantity<?php echo $result->idProdus?>">  
+                                                <input style="width: 50px; height:30px;" oninput="sumOfProduct(<?php echo  $result->idProdus?>)" type="number" min="1" max="100" value="1" id="quantity<?php echo $result->idProdus?>">  
                                         </div>
                                     </td>
                                     <td class="shoping__cart__total" id="sum_item<?php echo $result->idProdus?>">
