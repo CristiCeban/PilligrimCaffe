@@ -157,24 +157,7 @@
                             </div>
                 </div>
         </div>
-        <div class="row">
-            <div class="col-lg-3">
-                
-
-            </div>
-            <div class="col-lg-6">
-                <nav class="header__menu">
-                    
-                </nav>
-            </div>
-            <!-- <div class="col-lg-3">
-                <div class="menu-bar">
-                    <ul>
-                        <li> <a href="./shoping-cart.php"><i class="fa fa-shopping-cart"></i></a></li>
-                    </ul>
-                </div>
-            </div> -->
-        </div>
+        
         <div class="humberger__open">
             <i class="fa fa-bars"></i>
         </div>
