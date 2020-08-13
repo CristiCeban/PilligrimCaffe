@@ -22,8 +22,8 @@ class Product
     }
 
     public function getProductIds($ids) {
-        $this->db->query('select * from produs where idProdus in (:ids)');
-        $this->db->bind('ids',$ids);
+        $this->db->query("select * from produs where idProdus in ($ids)");
+//        $this->db->bind('ids',$ids);
         return $this->db->resultSet();
     }
     public function addProduct($nume,$numeRu,$pret,$imagePath,$categorie){

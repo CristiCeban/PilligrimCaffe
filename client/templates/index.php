@@ -9,19 +9,19 @@ require "../components/Header.php"
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 mb-sm-2">
-                    <!-- <nav class="navbar navbar-expand-lg my-sm-1" id="category-bar"> -->
-                                    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
+                     <nav class="navbar navbar-expand-lg my-sm-1" id="category-bar">
+                                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
                                         <span class="navbar-toggler-icon"></span>
                                         <i class="fa fa-bars" aria-hidden="true"></i>
                                         Categorii
-                                    </button> -->
+                                    </button>
 
 
-                            <!-- <div class="collapse navbar-collapse" id="main_nav"> -->
+                            -- <div class="collapse navbar-collapse" id="main_nav"> -
 
-                                <!-- <ul class="navbar-nav">
-                                
-                                    <li class="nav-item dropdown">    
+                                 <ul class="navbar-nav">
+
+                                    <li class="nav-item dropdown">
                                             <a class="nav-link" id="category-dropdown" href="#" data-toggle="dropdown">  Toate Categorii  </a>
                                         <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="shop_grid.php?cat=bauturi calde"> Caffea,ceai</a></li>
@@ -43,24 +43,24 @@ require "../components/Header.php"
                                                 <li><a class="dropdown-item" href="shop_grid.php?cat=bere"> Bere</a></li>
                                             </ul>
                                         </li>
-                                        
-                                        
+
+
                                         <li><a class="dropdown-item" href="#"> Produse </a>
                                         <ul class="submenu dropdown-menu">
                                                 <li><a class="dropdown-item" href="shop_grid.php?cat=Snack-uri"> Snack-uri</a></li>
                                                 <li><a class="dropdown-item" href="shop_grid.php?cat=Zakuska la bere">La o bere</a></li>
                                                 <li><a class="dropdown-item" href="shop_grid.php?cat=arahide">Arahide </a></li>
-                                                                        
+
                                             </ul>
                                         </li>
                                         <li><a class="dropdown-item" href="shop_grid.php?cat=tigari"> Tigari </a></li>
                                         </ul>
                                     </li>
-                                
-                                </ul> -->
 
-                            <!-- </div> navbar-collapse.// -->
-                    <!-- </nav> -->
+                                </ul>
+
+                             </div>
+                     </nav>
 
                     
                 </div>
