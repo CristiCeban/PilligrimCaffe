@@ -138,7 +138,7 @@ $sum = 0;
 <!--                            <li>Subtotal <span>$454.98</span></li>-->
                             <li>Suma: <span id = "total_sum"><?php echo $sum .' MDL' ?></span></li>
                         </ul>
-                        <a href="#" class="primary-btn">Continuă Comanda</a>
+                        <a href="./order_processing.php" class="primary-btn">Continuă Comanda</a>
                     </div>
                 </div>
             </div>
