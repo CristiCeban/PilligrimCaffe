@@ -21,6 +21,10 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- Sidebar Accordion CSS -->
+	<link rel="stylesheet" href="css/sidebar-accordion.css">
+	<!-- Demo CSS -->
+	<link rel="stylesheet" href="css/demo.css">
 </head>
 
 <body>
@@ -131,35 +135,31 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="header__logo">
-
+    
+        <div class="navbar">
+            
+                <div class="header__logo navbar-brand">
                     <a href="./index.php">
-  
-
-                         <img src="images/logo_color.png" alt="" style=" width: 160px;">
-
+            
+            
+                        <img src="images/logo_color.png" alt="" style=" width: 160px;">
+            
                     </a>
                 </div>
-
-            </div>
-            <div class="col-lg-6">
-                <nav class="header__menu">
-                    <ul><li><a href="./contact.php">Contacte</a></li></ul>
-                </nav>
-            </div>
-            <div class="col-lg-3">
-                <div class="menu-bar">
-                    <ul>
-                        <li> <a href="./shoping-cart.php"><i class="fa fa-shopping-cart"></i></a></li>
-                    </ul>
+                
+                <div class="hero__search__phone">
+                            <div class="hero__search__phone__icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="hero__search__phone__text">
+                                <h5>+65 11.188.888</h5>
+                                <span>support 24/7 time</span>
+                            </div>
                 </div>
-            </div>
         </div>
+        
         <div class="humberger__open">
             <i class="fa fa-bars"></i>
         </div>
-    </div>
+    
 </header>

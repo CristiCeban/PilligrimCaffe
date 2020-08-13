@@ -3529,9 +3529,7 @@ ol {
 		/*height: 57px;*/
 		width: 100%;
 	}
-	.navbar .navbar-nav{
-
-	}
+	
 }
 
 
@@ -3557,9 +3555,9 @@ ol {
 
 .slider
 {
-	margin-left: 355px;
+	
 	margin-bottom: 40px;
-	margin-right: 62px;
+	margin-right: 50px;
 }
 .carousel
 {
@@ -3577,6 +3575,7 @@ ol {
 	}
 }
 
+<<<<<<< HEAD
 /* side menu */
 .side-menu
 {
@@ -3653,14 +3652,17 @@ ol {
 	position: relative;
 }
 
+=======
+>>>>>>> be73f7bd7673219e3de5ee8e26265ee22128bf04
 /* shop grid style */
+
 .card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	max-width: 300px;
 	margin: auto;
 	text-align: center;
 	font-family: arial;
-  }
+}
   
   .price {
 	color: grey;
