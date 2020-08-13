@@ -8,7 +8,7 @@ require "../components/Header.php"
     <section class="hero">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 mb-sm-2">
+                <!-- <div class="col-lg-3 mb-sm-2"> -->
                     <!-- <nav class="navbar navbar-expand-lg my-sm-1" id="category-bar"> -->
                                     <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
                                         <span class="navbar-toggler-icon"></span>
@@ -63,7 +63,7 @@ require "../components/Header.php"
                     <!-- </nav> -->
 
                     
-                </div>
+                <!-- </div> -->
                 <div class="col-lg-7">
                      <div class="hero__search my-sm-1 mt-lg-1">
                         <div class="hero__search__form">
@@ -89,7 +89,7 @@ require "../components/Header.php"
                         
                     
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-3">
                     <div class="menu-bar my-sm-1 ">
                         <ul class="mt-sm-0">
                             <li> <a href="./shoping-cart.php"><i class="fa fa-shopping-cart"></i></a></li>
@@ -103,7 +103,7 @@ require "../components/Header.php"
             
         </div>
     </section>
-        <!-- <section>
+        <section>
                         <div class="side-menu" id="side-menu">
                             <ul>
                                 <li>Еда<i class="fa fa-angle-right"></i>
@@ -129,10 +129,8 @@ require "../components/Header.php"
                             <li>Авто<i class="fa fa-angle-right"></i></li>
                             </ul>
                         </div>
-            </section> -->
+            </section>
 
-
-            
 <!--Banner-->
 
 
