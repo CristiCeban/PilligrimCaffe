@@ -3577,7 +3577,7 @@ ol {
 	}
 }
 
-/* side menu
+/* side menu */
 .side-menu
 {
 	height: 79%;
@@ -3612,7 +3612,7 @@ ol {
 .side-menu ul li:hover ul
 {
 	display: block;
-	z-index: 400px;
+	/* z-index: 400px;
 	margin-left: 14%;
 	padding: 0 100px 10px 10px;
 	margin-top: -7px;
@@ -3629,7 +3629,28 @@ ol {
 	float: right;
 }
 
+.side-bar{
+	border:1px solid #000;
+	width: 20%;
+}
+.product-sublist{
+	display: none;
+}
 
+.side-bar  li:hover > ul.product-sublist{
+	display: block;
+
+}
+
+.product-submenu > .product-sublist{
+	top: 0;
+    left: 100%;
+    margin-top:-6px;
+}
+
+.product-submenu{
+	position: relative;
+}
 
 /* shop grid style */
 .card {
