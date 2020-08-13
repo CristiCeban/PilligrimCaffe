@@ -644,12 +644,10 @@ ol {
 	height: 50px;
 	border: 1px solid #ebebeb;
 	position: relative;
-	float: left;
 }
 
 .hero__search__form form .hero__search__categories {
 	width: 30%;
-	float: left;
 	font-size: 16px;
 	color: #1c1c1c;
 	font-weight: 700;
@@ -690,7 +688,7 @@ ol {
 
 .hero__search__form form button {
 	position: absolute;
-	right: 0;
+	/*right: 0;*/
 	top: -1px;
 	height: 50px;
 }
@@ -3575,7 +3573,6 @@ ol {
 	}
 }
 
-<<<<<<< HEAD
 /* side menu */
 .side-menu
 {
@@ -3652,8 +3649,6 @@ ol {
 	position: relative;
 }
 
-=======
->>>>>>> be73f7bd7673219e3de5ee8e26265ee22128bf04
 /* shop grid style */
 
 .card {

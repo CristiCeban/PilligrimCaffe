@@ -5,50 +5,6 @@ require "../components/Header.php"
     <!-- Header Section End -->
 
     <!-- Hero Section Begin -->
-    <section class="hero">
-        <div class="container">
-            <div class="row">
-                
-                <div class="col-lg-7">
-                     <div class="hero__search my-sm-1 mt-lg-1">
-                        <div class="hero__search__form">
-                            <form action="#" style="width=100%">
-                                
-                                <input type="text" placeholder="Termen de căutat">
-                                <button type="submit" class="site-btn" style="color:black;">Caută</button>
-                            </form>
-                        </div>
-                        
-
-                    </div>
-                </div>
-                    
-                    <div class="col-lg-2">
-                        <a style=
-                           "color:black !important;
-                            font-family: 'Montserrat', sans-serif;;
-                            font-size: 22px; "
-                            href="./contact.php">
-                        Contacte</a>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="menu-bar my-sm-1 ">
-                            <ul class="mt-sm-0">
-                                <li> <a href="./shoping-cart.php"><i class="fa fa-shopping-cart"></i></a></li>
-                            </ul>
-                        </div>
-                       
-    
-                    </div>
-                        
-                    
-                
-
-
-            </div>
-            
-        </div>
-    </section>
         
             <div class="row">
                 <div class="col-lg-3">
