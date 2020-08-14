@@ -44,16 +44,16 @@
     <div class="humberger__menu__widget">
         <div class="header__top__right__language">
             <?php if(check_lang_ru()):?>
-            <img src="img/moldova.png" alt="">
+            <img src="images/russia.png" alt="">
             <div>Русский</div>
             <?php else: ?>
-            <img src="img/moldova.png" alt="">
+            <img src="images/moldova.png" alt="">
             <div>Română</div>
             <?php endif?>
             <span class="arrow_carrot-down"></span>
             <ul>
-                <li><a href="../server/lang.php">Русский</a></li>
-                <li><a href="#">Română</a></li>
+                <li><a href="." onclick="setCookie('language','ru',1)">Русский</a></li>
+                <li><a href="." onclick="setCookie('language','ro',1)">Română</a></li>
             </ul>
         </div>
         <?php if(isAdmin()): ?>
@@ -65,26 +65,54 @@
         if(isLoggedIn()):
             ?>
             <div class="header__top__right__auth">
-                <a href="../server/disc.php"><i class="fa fa-user"></i>Ieși/Выйти</a>
+                <a href="../server/disc.php"><i class="fa fa-user"></i>
+                    <?php if(check_lang_ru()):?>
+                        Выйти
+                    <?php else:?>
+                        Ieși
+                    <?php endif;?>
+                </a>
             </div>
         <?php
         else:
             ?>
             <div class="header__top__right__auth">
-                <a href="auth.php"><i class="fa fa-user"></i>Intră în cont/Вход</a>
+                <a href="auth.php"><i class="fa fa-user"></i>
+                    <?php if(check_lang_ru()):?>
+                        Вход
+                    <?php else:?>
+                        Intră în cont
+                    <?php endif;?></a>
             </div>
             <div class="header__top__right__auth">
-                <a href="new_user.php"><i class="fa fa-user"></i>Înregistrează-te/Регистрация</a>
+                <a href="new_user.php"><i class="fa fa-user"></i>
+                    <?php if(check_lang_ru()):?>
+                        Регистрация
+                    <?php else:?>
+                        Înregistrează-te
+                    <?php endif;?>
+                    </a>
             </div>
         <?php endif;?>
     </div>
     <nav class="humberger__menu__nav mobile-menu">
         <ul>
                 <ul class="header__menu__dropdown">
-                    <li><a href="shoping-cart.php">Coș de cumpărături/Корзина</a></li>
+                    <li><a href="shoping-cart.php">
+                            <?php if(check_lang_ru()):?>
+                                Корзина
+                            <?php else:?>
+                                Coș de cumpărături
+                            <?php endif;?>
+                            </a></li>
                 </ul>
             </li>
-            <li><a href="contact.php">Contacte/Контакты</a></li>
+            <li><a href="contact.php">
+                    <?php if(check_lang_ru()):?>
+                        Контакты
+                    <?php else:?>
+                        Contacte
+                    <?php endif;?></a></li>
         </ul>
     </nav>
     <div id="mobile-menu-wrap"></div>

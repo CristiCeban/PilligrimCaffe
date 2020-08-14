@@ -85,10 +85,9 @@ $sum = 0;
                     <div class="shoping__checkout">
                         <h5>Total/К оплате</h5>
                         <ul>
-<!--                            <li>Subtotal <span>$454.98</span></li>-->
                             <li>Suma:/Сумма: <span id = "total_sum"><?php echo $sum .' MDL' ?></span></li>
                         </ul>
-                        <a href="./order_processing.php" class="primary-btn">Continuă Comanda/Продолжить заказ</a>
+                        <a href="" onclick="sendToCheckout()" class="primary-btn">Continuă Comanda/Продолжить заказ</a>
                     </div>
                 </div>
             </div>
