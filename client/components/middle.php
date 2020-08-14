@@ -1,11 +1,17 @@
 <div class="col-lg-5 mt-4">
-    <div class="hero__search my-sm-1 mt-lg-1">
+    <!-- <div class="hero__search my-sm-1 mt-lg-1">
         <div class="hero__search__form">
-            <form action="#"">
+            <form action="#">
             <input type="text" placeholder="Termen de căutat/Поиск по продуктам">
             <button type="submit" class="site-btn" style="color:black;">Caută/ Поиск</button>
             </form>
         </div>
+    </div> -->
+    <div class="search">
+          <form class="search-form">
+              <input type="text" placeholder="Search for books, authors, categories and more..">
+              <input type="submit" value="Submit">
+          </form>
     </div>
 </div>
 
