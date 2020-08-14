@@ -3526,12 +3526,12 @@ ol {
 	}
 }
 /*-------------slider-----------*/
-.slider
-{
-	
-	margin-bottom: 40px;
-	margin-right: 50px;
-}
+/*.slider*/
+/*{*/
+/*	*/
+/*	margin-bottom: 40px;*/
+/*	margin-right: 50px;*/
+/*}*/
 .carousel
 {
 	box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.5);
@@ -3650,9 +3650,6 @@ ol {
 	width: 100%;
 	font-size: 18px;
   }
-  
-<<<<<<< HEAD
-=======
   .card button:hover {
 	opacity: 0.7;
   }
@@ -3678,4 +3675,3 @@ ol {
 	text-transform: capitalize;
 	font-size: 2.4rem;
 }
->>>>>>> 7ef8ac33f846e10ae2f979bb2d118be9437b2403
