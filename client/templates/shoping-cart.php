@@ -12,15 +12,15 @@ $sum = 0;
 
 
     <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
+    <section class="breadcrumb-section set-bg" data-setbg="images/shopping_bag.jpg">
         <div class="container">
-            <div class="row">
+            <div class="row" style="height: 200px">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>Coș de cumpărături</h2>
+                        <h2>Coș de cumpărături/Корзина</h2>
                         <div class="breadcrumb__option">
-                            <a href="index.php">Pagina principală</a>
-                            <span>Coș de cumpărături</span>
+                            <a href="index.php">Pagina principală/Главная</a>
+                            <span>Coș de cumpărături/Корзина</span>
                         </div>
                     </div>
                 </div>
@@ -39,10 +39,10 @@ $sum = 0;
                             <thead>
                                 <tr>
                                     <th class="shoping__product">Imagine</th>
-                                    <th>Denumire</th>
-                                    <th>Preț</th>
-                                    <th>Cantitate</th>
-                                    <th>Total</th>
+                                    <th>Produs/Продукт</th>
+                                    <th>Preț/Цена</th>
+                                    <th>Cantitate/Количество</th>
+                                    <th>Total/Всего</th>
                                     <th></th>
                                 </tr>
                             </thead>
@@ -52,7 +52,7 @@ $sum = 0;
                                 $sum+=$result->Pret?>
                                 <tr>
                                     <td class="shoping__cart__item">
-                                        <img class="shop-cart-img fluid" src="<?php echo $result->ImagePath ?>" alt="">
+                                        <img class="shop-cart-img fluid" style="width: 150px" src="<?php echo $result->ImagePath ?>" alt="">
                                     </td>
                                     <td>
                                         <h5><?php echo $result->NumeProdus?></h5>
@@ -83,12 +83,12 @@ $sum = 0;
                 </div>
                 <div class="col-lg-6">
                     <div class="shoping__checkout">
-                        <h5>Total</h5>
+                        <h5>Total/К оплате</h5>
                         <ul>
 <!--                            <li>Subtotal <span>$454.98</span></li>-->
-                            <li>Suma: <span id = "total_sum"><?php echo $sum .' MDL' ?></span></li>
+                            <li>Suma:/Сумма: <span id = "total_sum"><?php echo $sum .' MDL' ?></span></li>
                         </ul>
-                        <a href="./order_processing.php" class="primary-btn">Continuă Comanda</a>
+                        <a href="./order_processing.php" class="primary-btn">Continuă Comanda/Продолжить заказ</a>
                     </div>
                 </div>
             </div>

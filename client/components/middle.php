@@ -9,8 +9,14 @@
     </div> -->
     <div class="search">
           <form class="search-form">
-              <input type="text" placeholder="Search for books, authors, categories and more..">
-              <input type="submit" value="Submit">
+              <input type="text" <?php if(check_lang_ru()):?> placeholder="Поиск" <?php else:?> placeholder="Termeni de cautare"<?php endif;?> >
+              <input style="width: 68px" type="submit"
+                  <?php if(check_lang_ru()):?>
+                        value="Поиск"
+                <?php else:?>
+                        value="Cauta"
+                <?php endif;?>
+              >
           </form>
     </div>
 </div>
@@ -22,7 +28,14 @@
         </div>
         <div class="hero__search__phone__text">
             <b><h6>+373123456789</h6></b>
-            <span>suport 24/7/ техподдержка </span>
+            <span>
+
+                <?php if(check_lang_ru()):?>
+                    техподдержка
+                <?php else:?>
+                    suport 24/7
+                <?php endif;?>
+            </span>
         </div>
     </div>
 </div>
@@ -34,7 +47,12 @@
                                             font-size: 20px;
                                             "
        href="./contact.php">
-        Contacte/Контакты</a>
+        <?php if(check_lang_ru()):?>
+            Контакты
+        <?php else:?>
+            Contacte
+        <?php endif;?>
+    </a>
 </div>
 
 

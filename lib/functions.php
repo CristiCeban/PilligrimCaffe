@@ -138,3 +138,10 @@ function ro_to_rus_cat($category){
             return null;
     }
 }
+
+function check_lang_ru(){
+    if(isset($_COOKIE['language']) && $_COOKIE['language']==='ru'){
+        return true;
+    };
+    return false;
+}
