@@ -1,7 +1,7 @@
 <?php
 
 require "../components/Header.php";
-
+require "../components/end.php";
 $rs = $this->manager->getProductbyCategory($this->categorie);
 ?>
 

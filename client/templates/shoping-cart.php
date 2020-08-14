@@ -1,5 +1,6 @@
 <?php
 require "../components/Header.php";
+require "../components/end.php";
 $ids = isset($_COOKIE['card-list']) ? $_COOKIE['card-list'] : null;
 if($ids) {
     $rs = $this->manager->getProductIds($ids);

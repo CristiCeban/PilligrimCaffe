@@ -1,12 +1,11 @@
 <?php
-require "../components/Header.php"
+require "../components/Header.php";
+
+require "../components/middle.php";
+
+require "../components/end.php";
     ?>
-<?php
-require "../components/middle.php"
-?>
-<?php
-require "../components/end.php"
-?>
+
     <!-- Header Section End -->
 
     <!-- Hero Section Begin -->
