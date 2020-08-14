@@ -2,8 +2,8 @@
     <div class="hero__search my-sm-1 mt-lg-1">
         <div class="hero__search__form">
             <form action="#"">
-            <input type="text" placeholder="Termen de căutat">
-            <button type="submit" class="site-btn" style="color:black;">Caută</button>
+            <input type="text" placeholder="Termen de căutat/Поиск по продуктам">
+            <button type="submit" class="site-btn" style="color:black;">Caută/ Поиск</button>
             </form>
         </div>
     </div>
@@ -16,7 +16,7 @@
         </div>
         <div class="hero__search__phone__text">
             <b><h6>+373123456789</h6></b>
-            <span>suport 24/7 </span>
+            <span>suport 24/7/ техподдержка </span>
         </div>
     </div>
 </div>
@@ -35,7 +35,7 @@
 <div class="col-lg-1 ml-1 mt-4">
     <div class="menu-bar my-sm-1 ">
         <ul class="mt-sm-0">
-            <li> <a href="./shoping-cart.php"><i class="fa fa-shopping-cart"></i></a></li>
+            <a href="./shoping-cart.php"><li><i class="fa fa-shopping-cart"></i></li></a>
         </ul>
     </div>
 </div>

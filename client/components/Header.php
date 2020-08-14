@@ -60,26 +60,26 @@
         if(isLoggedIn()):
             ?>
             <div class="header__top__right__auth">
-                <a href="../server/disc.php"><i class="fa fa-user"></i>Disconnect</a>
+                <a href="../server/disc.php"><i class="fa fa-user"></i>Ieși/Выйти</a>
             </div>
         <?php
         else:
             ?>
             <div class="header__top__right__auth">
-                <a href="auth.php"><i class="fa fa-user"></i>Intră în cont</a>
+                <a href="auth.php"><i class="fa fa-user"></i>Intră în cont/Вход</a>
             </div>
             <div class="header__top__right__auth">
-                <a href="new_user.php"><i class="fa fa-user"></i>Înregistrează-te</a>
+                <a href="new_user.php"><i class="fa fa-user"></i>Înregistrează-te/Регистрация</a>
             </div>
         <?php endif;?>
     </div>
     <nav class="humberger__menu__nav mobile-menu">
         <ul>
                 <ul class="header__menu__dropdown">
-                    <li><a href="shoping-cart.php">Shoping Cart</a></li>
+                    <li><a href="shoping-cart.php">Coș de cumpărături/Корзина</a></li>
                 </ul>
             </li>
-            <li><a href="contact.php">Contacte</a></li>
+            <li><a href="contact.php">Contacte/Контакты</a></li>
         </ul>
     </nav>
     <div id="mobile-menu-wrap"></div>
@@ -118,16 +118,16 @@
                             if(isLoggedIn()):
                         ?>
                         <div class="header__top__right__auth">
-                            <a href="../server/disc.php"><i class="fa fa-user"></i>Disconnect</a>
+                            <a href="../server/disc.php"><i class="fa fa-user"></i>Ieși/Выйти</a>
                         </div>
                         <?php
                             else:
                                 ?>
                         <div class="header__top__right__auth">
-                            <a href="auth.php"><i class="fa fa-user"></i>Intră în cont</a>
+                            <a href="auth.php"><i class="fa fa-user"></i>Intră în cont/Вход</a>
                         </div>
                         <div class="header__top__right__auth">
-                            <a href="new_user.php"><i class="fa fa-user"></i>Înregistrează-te</a>
+                            <a href="new_user.php"><i class="fa fa-user"></i>Înregistrează-te/Регистрация</a>
                         </div>
                         <?php endif;?>
                     </div>
