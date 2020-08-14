@@ -26,8 +26,14 @@ require "../components/end.php";
 
 
 <!-- Breadcrumb Section End -->
-
-
+<div class="container-fluid px-0"
+    <div class="row mb-4">
+        <div class="col-lg-12">
+        <img src="images/check_out.jpg">
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
 <div class="row">
     <div class="col-lg-3">
 <!--        style="background: #0f6674">-->
@@ -115,6 +121,7 @@ require "../components/end.php";
     <div class="col-lg-3">
 <!--         style="background: #17a2b8">-->
     </div>
+</div>
 </div>
 
 
