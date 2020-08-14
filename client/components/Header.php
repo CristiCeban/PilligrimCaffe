@@ -12,7 +12,6 @@
     <title>Piligrim Cafe</title>
     <!-- Google Font -->
     <link type="text/javascript"  href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
-
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
@@ -44,8 +43,13 @@
     </div>
     <div class="humberger__menu__widget">
         <div class="header__top__right__language">
+            <?php if(check_lang_ru()):?>
+            <img src="img/moldova.png" alt="">
+            <div>Русский</div>
+            <?php else: ?>
             <img src="img/moldova.png" alt="">
             <div>Română</div>
+            <?php endif?>
             <span class="arrow_carrot-down"></span>
             <ul>
                 <li><a href="../server/lang.php">Русский</a></li>
@@ -89,6 +93,12 @@
 </div>
 <!-- Humberger End -->
 
+
+
+
+
+
+
 <!-- Header Section Begin -->
 <header class="header">
     <div class="header__top">
@@ -102,8 +112,13 @@
                     <div class="header__top__right">
 
                         <div class="header__top__right__language">
-                            <img src="images/moldova.png" alt="">
-                            <div>Română</div>
+                            <?php if(check_lang_ru()):?>
+                                <img src="images/russia.png" alt="">
+                                <div>Русский</div>
+                            <?php else: ?>
+                                <img src="images/moldova.png" alt="">
+                                <div>Română</div>
+                            <?php endif?>
                             <span class="arrow_carrot-down"></span>
                             <ul>
                                 <li ><a href="." onclick="setCookie('language','ru',1)" >Русский</a></li>
@@ -119,16 +134,34 @@
                             if(isLoggedIn()):
                         ?>
                         <div class="header__top__right__auth">
-                            <a href="../server/disc.php"><i class="fa fa-user"></i>Ieși/Выйти</a>
+                            <a href="../server/disc.php"><i class="fa fa-user"></i>
+                                <?php if(check_lang_ru()):?>
+                                    Выйти
+                                <?php else:?>
+                                    Ieși
+                                <?php endif;?>
+                            </a>
                         </div>
                         <?php
                             else:
                                 ?>
                         <div class="header__top__right__auth">
-                            <a href="auth.php"><i class="fa fa-user"></i>Intră în cont/Вход</a>
+                            <a href="auth.php"><i class="fa fa-user"></i>
+                                <?php if(check_lang_ru()):?>
+                                    Вход
+                                <?php else:?>
+                                    Intră în cont
+                                <?php endif;?>
+                                </a>
                         </div>
                         <div class="header__top__right__auth">
-                            <a href="new_user.php"><i class="fa fa-user"></i>Înregistrează-te/Регистрация</a>
+                            <a href="new_user.php"><i class="fa fa-user"></i>
+                                <?php if(check_lang_ru()):?>
+                                    Регистрация
+                                <?php else:?>
+                                    Înregistrează-te
+                                <?php endif;?>
+                                </a>
                         </div>
                         <?php endif;?>
                     </div>
