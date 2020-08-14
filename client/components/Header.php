@@ -7,6 +7,7 @@
     <meta name="keywords" content="Ogani, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="js/functions.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
     <title>Piligrim Cafe</title>
     <!-- Google Font -->
@@ -47,7 +48,7 @@
             <div>Română</div>
             <span class="arrow_carrot-down"></span>
             <ul>
-                <li><a href="#">Русский</a></li>
+                <li><a href="../server/lang.php">Русский</a></li>
                 <li><a href="#">Română</a></li>
             </ul>
         </div>
@@ -105,8 +106,8 @@
                             <div>Română</div>
                             <span class="arrow_carrot-down"></span>
                             <ul>
-                                <li><a href="#">Русский</a></li>
-                                <li><a href="#">Română</a></li>
+                                <li ><a href="." onclick="setCookie('language','ru',1)" >Русский</a></li>
+                                <li><a href="." onclick="setCookie('language','ro',1)">Română</a></li>
                             </ul>
                         </div>
                         <?php if(isAdmin()): ?>

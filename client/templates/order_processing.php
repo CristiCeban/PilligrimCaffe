@@ -36,7 +36,7 @@ require "../components/end.php";
     </div>
 
 
-    <div class="col-lg-4 col-md-8 ">
+    <div class="col-lg-4 col-md-8">
         <form action="somewhere.php">
 
             <div class="container align-items-center justify-content-center shadow p-3 mb-5 bg-white rounded" style="background: white">
@@ -103,7 +103,7 @@ require "../components/end.php";
     </div>
 
 
-    <div class="col-lg-2 col-md-4">
+    <div class="col-lg-2 col-md-4" style="margin-top: 25px">
         <h3>Comanda ta de la Pilligrim Caffe:</h3>
         <br>
         <h5><strong>1</strong> x Bugher nahui</h5>
