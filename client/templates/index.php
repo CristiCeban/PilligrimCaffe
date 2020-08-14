@@ -15,35 +15,35 @@ require "../components/end.php";
                     <div class="contenedor-menu mx-1">
 		                <a href="" class="btnMenu">Menu/Меню <i class="fa fa-bars"></i></a>
                         <ul class="menu">
-                            <li><a href="bauturi calde">Cafea,ceai/Кофе, чай</a></li>
-                            <li><a href="Brutarie">Brutarie/ Пекарня</a></li>
+                            <li><a href="shop_grid.php?cat=bauturi calde">Cafea,ceai/Кофе, чай</a></li>
+                            <li><a  href="shop_grid.php?cat=Brutarie">Brutarie/ Пекарня</a></li>
                             <li><a href="#">Bauturi nealcoolice/ Безалкогольные напитки <i class="fa fa-chevron-down"></i></a>
                                 <ul>
-                                    <li><a href="cafea rece">Cafea rece/ Холодный кофе</a></li>
-                                    <li><a href="apa">Apa potabila/ Вода</a></li>
-                                    <li><a href="sucuri">Sucuri/ Соки</a></li>
-                                    <li><a href="energizante">Energizante/ Энергетики</a></li>
+                                    <li><a href="shop_grid.php?cat=cafea rece">Cafea rece/ Холодный кофе</a></li>
+                                    <li><a href="shop_grid.php?cat=apa">Apa potabila/ Вода</a></li>
+                                    <li><a href="shop_grid.php?cat=sucuri">Sucuri/ Соки</a></li>
+                                    <li><a href="shop_grid.php?cat=energizante">Energizante/ Энергетики</a></li>
                                 </ul>
                             </li>
                             
                             <li><a href="#">Bauturi alcoolice/ Алкогольные напитки<i class="fa fa-chevron-down"></i></a>
                                 <ul>
-                                    <li><a href="vin">Vin/ Вино</a></li>
-                                    <li><a href="coniac">Coniac/Коньяк</a></li>
-                                    <li><a href="vodka">Vodka/Водкв</a></li>
-                                    <li><a href="wiski">Whisky/Виски</a></li>
-                                    <li><a href="bere">Bere/Пиво</a></li>
+                                    <li><a href="shop_grid.php?cat=vin">Vin/ Вино</a></li>
+                                    <li><a href="shop_grid.php?cat=coniac">Coniac/Коньяк</a></li>
+                                    <li><a href="shop_grid.php?cat=vodka">Vodka/Водкв</a></li>
+                                    <li><a href="shop_grid.php?cat=wiski"">Whisky/Виски</a></li>
+                                    <li><a href="shop_grid.php?cat=bere">Bere/Пиво</a></li>
                                 </ul>
                             </li>
                             
                             <li><a href="#">Produse alimentare/Продукты <i class="fa fa-chevron-down"></i></a>
                                 <ul>
-                                    <li><a href="Snack-uri">Snack-uri/Снэки</a></li>
-                                    <li><a href="Zakuska la bere">La o bere/К пиву</a></li>
-                                    <li><a href="arahide">Arahide/Арахис</a></li>
+                                    <li><a href="shop_grid.php?cat=Snack-uri">Snack-uri/Снэки</a></li>
+                                    <li><a href="shop_grid.php?cat=Zakuska la bere">La o bere/К пиву</a></li>
+                                    <li><a href="shop_grid.php?cat=arahide">Arahide/Арахис</a></li>
                                 </ul>
                             </li>
-                            <li><a href="tigari">Tigari/Сигареты</a></li>
+                            <li><a href="shop_grid.php?cat=tigari">Tigari/Сигареты</a></li>
                             
                         </ul>
 	                </div>
