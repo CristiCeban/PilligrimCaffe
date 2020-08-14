@@ -2367,6 +2367,7 @@ ol {
 		-webkit-transform: translateY(0);
 	}
 	.categories__slider.owl-carousel .owl-nav button.owl-next {
+		top : 27px;
 		right: -10px;
 	}
 	.footer__copyright {
@@ -2796,7 +2797,7 @@ ol {
 }
 .fa-angle-right
 {
-	margin-top: 4px;
+	
 	margin-right: 8px;
 	float: right;
 }
