@@ -7,7 +7,7 @@
             </form>
         </div>
     </div> -->
-    <div class="search">
+    <div class="search ml-sm-3">
           <form class="search-form">
               <input type="text" <?php if(check_lang_ru()):?> placeholder="Поиск по продуктам" <?php else:?> placeholder="Termeni de cautare"<?php endif;?> >
               <input style="width: 68px" type="submit"
@@ -21,7 +21,7 @@
     </div>
 </div>
 
-<div class="col-lg-2 mt-4 mr-1">
+<div class="bar-options col-lg-2 mt-4 mr-1">
     <div class="hero__search__phone">
         <div class="hero__search__phone__icon">
             <i class="fa fa-phone"></i>
@@ -41,7 +41,7 @@
 </div>
 
 
-<div class="col-lg-1 mr-5 mt-4">
+<div class="bar-options col-lg-1 mr-5 mt-4">
     <a style=
        "color:black !important;
                                             font-size: 20px;
@@ -56,7 +56,7 @@
 </div>
 
 
-<div class="col-lg-1 ml-1 mt-4">
+<div class="bar-options col-lg-1 ml-1 mt-4">
     <div class="menu-bar my-sm-1 ">
         <ul class="mt-sm-0">
             <a href="./shoping-cart.php"><li><i class="fa fa-shopping-cart"></i></li></a>
