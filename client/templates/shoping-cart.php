@@ -37,7 +37,8 @@ $sum = 0;
                         <table>
                             <thead>
                                 <tr>
-                                    <th class="shoping__product">Produse</th>
+                                    <th class="shoping__product">Imagine</th>
+                                    <th>Denumire</th>
                                     <th>Preț</th>
                                     <th>Cantitate</th>
                                     <th>Total</th>
@@ -50,17 +51,17 @@ $sum = 0;
                                 $sum+=$result->Pret?>
                                 <tr>
                                     <td class="shoping__cart__item">
-                                        <img src="<?php echo $result->ImagePath ?>" alt="">
+                                        <img class="shop-cart-img fluid" src="<?php echo $result->ImagePath ?>" alt="">
+                                    </td>
+                                    <td>
                                         <h5><?php echo $result->NumeProdus?></h5>
                                     </td>
                                     <td class="shoping__cart__price" id="price<?php echo $result->idProdus?>">
                                         <?php echo $result->Pret .' MDL' ?>
                                     </td>
                                     <td class="shoping__cart__quantity">
-                                        <div class="quantity">
-                                            <div class="pro-qty">
-                                                <input oninput="sumOfProduct(<?php echo  $result->idProdus?>)" type="number" min="1" max="100" value="1" id="quantity<?php echo $result->idProdus?>">
-                                            </div>
+                                        <div class="quantity">                                           
+                                                <input style="width: 50px; height:30px;" oninput="sumOfProduct(<?php echo  $result->idProdus?>)" type="number" min="1" max="100" value="1" id="quantity<?php echo $result->idProdus?>">  
                                         </div>
                                     </td>
                                     <td class="shoping__cart__total" id="sum_item<?php echo $result->idProdus?>">

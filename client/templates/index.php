@@ -151,7 +151,6 @@ require "../components/Footer.php"
     <script src="js/mixitup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-    <script src= "js/bar-alter.js"></script>
     <script src="js/sidebar-accordion.js"></script>
 
 
