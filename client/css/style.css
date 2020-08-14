@@ -3688,7 +3688,7 @@ ol {
 .search input[type="text"]
 {
     border: 0px;
-    width: 67%;
+    width: calc(100% - 68px);
     padding: 10px 10px;
 }
 
