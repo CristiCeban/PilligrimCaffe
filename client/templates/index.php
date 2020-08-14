@@ -1,52 +1,57 @@
 <?php
 require "../components/Header.php"
     ?>
-
+<?php
+require "../components/middle.php"
+?>
+<?php
+require "../components/end.php"
+?>
     <!-- Header Section End -->
 
     <!-- Hero Section Begin -->
-        
-            <div class="row">
+        <div class="container-fluid mb-5">
+            <div class="row" >
                 <div class="col-lg-3">
                     <div class="contenedor-menu mx-1">
-		                <a href="" class="btnMenu">Menu <i class="fa fa-bars"></i></a>
+		                <a href="" class="btnMenu">Menu/Меню <i class="fa fa-bars"></i></a>
                         <ul class="menu">
-                            <li><a href="bauturi calde">Caffea,ceai</a></li>
-                            <li><a href="Brutarie">Brutarie</a></li>
-                            <li><a href="#">Bauturi nealc <i class="fa fa-chevron-down"></i></a>
+                            <li><a href="bauturi calde">Cafea,ceai/Кофе, чай</a></li>
+                            <li><a href="Brutarie">Brutarie/ Пекарня</a></li>
+                            <li><a href="#">Bauturi nealcoolice/ Безалкогольные напитки <i class="fa fa-chevron-down"></i></a>
                                 <ul>
-                                    <li><a href="cafea rece">Cafea rece</a></li>
-                                    <li><a href="apa">Apa potabila</a></li>
-                                    <li><a href="sucuri">Sucuri</a></li>
-                                    <li><a href="energizante">Energizante</a></li>
+                                    <li><a href="cafea rece">Cafea rece/ Холодный кофе</a></li>
+                                    <li><a href="apa">Apa potabila/ Вода</a></li>
+                                    <li><a href="sucuri">Sucuri/ Соки</a></li>
+                                    <li><a href="energizante">Energizante/ Энергетики</a></li>
                                 </ul>
                             </li>
                             
-                            <li><a href="#">Bauturi alc<i class="fa fa-chevron-down"></i></a>
+                            <li><a href="#">Bauturi alcoolice/ Алкогольные напитки<i class="fa fa-chevron-down"></i></a>
                                 <ul>
-                                    <li><a href="vin">Vin</a></li>
-                                    <li><a href="coniac">Coniac</a></li>
-                                    <li><a href="vodka">Vodka</a></li>
-                                    <li><a href="wiski">Wisky</a></li>
-                                    <li><a href="bere">Bere</a></li>
+                                    <li><a href="vin">Vin/ Вино</a></li>
+                                    <li><a href="coniac">Coniac/Коньяк</a></li>
+                                    <li><a href="vodka">Vodka/Водкв</a></li>
+                                    <li><a href="wiski">Whisky/Виски</a></li>
+                                    <li><a href="bere">Bere/Пиво</a></li>
                                 </ul>
                             </li>
                             
-                            <li><a href="#">Produse <i class="fa fa-chevron-down"></i></a>
+                            <li><a href="#">Produse alimentare/Продукты <i class="fa fa-chevron-down"></i></a>
                                 <ul>
-                                    <li><a href="Snack-uri">Snack-uri</a></li>
-                                    <li><a href="Zakuska la bere">La o bere</a></li>
-                                    <li><a href="arahide">Arahide</a></li>
+                                    <li><a href="Snack-uri">Snack-uri/Снэки</a></li>
+                                    <li><a href="Zakuska la bere">La o bere/К пиву</a></li>
+                                    <li><a href="arahide">Arahide/Арахис</a></li>
                                 </ul>
                             </li>
-                            <li><a href="tigari">Tigari</a></li>
+                            <li><a href="tigari">Tigari/Сигареты</a></li>
                             
                         </ul>
 	                </div>
                 </div>
                 <div class="col-lg-9">
                     <!--Banner-->
-                    <div class="slider ">
+                    <div class="slider">
                         <div id="slider" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#slider" data-slide-to="0" class="active"></li>
@@ -76,6 +81,7 @@ require "../components/Header.php"
                     </div>
                 </div>
             </div>
+        </div>
             
 
 
@@ -145,7 +151,6 @@ require "../components/Footer.php"
     <script src="js/mixitup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-    <script src= "js/bar-alter.js"></script>
     <script src="js/sidebar-accordion.js"></script>
 
 

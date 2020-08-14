@@ -25,7 +25,6 @@
 	<link rel="stylesheet" href="css/sidebar-accordion.css">
 	<!-- Demo CSS -->
 	<link rel="stylesheet" href="css/demo.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -138,62 +137,10 @@
     </div>
     
     <section class="hero">
-                    <div class="row mt-2">
+                    <div class="row mt-4 mr-0">
                         <div class="header__logo  col-lg-2 " >
                             <a href="./index.php">
-                                <img src="images/logo_color.png" alt="" style=" width: 160px;">
+                                <img src="images/logo_color.png" alt="" style=" width: 190px;">
                             </a>
                         </div>
 
-                        <div class="col-lg-4">
-                            <div class="hero__search my-sm-1 mt-lg-1">
-                                <div class="hero__search__form">
-                                    <form action="#"">
-                                        <input type="text" placeholder="Termen de căutat">
-                                        <button type="submit" class="site-btn" style="color:black;">Caută</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-
-                                <div class="col-lg-3">
-                                    <div class="hero__search__phone">
-                                        <div class="hero__search__phone__icon">
-                                            <i class="fa fa-phone"></i>
-                                        </div>
-                                        <div class="hero__search__phone__text">
-                                            <h5>+373123456789</h5>
-                                            <span>suport 24/7 </span>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                    <div class="col-lg-1 mr-2">
-                                        <a style=
-                                           "color:black !important;
-                                            font-family: 'Montserrat', sans-serif;;
-                                            font-size: 20px; "
-                                            href="./contact.php">
-                                            Contacte</a>
-                                    </div>
-
-
-                                    <div class="col-lg-1">
-                                        <div class="menu-bar my-sm-1 ">
-                                            <ul class="mt-sm-0">
-                                                <li> <a href="./shoping-cart.php"><i class="fa fa-shopping-cart"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-
-                    </div>
-    </section>
-
-        
-        <div class="humberger__open">
-            <i class="fa fa-bars"></i>
-        </div>
-    
-</header>
