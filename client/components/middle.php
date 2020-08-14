@@ -9,7 +9,7 @@
     </div> -->
     <div class="search">
           <form class="search-form">
-              <input type="text" <?php if(check_lang_ru()):?> placeholder="Поиск" <?php else:?> placeholder="Termeni de cautare"<?php endif;?> >
+              <input type="text" <?php if(check_lang_ru()):?> placeholder="Поиск по продуктам" <?php else:?> placeholder="Termeni de cautare"<?php endif;?> >
               <input style="width: 68px" type="submit"
                   <?php if(check_lang_ru()):?>
                         value="Поиск"

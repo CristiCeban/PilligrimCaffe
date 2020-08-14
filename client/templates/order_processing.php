@@ -43,7 +43,7 @@ require "../components/end.php";
 
 
     <div class="col-lg-4 col-md-8">
-        <form action="somewhere.php">
+        <form action="../server/cart_processing.php">
 
             <div class="container align-items-center justify-content-center shadow p-3 mb-5 bg-white rounded" style="background: white">
                 <h3>
