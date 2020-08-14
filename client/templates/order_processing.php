@@ -5,35 +5,24 @@ require "../components/end.php";
 ?>
 
 <!-- Breadcrumb Section Begin -->
-<!--<section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg"-->
-<!--         style="background-image: url(img/breadcrumb.jpg);">-->
-<!---->
-<!---->
-<!--    <div class="container my-4 shoping-cart">-->
-<!--        <div class="row">-->
-<!--            <div class="col-lg-12 text-center">-->
-<!--                <div class="breadcrumb__text">-->
-<!--                    <h2>Check-out</h2>-->
-<!--                    <div class="breadcrumb__option">-->
-<!--                        <a href="index.php">Pagina principală</a>-->
-<!--                        <span>Check-out</span>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
-
-
-<!-- Breadcrumb Section End -->
-<div class="container-fluid px-0"
-    <div class="row mb-4">
-        <div class="col-lg-12">
-        <img src="images/check_out.jpg">
+<section class="breadcrumb-section set-bg"  style="background-image: url('images/check_out.jpg');">
+    <div class="container">
+        <div class="row" style="height: 120px">
+            <div class="col-lg-12 text-center">
+                <div class="breadcrumb__text">
+                    <h2>Finalizare comandă/Завершить покупку</h2>
+                    <div class="breadcrumb__option">
+                        <a href="index.php">Pagina principală/Главная</a>
+                        <span>Finalizare comandă/Завершить покупку</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-<div class="container-fluid">
+</section>
+<!-- Breadcrumb Section End -->
+
+<div class="container-fluid mt-5">
 <div class="row">
     <div class="col-lg-3">
 <!--        style="background: #0f6674">-->
