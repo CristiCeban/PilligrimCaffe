@@ -14,7 +14,7 @@ $sum = 0;
     <!-- Breadcrumb Section Begin -->
     <section class="breadcrumb-section set-bg" data-setbg="images/shopping_bag.jpg">
         <div class="container">
-            <div class="row" style="height: 200px">
+            <div class="row" style="height: 120px">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
                         <h2>Coș de cumpărături/Корзина</h2>

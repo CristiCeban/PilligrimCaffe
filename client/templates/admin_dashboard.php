@@ -8,7 +8,7 @@ elseif (!isAdmin()) {
 
 
 require "../components/header.php";
-
+require "../components/end.php";
 ?>
 
 <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
