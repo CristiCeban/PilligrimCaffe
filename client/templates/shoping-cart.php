@@ -17,10 +17,10 @@ $sum = 0;
             <div class="row" style="height: 120px">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>Coș de cumpărături/Корзина</h2>
+                        <h2><?php if(check_lang_ru()):?>Корзина<?php else:?>Coș de cumpărături<?php endif;?></h2>
                         <div class="breadcrumb__option">
-                            <a href="index.php">Pagina principală/Главная</a>
-                            <span>Coș de cumpărături/Корзина</span>
+                            <a href="index.php"><?php if(check_lang_ru()):?>Главная<?php else:?>Pagina principală<?php endif;?></a>
+                            <span><?php if(check_lang_ru()):?>Корзина<?php else:?>Coș de cumpărături<?php endif;?></span>
                         </div>
                     </div>
                 </div>
@@ -38,11 +38,11 @@ $sum = 0;
                         <table>
                             <thead>
                                 <tr>
-                                    <th class="shoping__product">Imagine</th>
-                                    <th>Produs/Продукт</th>
-                                    <th>Preț/Цена</th>
-                                    <th>Cantitate/Количество</th>
-                                    <th>Total/Всего</th>
+                                    <th class="shoping__product"><?php if(check_lang_ru()):?>Картинка<?php else:?>Imagine<?php endif;?></th>
+                                    <th><?php if(check_lang_ru()):?>Продукт<?php else:?>Produs<?php endif;?></th>
+                                    <th><?php if(check_lang_ru()):?>Цена<?php else:?>Preț<?php endif;?></th>
+                                    <th><?php if(check_lang_ru()):?>Количество<?php else:?>Cantitate<?php endif;?></th>
+                                    <th><?php if(check_lang_ru()):?>Всего<?php else:?>Total<?php endif;?></th>
                                     <th></th>
                                 </tr>
                             </thead>
@@ -83,11 +83,11 @@ $sum = 0;
                 </div>
                 <div class="col-lg-6">
                     <div class="shoping__checkout">
-                        <h5>Total/К оплате</h5>
+                        <h5><?php if(check_lang_ru()):?>К оплате<?php else:?>Total<?php endif;?></h5>
                         <ul>
-                            <li>Suma:/Сумма: <span id = "total_sum"><?php echo $sum .' MDL' ?></span></li>
+                            <li><?php if(check_lang_ru()):?>Сумма:<?php else:?>Suma:<?php endif;?> <span id = "total_sum"><?php echo $sum .' MDL' ?></span></li>
                         </ul>
-                        <a href="" onclick="sendToCheckout()" class="primary-btn">Continuă Comanda/Продолжить заказ</a>
+                        <a href="" onclick="sendToCheckout()" class="primary-btn"><?php if(check_lang_ru()):?>Продолжить заказ<?php else:?>Continuă Comanda<?php endif;?></a>
                     </div>
                 </div>
             </div>
