@@ -2532,6 +2532,8 @@ ol {
     /*-moz-border-radius: 5px;*/
 	/*-webkit-border-radius: 5px;*/
 	margin-top: 5px;
+	margin-left:5%;
+	width: auto;
 }
 
 .search input[type="text"]
@@ -2553,26 +2555,17 @@ ol {
     background-color: #b54616;    color: #fff;
     float: right;
     padding: 10px;
-    border-radius-top-right: 5px;
+    
     -moz-border-radius-top-right: 5px;
     -webkit-border-radius-top-right: 5px;
-    border-radius-bottom-right: 5px;
+    
     -moz-border-radius-bottom-right: 5px;
     -webkit-border-radius-bottom-right: 5px;
     cursor:pointer;
 }
 
-/* ====== Medea Query for Search Box ====== */
 
-@media only screen and (min-width : 150px) and (max-width : 780px)
-{
-    .search
-    {
-        width: 95%;
-        margin: 0 auto;
-    }
 
-}
 
 @media only screen and (max-width : 992px){
 	.bar-options{
