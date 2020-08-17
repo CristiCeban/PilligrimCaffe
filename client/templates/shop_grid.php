@@ -44,6 +44,7 @@ $rs = $this->manager->getProductbyCategory($this->categorie);
                         </ul>
 	            </div>
         </div>
+<<<<<<< HEAD
         <div class="col">
             <?php foreach($rs as $r): ?>
                 <div class="card">
@@ -56,13 +57,34 @@ $rs = $this->manager->getProductbyCategory($this->categorie);
                         </label>
                         <p><button type="submit" >Add to Cart</button></p>
                     </form>
+=======
+        <div class="col-lg-9">
+            <div class="row">
+                <div class="col">
+                    <?php foreach($rs as $r): ?>
+                    <div class="card">
+                        <form method="post" action="../server/card.php">
+                            <div class="img-thumbnail">
+                                <img src=<?php echo $r->ImagePath ?>  alt=<?php echo $r->NumeProdus?>>
+                            </div>
+                            <h4><?php echo $r->NumeProdus?></h4>
+                            <p class="price"><?php echo $r->Pret?> MDL</p>
+                            <label>
+                                <input  type="hidden" name="id" value="<?php echo $r->idProdus;?>"/>
+                            </label>
+                            <p><button type="submit" >Add to Cart</button></p>
+                        </form>
+                    </div>
+                        <?php
+                        endforeach;
+                        ?>
+>>>>>>> 80129c4be56141e891f5a56a5b9cfc58c09423b8
                 </div>
-                    <?php
-                    endforeach;
-                    ?>
+            </div>
+           
 
             
-            </div>
+        </div>
             
             
     </div>

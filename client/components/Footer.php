@@ -1,4 +1,4 @@
-<footer class="footer spad">
+<footer class="footer spad mt-2">
     <div class="container-fluid text-center text-md-left mx-0">
         <div class="row">
             <div class="col-lg-2  col-sm-6">
