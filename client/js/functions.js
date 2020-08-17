@@ -23,6 +23,5 @@ function eraseCookie(name) {
 }
 
 function sendToCheckout(){
-    alert('aici');
-    window.location.replace('index.php');
+    window.location.assign('order_processing.php');
 }
