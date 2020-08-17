@@ -104,7 +104,7 @@ require "../components/end.php";
             Твой заказ из Pilligrim Caffe:
             <?php else:?>
             Comanda ta de la Pilligrim Caffe:
-            <?php endif;?>аше
+            <?php endif;?>
         </h3>
         <br>
         <h5><strong>1</strong> x Bugher nahui</h5>
