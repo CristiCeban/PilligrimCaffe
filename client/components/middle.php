@@ -7,7 +7,7 @@
             </form>
         </div>
     </div> -->
-    <div class="search ml-sm-3">
+    <div class="search">
           <form class="search-form">
               <input type="text" <?php if(check_lang_ru()):?> placeholder="Поиск по продуктам" <?php else:?> placeholder="Termeni de cautare"<?php endif;?> >
               <input style="width: 68px" type="submit"

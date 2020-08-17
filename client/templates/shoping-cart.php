@@ -56,7 +56,13 @@ $sum = 0;
                                         <img class="shop-cart-img fluid" style="width: 150px" src="<?php echo $result->ImagePath ?>" alt="">
                                     </td>
                                     <td>
-                                        <h5><?php echo $result->NumeProdus?></h5>
+                                        <h5><?php
+                                            if(check_lang_ru())
+                                                echo $result->NumeProdusRu;
+                                            else
+                                                echo $result->NumeProdus
+
+                                            ?></h5>
                                     </td>
                                     <td class="shoping__cart__price" id="price<?php echo $result->idProdus?>">
                                         <?php echo $result->Pret .' MDL' ?>

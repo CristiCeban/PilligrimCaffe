@@ -2,6 +2,7 @@
 
 require "../components/Header.php";
 require "../components/end.php";
+
 ?>
 
 <!-- Breadcrumb Section Begin -->
@@ -43,7 +44,7 @@ require "../components/end.php";
             <div class="container align-items-center justify-content-center shadow p-3 mb-5 bg-white rounded" style="background: white">
                 <h3>
                     <span class="tag_delivery">1</span>
-                    <span class="rand_tag_delivery"><?php if(check_lang_ru()):?>Подробности длставки  <?php else:?>Detalii livrare  <?php endif;?></span>
+                    <span class="rand_tag_delivery"><?php if(check_lang_ru()):?>Подробности доставки  <?php else:?>Detalii livrare  <?php endif;?></span>
                 </h3>
                 <br>
                 <h2>
@@ -74,15 +75,15 @@ require "../components/end.php";
                 <br>
                 <div class="row" style="margin-top: 15px">
                     <div class="col-md-6">
-                        <input name="surname" style="width: 90%" type="text"<?php if(check_lang_ru()):?>placeholder="Фамилия"  <?php else:?>placeholder="Nume"  <?php endif;?>>
+                        <input name="surname" style="width: 90%" type="text" <?php if(check_lang_ru()):?> placeholder="Фамилия"  <?php else:?>placeholder="Nume"  <?php endif;?>>
                     </div>
                     <div class="col-md-6">
-                        <input name="name" style="width: 90%" type="text"<?php if(check_lang_ru()):?>placeholder="Имя"<?php else:?>placeholder="Prenume"  <?php endif;?>>
+                        <input name="name" style="width: 90%" type="text" <?php if(check_lang_ru()):?> placeholder="Имя" <?php else:?>placeholder="Prenume"  <?php endif;?>>
                     </div>
                 </div>
                 <div class="row mb-2">
                     <div class="col-md-12">
-                        <input name="mobile" style="width: 95.5%;margin-top: 30px" type="text"<?php if(check_lang_ru()):?>placeholder="Номер телефона"<?php else:?>placeholder="Numar mobil"  <?php endif;?>>
+                        <input name="mobile" style="width: 95.5%;margin-top: 30px" type="text" <?php if(check_lang_ru()):?> placeholder="Номер телефона" <?php else:?>placeholder="Numar mobil"  <?php endif;?>>
                     </div>
                 </div>
 
@@ -104,11 +105,17 @@ require "../components/end.php";
             Твой заказ из Pilligrim Caffe:
             <?php else:?>
             Comanda ta de la Pilligrim Caffe:
-            <?php endif;?>аше
+            <?php endif;?>
         </h3>
         <br>
-        <h5><strong>1</strong> x Bugher nahui</h5>
+        <?php foreach ($this->fields as $key => $value){
+            if(check_lang_ru())
+                echo '<h5><strong>'.$value.'</strong> x ' . $this->manager->getProduct($key)->NumeProdusRu.'</h5>';
+            else
+                echo '<h5><strong>'.$value.'</strong> x ' . $this->manager->getProduct($key)->NumeProdus.'</h5>';
+        }?>
         <br>
+        <h4><?php echo $this->sum ?></h4>
         <hr class="my-4">
     </div>
 
