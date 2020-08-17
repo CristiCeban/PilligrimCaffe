@@ -8,4 +8,4 @@ else {
     setcookie('card-list',$card_list,time()+3600,'/');
 }
 
-header('Location: ../client/index.php');
+header('Location: ../client/shop_grid.php?cat='.$_GET['cat']);
