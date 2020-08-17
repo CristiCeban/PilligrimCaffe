@@ -22,15 +22,18 @@ function eraseCookie(name) {
     document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 }
 
+function addToObject(obj,key,value){
+    return obj.key=value;
+}
 function sendToCheckout(){
     const ids = document.getElementsByClassName('ids');
-    // ids.element.textContent || element.innerText;
-    const quantitys = document.getElementsByClassName('quantity_id')
-    // quantitys.value;
+    const quantitys = document.getElementsByClassName('quantity_id');
+    const sum = document.getElementById('total_sum');
     let msg="";
+    let object = {};
     for(let i = 0;i < ids.length;i++){
-        // alert(ids[i].innerText || ids[i].textContent);
         msg += "id"+(ids[i].innerText || ids[i].textContent) + "=" + quantitys[i].value + "&";
     }
+    msg+='sum='+sum.innerText;
     window.location.assign('order_processing.php?'+msg);
 }
