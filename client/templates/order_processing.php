@@ -2,6 +2,7 @@
 
 require "../components/Header.php";
 require "../components/end.php";
+
 ?>
 
 <!-- Breadcrumb Section Begin -->
@@ -74,15 +75,15 @@ require "../components/end.php";
                 <br>
                 <div class="row" style="margin-top: 15px">
                     <div class="col-md-6">
-                        <input name="surname" style="width: 90%" type="text"<?php if(check_lang_ru()):?>placeholder="Фамилия"  <?php else:?>placeholder="Nume"  <?php endif;?>>
+                        <input name="surname" style="width: 90%" type="text" <?php if(check_lang_ru()):?> placeholder="Фамилия"  <?php else:?>placeholder="Nume"  <?php endif;?>>
                     </div>
                     <div class="col-md-6">
-                        <input name="name" style="width: 90%" type="text"<?php if(check_lang_ru()):?>placeholder="Имя"<?php else:?>placeholder="Prenume"  <?php endif;?>>
+                        <input name="name" style="width: 90%" type="text" <?php if(check_lang_ru()):?> placeholder="Имя" <?php else:?>placeholder="Prenume"  <?php endif;?>>
                     </div>
                 </div>
                 <div class="row mb-2">
                     <div class="col-md-12">
-                        <input name="mobile" style="width: 95.5%;margin-top: 30px" type="text"<?php if(check_lang_ru()):?>placeholder="Номер телефона"<?php else:?>placeholder="Numar mobil"  <?php endif;?>>
+                        <input name="mobile" style="width: 95.5%;margin-top: 30px" type="text" <?php if(check_lang_ru()):?> placeholder="Номер телефона" <?php else:?>placeholder="Numar mobil"  <?php endif;?>>
                     </div>
                 </div>
 
@@ -107,7 +108,9 @@ require "../components/end.php";
             <?php endif;?>аше
         </h3>
         <br>
-        <h5><strong>1</strong> x Bugher nahui</h5>
+        <?php foreach ($this->fields as $key => $value){
+            echo '<h5><strong>'.$value.'</strong> x ' . $this->manager->getProduct($key)->NumeProdus.'</h5>';
+        }?>
         <br>
         <hr class="my-4">
     </div>
