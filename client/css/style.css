@@ -2805,7 +2805,8 @@ ol {
     border: 2px solid #CF5C3F;
     overflow: auto;	
 	margin-top: 5px;
-
+	margin-left:5%;
+	width: auto;
 }
 
 .search input[type="text"]
@@ -2828,10 +2829,10 @@ ol {
     color: #fff;
     float: right;
     padding: 10px;
-    border-radius-top-right: 5px;
+    
     -moz-border-radius-top-right: 5px;
     -webkit-border-radius-top-right: 5px;
-    border-radius-bottom-right: 5px;
+    
     -moz-border-radius-bottom-right: 5px;
     -webkit-border-radius-bottom-right: 5px;
     cursor:pointer;
