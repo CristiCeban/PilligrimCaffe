@@ -50,8 +50,10 @@ $rs = $this->manager->getProductbyCategory($this->categorie);
                     <?php foreach($rs as $r): ?>
                     <div class="card">
                         <form method="post" action="../server/card.php">
-                            <img class="img-thumbnail" src=<?php echo $r->ImagePath ?>  alt=<?php echo $r->NumeProdus?> style="width:100%">
-                            <h1><?php echo $r->NumeProdus?></h1>
+                            <div class="img-thumbnail">
+                                <img src=<?php echo $r->ImagePath ?>  alt=<?php echo $r->NumeProdus?>>
+                            </div>
+                            <h4><?php echo $r->NumeProdus?></h4>
                             <p class="price"><?php echo $r->Pret?> MDL</p>
                             <label>
                                 <input  type="hidden" name="id" value="<?php echo $r->idProdus;?>"/>
