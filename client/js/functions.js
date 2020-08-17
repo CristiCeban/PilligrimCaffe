@@ -29,6 +29,10 @@ function sendToCheckout(){
     const ids = document.getElementsByClassName('ids');
     const quantitys = document.getElementsByClassName('quantity_id');
     const sum = document.getElementById('total_sum');
+    if(parseInt(sum.innerText) <=0) {
+        alert('Nu aveti lucruri in cos');
+        return;
+    }
     let msg="";
     let object = {};
     for(let i = 0;i < ids.length;i++){

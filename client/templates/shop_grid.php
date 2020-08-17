@@ -49,7 +49,7 @@ $rs = $this->manager->getProductbyCategory($this->categorie);
                 <div class="card">
                     <form method="post" action="../server/card.php?cat=<?php echo $_GET['cat']?> " >
                         <img src=<?php echo $r->ImagePath ?>  alt=<?php echo $r->NumeProdus?> style="width:100%">
-                        <h1><?php echo $r->NumeProdus?></h1>
+                        <h1><?php if(check_lang_ru()) echo $r->NumeProdusRu; else echo $r->NumeProdus?></h1>
                         <p class="price"><?php echo $r->Pret?> MDL</p>
                         <label>
                             <input  type="hidden" name="id" value="<?php echo $r->idProdus;?>"/>
