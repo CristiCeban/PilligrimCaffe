@@ -2803,11 +2803,9 @@ ol {
 .search
 {
     border: 2px solid #CF5C3F;
-    overflow: auto;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
+    overflow: auto;	
 	margin-top: 5px;
+
 }
 
 .search input[type="text"]
@@ -2839,17 +2837,8 @@ ol {
     cursor:pointer;
 }
 
-/* ====== Medea Query for Search Box ====== */
 
-@media only screen and (min-width : 150px) and (max-width : 780px)
-{
-    .search
-    {
-        width: 95%;
-        margin: 0 auto;
-    }
 
-}
 
 @media only screen and (max-width : 992px){
 	.bar-options{
