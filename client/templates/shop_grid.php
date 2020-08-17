@@ -47,7 +47,7 @@ $rs = $this->manager->getProductbyCategory($this->categorie);
         <div class="col">
             <?php foreach($rs as $r): ?>
                 <div class="card">
-                    <form method="post" action="../server/card.php">
+                    <form method="post" action="../server/card.php?cat=<?php echo $_GET['cat']?> " >
                         <img src=<?php echo $r->ImagePath ?>  alt=<?php echo $r->NumeProdus?> style="width:100%">
                         <h1><?php echo $r->NumeProdus?></h1>
                         <p class="price"><?php echo $r->Pret?> MDL</p>
