@@ -51,6 +51,7 @@ $sum = 0;
                                 foreach($rs as $result):
                                 $sum+=$result->Pret?>
                                 <tr>
+                                    <td class="ids" hidden><?php echo $result->idProdus?></td>
                                     <td class="shoping__cart__item">
                                         <img class="shop-cart-img fluid" style="width: 150px" src="<?php echo $result->ImagePath ?>" alt="">
                                     </td>
@@ -62,7 +63,7 @@ $sum = 0;
                                     </td>
                                     <td class="shoping__cart__quantity">
                                         <div class="quantity">                                           
-                                                <input style="width: 50px; height:30px;" oninput="sumOfProduct(<?php echo  $result->idProdus?>)" type="number" min="1" max="100" value="1" id="quantity<?php echo $result->idProdus?>">  
+                                                <input class="quantity_id" style="width: 50px; height:30px;" oninput="sumOfProduct(<?php echo  $result->idProdus?>)" type="number" min="1" max="100" value="1" id="quantity<?php echo $result->idProdus?>">
                                         </div>
                                     </td>
                                     <td class="shoping__cart__total" id="sum_item<?php echo $result->idProdus?>">
