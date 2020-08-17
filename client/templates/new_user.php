@@ -42,10 +42,16 @@ if(isset($alert_msg)){
             <div class="col-12 form-input">
                 <form action="../server/new_user_check.php" method="post">
                     <div class="form-group">
+                        <input type="text" name="email" class="form-control" placeholder="Enter E-mail" required>
+                    </div>
+                    <div>
+                    <div class="form-group">
                         <input type="text" name="username" class="form-control" placeholder="Enter Username" required>
                     </div>
+
                     <div class="form-group">
                         <input type="password" name="password" class="form-control" placeholder="Enter Password" required>
+                    </div>
                     </div>
                     <div class="form-group">
                         <input type="password" name="password_repeat" class="form-control" placeholder="Repeat Password" required>
