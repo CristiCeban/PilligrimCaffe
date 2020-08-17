@@ -8,4 +8,4 @@ else {
     setcookie('card-list',$card_list,time()+3600,'/');
 }
 
-echo 'card';
+header('Location: ../client/index.php');

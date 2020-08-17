@@ -87,7 +87,7 @@ $sum = 0;
                         <ul>
                             <li><?php if(check_lang_ru()):?>Сумма:<?php else:?>Suma:<?php endif;?> <span id = "total_sum"><?php echo $sum .' MDL' ?></span></li>
                         </ul>
-                        <a href="" onclick="sendToCheckout()" class="primary-btn"><?php if(check_lang_ru()):?>Продолжить заказ<?php else:?>Continuă Comanda<?php endif;?></a>
+                        <a href="#" onclick="sendToCheckout()" class="primary-btn"><?php if(check_lang_ru()):?>Продолжить заказ<?php else:?>Continuă Comanda<?php endif;?></a>
                     </div>
                 </div>
             </div>

@@ -78,18 +78,18 @@ require "../components/end.php";
                         <input name="name" style="width: 90%" type="text" placeholder="Prenume">
                     </div>
                 </div>
-                <div class="row">
+                <div class="row mb-2">
                     <div class="col-md-12">
-                        <input name="mobile" style="width: 95.5%;margin-top: 30px"" type="text" placeholder="Numar mobil">
+                        <input name="mobile" style="width: 95.5%;margin-top: 30px" type="text" placeholder="Numar mobil">
                     </div>
-                </div>
-                <div class="container row">
-                        <button type="submit" class="btn btn-primary btn-lg btn-block" style="width: 100%">Submit</button>
                 </div>
 
             </div>
-        </form>
 
+            <div class="container row justify-content-center align-items-center text-center mb-4">
+                    <button type="submit" class="btn btn-primary  " style="width: 50%">Submit</button>
+            </div>
+        </form>
 
 
 
