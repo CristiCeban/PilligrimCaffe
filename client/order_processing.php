@@ -10,4 +10,5 @@ for($i = 0;$i< 10000;$i++){
 }
 $template->fields = $fields;
 $template->manager = new Product();
+$template->sum = isset($_GET['sum']) ? $_GET['sum'] : null;
 echo $template;

@@ -27,12 +27,13 @@ function addToObject(obj,key,value){
 }
 function sendToCheckout(){
     const ids = document.getElementsByClassName('ids');
-    const quantitys = document.getElementsByClassName('quantity_id')
+    const quantitys = document.getElementsByClassName('quantity_id');
+    const sum = document.getElementById('total_sum');
     let msg="";
     let object = {};
     for(let i = 0;i < ids.length;i++){
         msg += "id"+(ids[i].innerText || ids[i].textContent) + "=" + quantitys[i].value + "&";
     }
-
+    msg+='sum='+sum.innerText;
     window.location.assign('order_processing.php?'+msg);
 }

@@ -14,6 +14,14 @@ function ready() {
 function removeCartItem(event) {
     const buttonClicked = event.target;
     buttonClicked.parentElement.parentElement.remove()
+    const quantity = document.getElementsByClassName('quantity_id');
+    const price = document.getElementsByClassName('shoping__cart__total');
+    const totalSumCheckout = document.getElementById('total_sum');
+    let sum = 0;
+    for(let i = 0;i < quantity.length;i++){
+        sum+= parseInt(quantity[i].value) * (parseInt(price[i].innerText) || parseInt(price[i].textContent));
+    }
+    totalSumCheckout.innerHTML = sum.toString() + ' MDL';
 }
 
 function sumOfProduct(id){

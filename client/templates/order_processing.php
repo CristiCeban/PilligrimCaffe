@@ -44,7 +44,7 @@ require "../components/end.php";
             <div class="container align-items-center justify-content-center shadow p-3 mb-5 bg-white rounded" style="background: white">
                 <h3>
                     <span class="tag_delivery">1</span>
-                    <span class="rand_tag_delivery"><?php if(check_lang_ru()):?>Подробности длставки  <?php else:?>Detalii livrare  <?php endif;?></span>
+                    <span class="rand_tag_delivery"><?php if(check_lang_ru()):?>Подробности доставки  <?php else:?>Detalii livrare  <?php endif;?></span>
                 </h3>
                 <br>
                 <h2>
@@ -105,13 +105,17 @@ require "../components/end.php";
             Твой заказ из Pilligrim Caffe:
             <?php else:?>
             Comanda ta de la Pilligrim Caffe:
-            <?php endif;?>аше
+            <?php endif;?>
         </h3>
         <br>
         <?php foreach ($this->fields as $key => $value){
-            echo '<h5><strong>'.$value.'</strong> x ' . $this->manager->getProduct($key)->NumeProdus.'</h5>';
+            if(check_lang_ru())
+                echo '<h5><strong>'.$value.'</strong> x ' . $this->manager->getProduct($key)->NumeProdusRu.'</h5>';
+            else
+                echo '<h5><strong>'.$value.'</strong> x ' . $this->manager->getProduct($key)->NumeProdus.'</h5>';
         }?>
         <br>
+        <h4><?php echo $this->sum ?></h4>
         <hr class="my-4">
     </div>
 
