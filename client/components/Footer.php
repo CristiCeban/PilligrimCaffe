@@ -1,11 +1,13 @@
 <footer class="footer spad">
-    <div class="container mx-0">
+    <div class="container-fluid text-center text-md-left mx-0">
         <div class="row">
-            <div class="col-lg-5 col-md-4 col-sm-6 ">
-                <div class="footer__about">
-                    <div class="footer__about__logo">
+            <div class="col-lg-2  col-sm-6">
+                <div class="footer__about__logo">
                         <a href="./index.php"><img src="images/logo_color.png" alt="" style="width: 180px"></a>
-                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="footer__about">
                     <ul>
                         <li>
                             <?php if(check_lang_ru()):?>
@@ -32,13 +34,13 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 ">
+            <div class="col-lg-2  col-sm-6">
                 <div class="footer__widget">
                     <h6>
                         <?php if(check_lang_ru()):?>
                         Полезные ссылки
                         <?php else:?>
-                        Link-uri utile/
+                        Link-uri utile
                         <?php endif;?>
                     </h6>
                     <ul>
@@ -59,7 +61,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 ">
+            <div class="col-lg-3 col-sm-6">
                 <div class="footer__widget">
                     <h6>
                         <?php if(check_lang_ru()):?>
