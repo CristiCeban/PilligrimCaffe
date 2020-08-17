@@ -40,5 +40,3 @@ function sumOfProduct(id){
     totalSumCheckout.innerHTML = sum.toString() + ' MDL';
 }
 
-localStorage.setItem('Name', document.getElementsByClassName('shop-item-title') )
-console.log(localStorage.getItem('Name'))

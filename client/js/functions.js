@@ -23,6 +23,14 @@ function eraseCookie(name) {
 }
 
 function sendToCheckout(){
-    // const ids = document.getElementsByClassName();
-    window.location.assign('order_processing.php');
+    const ids = document.getElementsByClassName('ids');
+    // ids.element.textContent || element.innerText;
+    const quantitys = document.getElementsByClassName('quantity_id')
+    // quantitys.value;
+    let msg="";
+    for(let i = 0;i < ids.length;i++){
+        // alert(ids[i].innerText || ids[i].textContent);
+        msg += "id"+(ids[i].innerText || ids[i].textContent) + "=" + quantitys[i].value + "&";
+    }
+    window.location.assign('order_processing.php?'+msg);
 }
