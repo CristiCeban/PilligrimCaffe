@@ -93,4 +93,10 @@ class Product
         $this->db->execute();
     }
 
+    public function getProductsByStr($substr)
+    {
+        $this->db->query("select * from produs where NumeProdus like (%:substring%)");
+        $this->db->bind('substring',$substr);
+        return $this->db->resultSet();
+    }
 }

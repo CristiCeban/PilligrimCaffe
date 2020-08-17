@@ -8,7 +8,7 @@
         </div>
     </div> -->
     <div class="search">
-          <form class="search-form">
+          <form class="search-form" action="search.php" method="POST">
               <input type="text" <?php if(check_lang_ru()):?> placeholder="Поиск по продуктам" <?php else:?> placeholder="Termeni de cautare"<?php endif;?> >
               <input style="width: 68px" type="submit"
                   <?php if(check_lang_ru()):?>
@@ -17,6 +17,7 @@
                         value="Cauta"
                 <?php endif;?>
               >
+
           </form>
     </div>
 </div>
