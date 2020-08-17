@@ -23,6 +23,6 @@ function eraseCookie(name) {
 }
 
 function sendToCheckout(){
-    const ids = document.getElementsByClassName()
+    // const ids = document.getElementsByClassName();
     window.location.assign('order_processing.php');
 }
