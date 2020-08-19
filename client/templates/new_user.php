@@ -25,6 +25,9 @@ if(isset($alert_msg)){
         $msg = "Password doesn't match!";
         alertPHP($msg);
     }
+    elseif($alert_msg==MAIL_ALREADY_USED){
+        alertPHP('User with this email already exist');
+    }
     elseif($alert_msg==NEW_USER_OK){
         $msg = "User create with success";
         setcookie('username',$user,time()+3600,'/');

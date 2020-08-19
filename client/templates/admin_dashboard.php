@@ -83,6 +83,7 @@ require "../components/end.php";
             <tr>
                 <th>Логин</th>
                 <th>Криптованный пароль</th>
+                <th>Эл. Почта</th>
                 <th>Роль</th>
                 <th>Действия</th>
             </tr>
@@ -92,6 +93,7 @@ require "../components/end.php";
                 <tr>
                     <td><?php echo $user->login;?></td>
                     <td><?php echo $user->password;?></td>
+                    <td><?php echo $user->email?></td>
                     <td><?php echo $user->role;?></td>
                     <td>
                         <a href="#" style="color: red" onclick="deleteFunction(<?php echo "'idUtilizator=".$user->idUtilizator."'";echo ','; echo "'".$user->login."'"?>);return false">

@@ -45,20 +45,20 @@ class user
         return true;
     }
 
-    private function createUserUtil(string $username,string $password){
-        $this->db->query('insert into users(login, password,role) value(:username, :password, "user")');
-        //insert into users(login, mdp,role) value('temp','temp1','user');
+    private function createUserUtil(string $username,string $password,$email){
+        $this->db->query('insert into users(login, password,email,role) value(:username, :password,:email,"user")');
         $this->db->bind('username',$username);
         $this->db->bind('password',$password);
+        $this->db->bind('email',$email);
         $this->db->execute();
     }
 
-    public function createUser(string $username,string $password) : string{
+    public function createUser(string $username,string $password,string $email) : string{
         if ($this->findUser($username)){
             $msg='?new_user_message='.USER_NOT_FOUND;
         }
         else {
-            $this->createUserUtil($username,$password);
+            $this->createUserUtil($username,$password,$email);
             $msg='?new_user_message='.NEW_USER_OK;
         }
         return $msg;
@@ -80,5 +80,11 @@ class user
         if($result==LOGIN_OK)
             $this->changePassUtil($username,$password_repeat1);
         return $result;
+    }
+
+    public function checkEmail(string $email){
+        $this->db->query("SELECT email FROM users WHERE email = :email; ");
+        $this->db->bind('email',$email);
+        return $this->db->resultSet();
     }
 }

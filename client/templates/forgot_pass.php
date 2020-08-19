@@ -23,7 +23,7 @@
                 <img src="images/icon.svg">
             </div>
             <div class="col-12 form-input">
-                <form action="../server/auth_user.php" method="post">
+                <form action="../server/forgot_pass.php" method="post">
                     <div class="form-group">
                         <input type="email" name="email" class="form-control" placeholder="Enter email" required>
                     </div>

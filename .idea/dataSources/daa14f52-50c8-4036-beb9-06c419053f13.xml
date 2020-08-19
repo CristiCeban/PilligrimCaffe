@@ -20,7 +20,7 @@
       <Collation>utf8mb4_general_ci</Collation>
     </schema>
     <schema id="6" parent="1" name="mydb">
-      <Collation>utf8_general_ci</Collation>
+      <Collation>utf8mb4_general_ci</Collation>
     </schema>
     <schema id="7" parent="1" name="mysql">
       <Collation>utf8mb4_general_ci</Collation>
@@ -1074,9 +1074,15 @@
     <table id="348" parent="2" name="secretare"/>
     <table id="349" parent="2" name="sectii"/>
     <table id="350" parent="2" name="vanzari"/>
-    <table id="351" parent="6" name="history_delivery"/>
-    <table id="352" parent="6" name="produs"/>
-    <table id="353" parent="6" name="users"/>
+    <table id="351" parent="6" name="history_delivery">
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="352" parent="6" name="produs">
+      <Collation>utf8_general_ci</Collation>
+    </table>
+    <table id="353" parent="6" name="users">
+      <Collation>utf8_general_ci</Collation>
+    </table>
     <column id="354" parent="337" name="IdAchizitie">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
@@ -1598,7 +1604,7 @@
     </column>
     <column id="460" parent="352" name="Pret">
       <Position>3</Position>
-      <DataType>int(11)|0s</DataType>
+      <DataType>float|0s</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="461" parent="352" name="Image">
@@ -1642,7 +1648,12 @@
       <Position>4</Position>
       <DataType>varchar(15)|0s</DataType>
     </column>
-    <key id="470" parent="353" name="PRIMARY">
+    <column id="470" parent="353" name="email">
+      <Position>5</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="471" parent="353" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>idUtilizator</ColNames>
       <Primary>1</Primary>
