@@ -49,9 +49,10 @@ elseif ($this->search)
         </div>
         <div class="col-lg-9">
             <div class="row">
-                <div class="col">
+                
                     <?php if(isset($rs))
                         foreach($rs as $r): ?>
+                    <div class="col-lg-2">
                         <div class="card">
                             <form method="post" action="../server/card.php?cat=<?php echo $_GET['cat'];?>">
                                 <div class="img-thumbnail">
@@ -65,10 +66,11 @@ elseif ($this->search)
                                 <p><button type="submit" >Add to Cart</button></p>
                             </form>
                         </div>
+                    </div>
                     <?php
                     endforeach;
                     ?>
-                </div>
+                
             </div>
 
 
