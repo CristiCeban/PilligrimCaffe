@@ -3,7 +3,9 @@ require "../components/Header.php";
 require "../components/end.php";
 $ids = isset($_COOKIE['card-list']) ? $_COOKIE['card-list'] : null;
 if($ids) {
-    $rs = $this->manager->getProductIds($ids);
+    if($ids[0]===',')
+        $ids = substr($ids, 1);
+    $rs = $this->manager->getProductIds(substr($ids, 0, -1));
 }
 else $rs = null;
 $sum = 0;
@@ -50,7 +52,7 @@ $sum = 0;
                             <?php if($ids)
                                 foreach($rs as $result):
                                 $sum+=$result->Pret?>
-                                <tr>
+                                <tr id="tr_id<?php echo $result->idProdus?>">
                                     <td class="ids" hidden><?php echo $result->idProdus?></td>
                                     <td class="shoping__cart__item">
                                         <img class="shop-cart-img fluid" style="width: 150px" src="<?php echo $result->ImagePath ?>" alt="">
@@ -76,7 +78,7 @@ $sum = 0;
                                         <?php echo $result->Pret.' MDL' ?>
                                     </td>
                                     <td class="shoping__cart__item__close" >
-                                        <span class="icon_close"></span>
+                                        <span class="icon_close" onclick="removeCartItem(<?php echo $result->idProdus?>)"></span>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>

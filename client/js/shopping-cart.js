@@ -1,19 +1,7 @@
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', ready)
-} else {
-    ready()
-}
 
-function ready() {
-    const removeCartItemButtons = document.getElementsByClassName('icon_close');
-    for (let i = 0; i < removeCartItemButtons.length; i++) {
-        const button = removeCartItemButtons[i];
-        button.addEventListener('click', removeCartItem)
-    }
-}
-function removeCartItem(event) {
-    const buttonClicked = event.target;
-    buttonClicked.parentElement.parentElement.remove()
+function removeCartItem(id) {
+    document.getElementById('tr_id'+id).outerHTML = "";
+
     const quantity = document.getElementsByClassName('quantity_id');
     const price = document.getElementsByClassName('shoping__cart__total');
     const totalSumCheckout = document.getElementById('total_sum');
@@ -22,7 +10,9 @@ function removeCartItem(event) {
         sum+= parseInt(quantity[i].value) * (parseInt(price[i].innerText) || parseInt(price[i].textContent));
     }
     totalSumCheckout.innerHTML = sum.toString() + ' MDL';
+    eraseOneItemFromCookie('card-list',id);
 }
+
 
 function sumOfProduct(id){
     let quantity = document.getElementById('quantity'+id).value;
