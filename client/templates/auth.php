@@ -25,6 +25,10 @@ if(isset($alert_msg)){
         $msg = "Password doesn't match!";
         alertPHP($msg);
     }
+    elseif($alert_msg == NEW_PASS_EMAIL){
+        $msg = "New pass was send to email";
+        alertPHP($msg);
+    }
     elseif($alert_msg==NEW_USER_OK){
         $msg = "User created with success";
         setcookie('username',$user,time()+3600,'/');

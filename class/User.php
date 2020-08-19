@@ -65,7 +65,7 @@ class user
     }
 
     public function changePassUtil(string $username,string $password){
-        $this->db->query('UPDATE users SET password = :password WHERE login = :username;');
+        $this->db->query('UPDATE users SET password = :password WHERE login = :username or email = :username;');
         $this->db->bind('password',$password);
         $this->db->bind('username',$username);
         $this->db->execute();

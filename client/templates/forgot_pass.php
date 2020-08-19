@@ -15,6 +15,14 @@
 </head>
 
 <body>
+<?php if(isset($alert_msg)) {
+    if ($alert_msg == MAIL_NOT_FOUND) {
+        $msg = "User with this email is not found";
+        alertPHP($msg);
+    }
+
+}
+    ?>
 <div class="modal-dialog text-center">
     <div class="col-sm-9 main-section">
         <div class="modal-content">
