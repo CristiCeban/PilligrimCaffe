@@ -52,7 +52,7 @@ elseif ($this->search)
                 
                     <?php if(isset($rs))
                         foreach($rs as $r): ?>
-                    <div class="col-lg-2">
+                    <div class="col-lg-3">
                         <div class="card">
                             <form method="post" action="../server/card.php?cat=<?php echo $_GET['cat'];?>">
                                 <div class="img-thumbnail">
