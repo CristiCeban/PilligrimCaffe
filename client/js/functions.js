@@ -18,10 +18,17 @@ function getCookie(name) {
     }
     return null;
 }
+
 function eraseCookie(name) {
     document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 }
 
+function eraseOneItemFromCookie(cookie_name,item){
+    let cookies = getCookie(cookie_name);
+    cookies=cookies.replace(item+'%2C','');
+    eraseCookie(cookie_name);
+    setCookie(cookie_name,cookies,1);
+}
 function addToObject(obj,key,value){
     return obj.key=value;
 }
