@@ -56,12 +56,12 @@ require "../components/end.php";
                         <input name="address" required style="width: 90%" type="text" <?php if(check_lang_ru()):?>placeholder="Адрес"  <?php else:?>placeholder="Adresa"<?php endif;?>>
                     </div>
                     <div class="col-md-6">
-                        <input name="city" required style="width: 90%" type="text" <?php if(check_lang_ru()):?>placeholder="Город/Село"<?php else:?>placeholder="Orasul/Satul"  <?php endif;?>>
+                        <input name="city" required style="width: 90%" type="text" <?php if(check_lang_ru()):?>placeholder="Город/Село" <?php else:?>placeholder="Orasul/Satul"  <?php endif;?>>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <textarea  name="supplementary_info" style="width: 95.5%;margin-top: 30px" rows="4" <?php if(check_lang_ru()):?>placeholder="Дополнительная информация,блок,подъезд,этаж,квартира"<?php else:?>placeholder="Informatii suplimentarea,bloc,scara,etaj,apartamentul"  <?php endif;?>></textarea>
+                        <textarea  name="supplementary_info" style="width: 95.5%;margin-top: 30px" rows="4" <?php if(check_lang_ru()):?>placeholder="Дополнительная информация,блок,подъезд,этаж,квартира" <?php else:?>placeholder="Informatii suplimentarea,bloc,scara,etaj,apartamentul"  <?php endif;?>></textarea>
                     </div>
                 </div>
             </div>
@@ -81,6 +81,9 @@ require "../components/end.php";
                         <input required name="name" style="width: 90%" type="text" <?php if(check_lang_ru()):?> placeholder="Имя" <?php else:?>placeholder="Prenume"  <?php endif;?>>
                     </div>
                 </div>
+
+                <input type="hidden" name="fields" value="<?php echo htmlspecialchars(json_encode($this->fields));?>">
+                <input type="hidden" name="sum" value="<?php echo $this->sum;?>">
                 <div class="row mb-2">
                     <div class="col-md-12">
                         <input  required name="mobile" style="width: 95.5%;margin-top: 30px" type="text" <?php if(check_lang_ru()):?> placeholder="Номер телефона" <?php else:?>placeholder="Numar mobil"  <?php endif;?>>
@@ -110,12 +113,12 @@ require "../components/end.php";
         <br>
         <?php foreach ($this->fields as $key => $value){
             if(check_lang_ru())
-                echo '<h5><strong>'.$value.'</strong> x ' . $this->manager->getProduct($key)->NumeProdusRu.'</h5>';
+                echo '<h5><strong>'.$value.'</strong> x ' . $this->manager->getProduct($key)->NumeProdusRu.' + <u>'.(int)$value*(int)$this->manager->getProduct($key)->Pret.' MDL</u></h5>';
             else
-                echo '<h5><strong>'.$value.'</strong> x ' . $this->manager->getProduct($key)->NumeProdus.'</h5>';
+                echo '<h5><strong>'.$value.'</strong> x ' . $this->manager->getProduct($key)->NumeProdus.' + <u>'.(int)$value*(int)$this->manager->getProduct($key)->Pret.' MDL</u></h5>';
         }?>
         <br>
-        <h4><?php echo $this->sum ?></h4>
+        <h4><strong><?php echo $this->sum ?></strong></h4>
         <hr class="my-4">
     </div>
 
