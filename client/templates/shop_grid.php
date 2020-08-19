@@ -3,10 +3,8 @@
 require "../components/Header.php";
 require "../components/middle.php";
 require "../components/end.php";
-echo $this->search;
 if ($this->categorie)
     $rs = $this->manager->getProductbyCategory($this->categorie);
-
 elseif ($this->search)
     $rs = $this->manager->getProductsByStr($this->search);
 ?>
@@ -52,7 +50,8 @@ elseif ($this->search)
         <div class="col-lg-9">
             <div class="row">
                 <div class="col">
-                    <?php foreach($rs as $r): ?>
+                    <?php if(isset($rs))
+                        foreach($rs as $r): ?>
                         <div class="card">
                             <form method="post" action="../server/card.php?cat=<?php echo $_GET['cat'];?>">
                                 <div class="img-thumbnail">

@@ -95,7 +95,7 @@ class Product
 
     public function getProductsByStr($substr)
     {
-        $this->db->query("select * from produs where NumeProdus like (%:substring)");
+        $this->db->query('select * from produs where NumeProdus like "%'.$substr.'%"');
         $this->db->bind('substring',$substr);
         return $this->db->resultSet();
     }
