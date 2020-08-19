@@ -63,14 +63,14 @@ $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->SMTPAuth = true;
 
 //Username to use for SMTP authentication - use full email address for gmail
-$mail->Username = 'lungukirillpiligrim@gmail.com';
+$mail->Username = 'piligrim.cafe.aneni@gmail.com';
 
 //Password to use for SMTP authentication
-$mail->Password = 'piligrimcafe';
+$mail->Password = 'exotiquetouch101';
 
 //Set who the message is to be sent from
 try {
-    $mail->setFrom('lungukirillpiligrim@gmail.com', 'Comanda noua');
+    $mail->setFrom('piligrim.cafe.aneni@gmail.com', 'Comanda noua');
 } catch (\PHPMailer\PHPMailer\Exception $e) {
 }
 
@@ -79,7 +79,7 @@ try {
 
 //Set who the message is to be sent to
 try {
-    $mail->addAddress('lungukirillpiligrim@gmail.com', 'Comanda noua');
+    $mail->addAddress('piligrim.cafe.aneni@gmail.com', 'Comanda noua');
 } catch (\PHPMailer\PHPMailer\Exception $e) {
 }
 
@@ -108,3 +108,5 @@ try {
 } catch (\PHPMailer\PHPMailer\Exception $e) {
 
 }
+
+header('Location: ../client/index.php?success=true');

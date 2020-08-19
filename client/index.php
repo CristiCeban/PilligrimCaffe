@@ -3,7 +3,7 @@
 include_once 'config/init.php';
 
 $template = new Template('templates/index.php');
-
+$template->success = isset($_GET['success']) ? $_GET['success'] : null;
 echo $template;
 
 /*

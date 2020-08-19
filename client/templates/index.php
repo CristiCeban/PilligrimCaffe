@@ -4,6 +4,9 @@ require "../components/Header.php";
 require "../components/middle.php";
 
 require "../components/end.php";
+
+if(isset($_GET['success'])) echo "<script>alertify.success('comanda a fost facuta');</script>";
+
     ?>
 
     <!-- Header Section End -->
