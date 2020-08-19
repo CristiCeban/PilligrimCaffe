@@ -1,12 +1,4 @@
 <div class="col-lg-5 mt-4">
-    <!-- <div class="hero__search my-sm-1 mt-lg-1">
-        <div class="hero__search__form">
-            <form action="#">
-            <input type="text" placeholder="Termen de căutat/Поиск по продуктам">
-            <button type="submit" class="site-btn" style="color:black;">Caută/ Поиск</button>
-            </form>
-        </div>
-    </div> -->
     <div class="search">
           <form class="search-form" action="shop_grid.php" method="POST" >
               <input minlength="3" name="search" type="text" <?php if(check_lang_ru()):?> placeholder="Поиск по продуктам" <?php else:?> placeholder="Termeni de cautare"<?php endif;?> >
@@ -28,7 +20,7 @@
             <i class="fa fa-phone"></i>
         </div>
         <div class="hero__search__phone__text">
-            <b><h6>+373123456789</h6></b>
+            <b><h6>123456789</h6></b>
             <span>
 
                 <?php if(check_lang_ru()):?>
