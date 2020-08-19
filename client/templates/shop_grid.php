@@ -3,7 +3,12 @@
 require "../components/Header.php";
 require "../components/middle.php";
 require "../components/end.php";
-$rs = $this->manager->getProductbyCategory($this->categorie);
+echo $this->search;
+if ($this->categorie)
+    $rs = $this->manager->getProductbyCategory($this->categorie);
+
+elseif ($this->search)
+    $rs = $this->manager->getProductsByStr($this->search);
 ?>
 <div class="container-fluid">
     <div class="row">
