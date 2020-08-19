@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 17, 2020 at 01:38 PM
+-- Generation Time: Aug 19, 2020 at 05:37 PM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.8
 
@@ -45,7 +45,7 @@ CREATE TABLE `history_delivery` (
 CREATE TABLE `produs` (
   `idProdus` int(11) NOT NULL,
   `NumeProdus` varchar(255) NOT NULL,
-  `Pret` int(11) NOT NULL,
+  `Pret` float NOT NULL,
   `Image` varchar(45) DEFAULT NULL,
   `ImagePath` varchar(2048) DEFAULT NULL,
   `categorie` varchar(255) DEFAULT NULL,
@@ -61,7 +61,8 @@ INSERT INTO `produs` (`idProdus`, `NumeProdus`, `Pret`, `Image`, `ImagePath`, `c
 (11, 'kent 4', 34, NULL, 'https://img3.zakaz.ua/src.1592498250.ad72436478c_2020-06-18_Tamara/src.1592498250.SNCPSG10.obj.0.1.jpg.oe.jpg.pf.jpg.350nowm.jpg.350x.jpg', 'tigari', 'кент 4'),
 (12, 'Fanta Portocale 0.3l', 10, NULL, 'https://lamasa.auchan.ro/cs-content/cs-photos/products/original/fanta-portocala-0,33-ml_2886_1_1517561544.jpg', 'apa', 'Fanta Portocale 0.3l'),
 (13, 'Sprite 0.3l', 10, NULL, 'https://lamasa.auchan.ro/cs-content/cs-photos/products/original/sprite-0,33ml-_2888_1_1517561598.jpg', 'apa', 'Sprite 0.3l'),
-(14, 'Coca Cola 1.5l', 26, NULL, 'https://fidesco.md/wp-content/uploads/2020/06/5449000000439-1.jpg', 'apa', 'Coca Cola 1.5l');
+(14, 'Coca Cola 1.5l', 26, NULL, 'https://fidesco.md/wp-content/uploads/2020/06/5449000000439-1.jpg', 'apa', 'Coca Cola 1.5l'),
+(15, 'FuzeTea', 14, NULL, 'https://images.pizza33.ua/products/product/tk3aJFgTmFkpf24b12c4I9E0JF54oQ30.png', 'apa', 'FuzeTea');
 
 -- --------------------------------------------------------
 
@@ -120,7 +121,7 @@ ALTER TABLE `history_delivery`
 -- AUTO_INCREMENT for table `produs`
 --
 ALTER TABLE `produs`
-  MODIFY `idProdus` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `idProdus` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `users`
