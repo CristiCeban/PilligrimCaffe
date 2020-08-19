@@ -15,23 +15,6 @@
 </head>
 
 <body>
-<?php
-if(isset($alert_msg)){
-    if($alert_msg==USER_NOT_FOUND){
-        $msg = "User with this username doesn't exist";
-        alertPHP($msg);
-    }
-    elseif($alert_msg==PASSWORD_WRONG){
-        $msg = "Password doesn't match!";
-        alertPHP($msg);
-    }
-    elseif($alert_msg==NEW_USER_OK){
-        $msg = "User created with success";
-        setcookie('username',$user,time()+3600,'/');
-        alertPHPBack($msg);
-    }
-}
-?>
 <div class="modal-dialog text-center">
     <div class="col-sm-9 main-section">
         <div class="modal-content">
@@ -42,13 +25,9 @@ if(isset($alert_msg)){
             <div class="col-12 form-input">
                 <form action="../server/auth_user.php" method="post">
                     <div class="form-group">
-                        <input type="text" name="username" class="form-control" placeholder="Enter Username" required>
+                        <input type="email" name="email" class="form-control" placeholder="Enter email" required>
                     </div>
-                    <div class="form-group">
-                        <input type="password" name="password" class="form-control" placeholder="Enter Password" required>
-                    </div>
-                    <button type="submit" name="btn_submit" class="btn btn-success">Login</button>
-                    <div><a style="color: white" href="forgot_pass.php"><u>Forgot Pass?</u></a></div>
+                    <button type="submit" name="btn_submit" class="btn btn-success">Restore</button>
                 </form>
             </div>
 
