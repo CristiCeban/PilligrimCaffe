@@ -8,8 +8,8 @@
         </div>
     </div> -->
     <div class="search">
-          <form class="search-form" action="shop_grid.php" method="POST">
-              <input name="search" type="text" <?php if(check_lang_ru()):?> placeholder="Поиск по продуктам" <?php else:?> placeholder="Termeni de cautare"<?php endif;?> >
+          <form class="search-form" action="shop_grid.php" method="POST" >
+              <input minlength="3" name="search" type="text" <?php if(check_lang_ru()):?> placeholder="Поиск по продуктам" <?php else:?> placeholder="Termeni de cautare"<?php endif;?> >
               <input style="width: 68px" type="submit"
                   <?php if(check_lang_ru()):?>
                         value="Поиск"
