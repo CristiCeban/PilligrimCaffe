@@ -6,7 +6,7 @@ require "../components/middle.php";
 require "../components/end.php";
 
 if(isset($_GET['success'])) echo "<script>alertify.success('comanda a fost facuta');</script>";
-
+if(isset($_GET['contact'])) echo "<script>alertify.success('Mail-ul a fost tranmis');</script>";
     ?>
 
     <!-- Header Section End -->

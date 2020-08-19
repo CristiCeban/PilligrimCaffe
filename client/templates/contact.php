@@ -108,16 +108,16 @@ require "../components/end.php";
                     </div>
                 </div>
             </div>
-            <form action="#">
+            <form method="post" action="../server/contact_us.php">
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
-                        <input type="text" <?php if(check_lang_ru()):?>placeholder="Имя"<?php else:?> placeholder="Numele tau"<?php endif;?>>
+                        <input required type="text" name="name" <?php if(check_lang_ru()):?> placeholder="Имя"<?php else:?>  placeholder="nume"<?php endif;?>>
                     </div>
                     <div class="col-lg-6 col-md-6">
-                        <input type="text" <?php if(check_lang_ru()):?>placeholder="Введите свой email"<?php else:?> placeholder="Emailul tău"<?php endif;?>>
+                        <input required type="text" name="mail" <?php if(check_lang_ru()):?> placeholder="Введите свой email"<?php else:?> placeholder="mail"<?php endif;?>>
                     </div>
                     <div class="col-lg-12 text-center">
-                        <textarea <?php if(check_lang_ru()):?> placeholder="Ваше сообщение" <?php else:?>placeholder="Mesajul tau"<?php endif;?>></textarea>
+                        <textarea required name="msg" <?php if(check_lang_ru()):?> placeholder="Ваше сообщение" <?php else:?>placeholder="Mesajul tau"<?php endif;?>></textarea>
                         <button type="submit" class="site-btn"> <?php if(check_lang_ru()):?>Отправить сообщение<?php else:?>Trimite mesaj<?php endif;?></button>
                     </div>
                 </div>
