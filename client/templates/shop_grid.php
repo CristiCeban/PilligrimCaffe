@@ -63,7 +63,7 @@ elseif ($this->search)
                                 <label>
                                     <input  type="hidden" name="id" value="<?php echo $r->idProdus;?>"/>
                                 </label>
-                                <p><button type="button" onclick="setItemToCardList(<?php echo $r->idProdus?>)"><?php if(check_lang_ru()):?>Добавить в корзину<?php else:?>Adaugă în coș<?php endif;?></button></p>
+                                <button type="button" onclick="setItemToCardList(<?php echo $r->idProdus?>)"><?php if(check_lang_ru()):?>Добавить в корзину<?php else:?>Adaugă în coș<?php endif;?></button>
                             </form>
                         </div>
                     </div>
