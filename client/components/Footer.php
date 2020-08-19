@@ -97,7 +97,7 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/sidebar-accordion.js"></script>
-
+    <script src="js/shopping-cart.js"></script>
 
     </body>
 </html>

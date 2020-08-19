@@ -108,7 +108,7 @@ ol {
 	margin: 0 auto;
 }
 
-.set-bg {
+.set_bg {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top center;
@@ -2467,6 +2467,9 @@ ol {
 		width: 100%;
 		margin-left: 0;
 	}
+	.shoping__cart__table table thead th{
+		font-size: 16px;
+	}
 }
 
 
@@ -2483,9 +2486,10 @@ ol {
 	margin: auto;
 	text-align: center;
 	font-family: arial;
-
+	position: relative;
 }
-  
+
+
   .price {
 	color: grey;
 	font-size: 22px;
@@ -2501,7 +2505,12 @@ ol {
 	cursor: pointer;
 	width: 100%;
 	font-size: 18px;
+	position: absolute;
+	bottom: 0;
+	left:0;
   }
+
+
 
   .card button:hover {
 	opacity: 0.7;
