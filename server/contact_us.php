@@ -4,14 +4,9 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 
-$address = isset($_POST['address']) ? $_POST['address'] : null;
-$city = isset($_POST['city']) ? $_POST['city'] : null;
-$supplementary_info = isset($_POST['supplementary_info']) ? $_POST['supplementary_info'] : null;
-$surname = isset($_POST['surname']) ? $_POST['surname'] : null;
 $name = isset($_POST['name']) ? $_POST['name'] : null;
-$mobile = isset($_POST['mobile']) ? $_POST['mobile'] : null;
-$sum = isset($_POST['sum']) ? $_POST['sum'] : null;
-$fields = isset($_POST['fields']) ? json_decode(htmlspecialchars_decode(($_POST['fields']))) : null;
+$mail_to_send = isset($_POST['mail']) ? $_POST['mail'] : null;
+$msg = isset($_POST['msg']) ? $_POST['msg'] : null;
 
 
 require '../phpmail/PHPMailer/src/PHPMailer.php';
@@ -20,14 +15,6 @@ require '../phpmail/PHPMailer/src/SMTP.php';
 require_once '../client/config/init.php';
 
 $manager = new Product();
-$msg_fields ='';
-foreach ($fields as $key => $value){
-    $msg_fields.='<h3><strong>'.$value.'</strong> x ' .$manager->getProduct($key)->NumeProdusRu.' + <u>'.(int)$value*(int)$manager->getProduct($key)->Pret.' MDL</u></h3>';
-
-}
-
-
-
 
 
 
@@ -36,10 +23,7 @@ $mail = new PHPMailer(true);
 
 $mail->isSMTP();
 
-//Enable SMTP debugging
-// SMTP::DEBUG_OFF = off (for production use)
-// SMTP::DEBUG_CLIENT = client messages
-// SMTP::DEBUG_SERVER = client and server messages
+
 $mail->SMTPDebug = SMTP::DEBUG_SERVER;
 
 //Set the hostname of the mail server
@@ -67,7 +51,7 @@ $mail->Password = 'exotiquetouch101';
 
 //Set who the message is to be sent from
 try {
-    $mail->setFrom('piligrim.cafe.aneni@gmail.com', 'Comanda noua');
+    $mail->setFrom('piligrim.cafe.aneni@gmail.com', 'Contact');
 } catch (\PHPMailer\PHPMailer\Exception $e) {
 }
 
@@ -76,7 +60,7 @@ try {
 
 //Set who the message is to be sent to
 try {
-    $mail->addAddress('piligrim.cafe.aneni@gmail.com', 'Comanda noua');
+    $mail->addAddress('piligrim.cafe.aneni@gmail.com', 'Contact');
 } catch (\PHPMailer\PHPMailer\Exception $e) {
 }
 
@@ -84,15 +68,9 @@ try {
 $mail->Subject = 'comanda noua';
 
 $mail->isHTML(true);
-$mail->Body= $message = 'У вас новый заказ.<br> От <b>'
-        .$name.' '.$surname.'</b> мобильный номер <b>'.$mobile.'</b> адресс: <b>'
-            .$address.'</b> город/село <b>'. $city.'</b> доп. информация: '
-        .' <b>'.$supplementary_info.'</b> <br>'
-        .'Заказ:<br>'
-        .$msg_fields
-        .'На сумму:<b>'.$sum.'</b>'
-        .'<br><br>'
-        .'Отправленно при помощи PHPMAILER с сайта <b>piligrimcafe</b>';
+$mail->Body= $message = 'Кто-то пытается с вами связаться'. '<br>'.
+    'Имя:<b>'.$name.'</b> Майл:<b>'.$mail_to_send.'</b><br>'.
+    'Сообщения:<b>'.$msg.'</b>';
 
 //send the message, check for errors
 try {
@@ -106,4 +84,4 @@ try {
 
 }
 
-header('Location: ../client/index.php?success=true');
+header("Location: ../client/index.php?contact=success");

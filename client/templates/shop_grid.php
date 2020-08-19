@@ -58,7 +58,7 @@ elseif ($this->search)
                                 <div class="img-thumbnail">
                                     <img src=<?php echo $r->ImagePath ?>  alt=<?php echo $r->NumeProdus?>>
                                 </div>
-                                <h4><?php echo $r->NumeProdus?></h4>
+                                <h4><?php if(check_lang_ru()) echo $r->NumeProdusRu;  else echo $r->NumeProdus;?></h4>
                                 <p class="price"><?php echo $r->Pret?> MDL</p>
                                 <label>
                                     <input  type="hidden" name="id" value="<?php echo $r->idProdus;?>"/>
