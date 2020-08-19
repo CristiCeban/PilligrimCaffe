@@ -2483,10 +2483,10 @@ ol {
 	margin: auto;
 	text-align: center;
 	font-family: arial;
+	position: relative;
 }
- .card form{
-	 position: relative;
- } 
+
+
   .price {
 	color: grey;
 	font-size: 22px;
@@ -2502,6 +2502,9 @@ ol {
 	cursor: pointer;
 	width: 100%;
 	font-size: 18px;
+	position: absolute;
+	bottom: 0;
+	left:0;
   }
 
 

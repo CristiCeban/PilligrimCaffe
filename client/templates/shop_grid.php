@@ -59,11 +59,11 @@ elseif ($this->search)
                                     <img src=<?php echo $r->ImagePath ?>  alt=<?php echo $r->NumeProdus?>>
                                 </div>
                                 <h4><?php echo $r->NumeProdus?></h4>
+                                <p class="price"><?php echo $r->Pret?> MDL</p>
                                 
                                 <label>
                                     <input  type="hidden" name="id" value="<?php echo $r->idProdus;?>"/>
                                 </label>
-                                <p class="price"><?php echo $r->Pret?> MDL</p>
                                 <p><button type="submit" ><?php if(check_lang_ru()):?>Добавить в корзину<?php else:?>Adaugă în coș<?php endif;?></button></p>
                             </form>
                         </div>
