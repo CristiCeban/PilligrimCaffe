@@ -54,17 +54,16 @@ elseif ($this->search)
                         foreach($rs as $r): ?>
                     <div class="col-lg-3 col-md-3 col-sm-6 col-6">
                         <div class="card h-100">
-                            <form method="post" action="../server/card.php?cat=<?php echo $_GET['cat'];?>">
+                            <form>
                                 <div class="img-thumbnail">
                                     <img src=<?php echo $r->ImagePath ?>  alt=<?php echo $r->NumeProdus?>>
                                 </div>
                                 <h4><?php echo $r->NumeProdus?></h4>
                                 <p class="price"><?php echo $r->Pret?> MDL</p>
-                                
                                 <label>
                                     <input  type="hidden" name="id" value="<?php echo $r->idProdus;?>"/>
                                 </label>
-                                <button type="submit" ><?php if(check_lang_ru()):?>Добавить в корзину<?php else:?>Adaugă în coș<?php endif;?></button>
+                                <button type="button" onclick="setItemToCardList(<?php echo $r->idProdus?>)"><?php if(check_lang_ru()):?>Добавить в корзину<?php else:?>Adaugă în coș<?php endif;?></button>
                             </form>
                         </div>
                     </div>

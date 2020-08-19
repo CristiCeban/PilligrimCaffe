@@ -8,15 +8,60 @@ function setCookie(name,value,days) {
     document.cookie = name + "=" + (value || "")  + expires + "; path=/";
 }
 
-function getCookie(name) {
-    let nameEQ = name + "=";
-    let ca = document.cookie.split(';');
-    for(let i=0;i < ca.length;i++) {
-        let c = ca[i];
-        while (c.charAt(0)===' ') c = c.substring(1,c.length);
-        if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length,c.length);
+function implode( glue, pieces ) {  // Join array elements with a string
+    //
+    // +   original by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
+    // +   improved by: _argos
+    return ( ( pieces instanceof Array ) ? pieces.join ( glue ) : pieces );
+
+}
+
+function eliminateDuplicates(arr) {
+    let i,
+        len = arr.length,
+        out = [],
+        obj = {};
+
+    for (i = 0; i < len; i++) {
+        obj[arr[i]] = 0;
     }
-    return null;
+    for (i in obj) {
+        out.push(i);
+    }
+    return out;
+}
+
+function setItemToCardList(id){
+
+
+    if(getCookie('card-list')===null){
+        setCookie('card-list',id+',','1');
+    }
+    else {
+         let cookie = implode(',',eliminateDuplicates((getCookie('card-list')+id+',').split(',')));
+         setCookie('card-list',cookie,1);
+    }
+    alertify.success('added with succes');
+}
+function getCookie(name) {
+    let dc = document.cookie;
+    let prefix = name + "=";
+    let begin = dc.indexOf("; " + prefix);
+    if (begin === -1) {
+        begin = dc.indexOf(prefix);
+        if (begin !== 0) return null;
+    }
+    else
+    {
+        begin += 2;
+        var end = document.cookie.indexOf(";", begin);
+        if (end === -1) {
+            end = dc.length;
+        }
+    }
+    // because unescape has been deprecated, replaced with decodeURI
+    //return unescape(dc.substring(begin + prefix.length, end));
+    return decodeURI(dc.substring(begin + prefix.length, end));
 }
 
 function eraseCookie(name) {
@@ -25,7 +70,7 @@ function eraseCookie(name) {
 
 function eraseOneItemFromCookie(cookie_name,item){
     let cookies = getCookie(cookie_name);
-    cookies=cookies.replace(item+'%2C','');
+    cookies=cookies.replace(item+',','');
     eraseCookie(cookie_name);
     setCookie(cookie_name,cookies,1);
 }
@@ -41,7 +86,6 @@ function sendToCheckout(){
         return;
     }
     let msg="";
-    let object = {};
     for(let i = 0;i < ids.length;i++){
         msg += "id"+(ids[i].innerText || ids[i].textContent) + "=" + quantitys[i].value + "&";
     }
