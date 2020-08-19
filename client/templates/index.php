@@ -59,13 +59,13 @@ require "../components/end.php";
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="carousel-img" src="images/banner4.jpg" class="d-block " alt="...">
+                                    <img class="carousel-img" src="images/banner4.png" class="d-block"  alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="carousel-img" src="images/banner1.jpg" class="d-block w-100" alt="...">
+                                    <img class="carousel-img" src="images/banner1.png" class="d-block" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="carousel-img" src="images/banner2.jpg" class="d-block w-100" alt="...">
+                                    <img class="carousel-img" src="images/banner2.png" class="d-block" alt="...">
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
