@@ -64,7 +64,7 @@ elseif ($this->search)
                                 <label>
                                     <input  type="hidden" name="id" value="<?php echo $r->idProdus;?>"/>
                                 </label>
-                                <p><button type="submit" ><?php if(check_lang_ru()):?>Добавить в корзину<?php else:?>Adaugă în coș<?php endif;?></button></p>
+                                <button type="submit" ><?php if(check_lang_ru()):?>Добавить в корзину<?php else:?>Adaugă în coș<?php endif;?></button>
                             </form>
                         </div>
                     </div>

@@ -98,6 +98,7 @@
     <script src="js/main.js"></script>
     <script src="js/sidebar-accordion.js"></script>
     <script src="js/shopping-cart.js"></script>
-
+    <script src="js/functions.js"></script>
+    
     </body>
 </html>
