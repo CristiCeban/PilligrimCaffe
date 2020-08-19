@@ -2,10 +2,10 @@
 -- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
--- Хост: 127.0.0.1
--- Время создания: Авг 12 2020 г., 11:37
--- Версия сервера: 10.4.13-MariaDB
--- Версия PHP: 7.4.8
+-- Host: 127.0.0.1
+-- Generation Time: Aug 17, 2020 at 01:38 PM
+-- Server version: 10.4.13-MariaDB
+-- PHP Version: 7.4.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- База данных: `mydb`
+-- Database: `mydb`
 --
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `history_delivery`
+-- Table structure for table `history_delivery`
 --
 
 CREATE TABLE `history_delivery` (
@@ -39,7 +39,7 @@ CREATE TABLE `history_delivery` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `produs`
+-- Table structure for table `produs`
 --
 
 CREATE TABLE `produs` (
@@ -53,17 +53,20 @@ CREATE TABLE `produs` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `produs`
+-- Dumping data for table `produs`
 --
 
 INSERT INTO `produs` (`idProdus`, `NumeProdus`, `Pret`, `Image`, `ImagePath`, `categorie`, `NumeProdusRu`) VALUES
 (10, 'coca cola 0.3l', 20, NULL, 'https://www.pizzaabi.ro/image/cache/data/coca-cola-330ml-icon-bottle-2015_temp_1-900x900.jpg', 'apa', 'Кока кола 0.3л'),
-(11, 'kent 4', 34, NULL, 'https://img3.zakaz.ua/src.1592498250.ad72436478c_2020-06-18_Tamara/src.1592498250.SNCPSG10.obj.0.1.jpg.oe.jpg.pf.jpg.350nowm.jpg.350x.jpg', 'tigari', 'кент 4');
+(11, 'kent 4', 34, NULL, 'https://img3.zakaz.ua/src.1592498250.ad72436478c_2020-06-18_Tamara/src.1592498250.SNCPSG10.obj.0.1.jpg.oe.jpg.pf.jpg.350nowm.jpg.350x.jpg', 'tigari', 'кент 4'),
+(12, 'Fanta Portocale 0.3l', 10, NULL, 'https://lamasa.auchan.ro/cs-content/cs-photos/products/original/fanta-portocala-0,33-ml_2886_1_1517561544.jpg', 'apa', 'Fanta Portocale 0.3l'),
+(13, 'Sprite 0.3l', 10, NULL, 'https://lamasa.auchan.ro/cs-content/cs-photos/products/original/sprite-0,33ml-_2888_1_1517561598.jpg', 'apa', 'Sprite 0.3l'),
+(14, 'Coca Cola 1.5l', 26, NULL, 'https://fidesco.md/wp-content/uploads/2020/06/5449000000439-1.jpg', 'apa', 'Coca Cola 1.5l');
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `users`
+-- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
@@ -74,7 +77,7 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `users`
+-- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`idUtilizator`, `login`, `password`, `role`) VALUES
@@ -82,45 +85,45 @@ INSERT INTO `users` (`idUtilizator`, `login`, `password`, `role`) VALUES
 (8, 'cristi', '0cc175b9c0f1b6a831c399e269772661', 'user');
 
 --
--- Индексы сохранённых таблиц
+-- Indexes for dumped tables
 --
 
 --
--- Индексы таблицы `history_delivery`
+-- Indexes for table `history_delivery`
 --
 ALTER TABLE `history_delivery`
   ADD PRIMARY KEY (`idhistory_delivery`);
 
 --
--- Индексы таблицы `produs`
+-- Indexes for table `produs`
 --
 ALTER TABLE `produs`
   ADD PRIMARY KEY (`idProdus`);
 
 --
--- Индексы таблицы `users`
+-- Indexes for table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`idUtilizator`);
 
 --
--- AUTO_INCREMENT для сохранённых таблиц
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT для таблицы `history_delivery`
+-- AUTO_INCREMENT for table `history_delivery`
 --
 ALTER TABLE `history_delivery`
   MODIFY `idhistory_delivery` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT для таблицы `produs`
+-- AUTO_INCREMENT for table `produs`
 --
 ALTER TABLE `produs`
-  MODIFY `idProdus` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `idProdus` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
--- AUTO_INCREMENT для таблицы `users`
+-- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
   MODIFY `idUtilizator` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
