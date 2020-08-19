@@ -6,7 +6,7 @@ require "../components/end.php";
 ?>
 
 <!-- Breadcrumb Section Begin -->
-<section class="breadcrumb-section set-bg"  style="background-image: url('images/check_out.jpg');">
+<section class="breadcrumb-section set_bg"  style="background-image: url('images/check_out.jpg');">
     <div class="container">
         <div class="row" style="height: 120px">
             <div class="col-lg-12 text-center">

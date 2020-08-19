@@ -108,7 +108,7 @@ ol {
 	margin: 0 auto;
 }
 
-.set-bg {
+.set_bg {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top center;
@@ -2483,9 +2483,10 @@ ol {
 	margin: auto;
 	text-align: center;
 	font-family: arial;
-
 }
-  
+ .card form{
+	 position: relative;
+ } 
   .price {
 	color: grey;
 	font-size: 22px;
@@ -2502,6 +2503,8 @@ ol {
 	width: 100%;
 	font-size: 18px;
   }
+
+
 
   .card button:hover {
 	opacity: 0.7;
