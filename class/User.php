@@ -10,14 +10,14 @@ class user
     }
 
     private function findUser(string $userName)  {
-        $this->db->query('select * from users where login = :username');
+        $this->db->query('select * from users where (login = :username) or (email = :username)');
 
         $this->db->bind('username',$userName);
         return $this->db->resultSet();
     }
 
     private function tryLogin(string $username,string $password){
-        $this->db->query('select * from users where login = :username and password = :password');
+        $this->db->query('select * from users where (login = :username and password = :password) or (email=:username and password=:password)');
         $this->db->bind('username',$username);
         $this->db->bind('password',$password);
         $result = $this->db->resultSet();
