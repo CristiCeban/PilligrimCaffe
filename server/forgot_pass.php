@@ -55,7 +55,7 @@ $mail->Password = 'exotiquetouch101';
 
 //Set who the message is to be sent from
 try {
-    $mail->setFrom('piligrim.cafe.aneni@gmail.com', 'Comanda noua');
+    $mail->setFrom('piligrim.cafe.aneni@gmail.com', 'Restore Pass');
 } catch (\PHPMailer\PHPMailer\Exception $e) {
 }
 
