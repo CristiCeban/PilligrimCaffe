@@ -99,7 +99,7 @@
     <script src="js/sidebar-accordion.js"></script>
     <script src="js/shopping-cart.js"></script>
     <script src="js/functions.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
 
 
 </body>

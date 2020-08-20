@@ -1,6 +1,6 @@
 <?php
 
-
+setcookie('card-list','', time() - 3600);
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 
