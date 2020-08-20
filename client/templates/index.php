@@ -176,7 +176,3 @@ if(isset($_GET['contact'])) echo "<script>alertify.success('Mail-ul a fost tranm
 require "../components/Footer.php"
 ?>
     <!-- Footer Section End -->
-
-    
-
-
