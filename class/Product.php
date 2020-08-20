@@ -104,4 +104,17 @@ class Product
         $this->db->bind('N',$nr);
         return $this->db->resultSet();
     }
+    public function getProductsBAlcool(){
+        $this->db->query("select * from produs where categorie= 'cafea rece' or categorie = 'apa' or categorie = 'sucuri' or categorie = 'energizante'");
+        return $this->db->resultSet();
+    }
+
+    public function getProductsAlcool(){
+        $this->db->query("select * from produs where categorie = 'vin' or categorie = 'coniac' or  categorie = 'vodka' or categorie = 'wiski' or categorie = 'bere'");
+        return $this->db->resultSet();
+    }
+    public function getProductsAlim(){
+        $this->db->query("select * from produs where categorie = 'Snack-uri' or  categorie = 'Zakuska la bere' or  categorie = 'arahide'  ");
+        return $this->db->resultSet();
+    }
 }

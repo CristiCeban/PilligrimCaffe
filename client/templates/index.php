@@ -107,17 +107,17 @@ if(isset($_GET['contact'])) echo "<script>alertify.success('Mail-ul a fost tranm
                     </div>
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="images/categories/soft_drinks1.jpg">
-                            <h5><a href="#"><?php if(check_lang_ru()):?>Безалкогольные напитки<?php else:?>Bauturi nealcoolice<?php endif;?></a></h5>
+                            <h5><a href="shop_grid.php?cat=b/alcool"><?php if(check_lang_ru()):?>Безалкогольные напитки<?php else:?>Bauturi nealcoolice<?php endif;?></a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="images/categories/alc_drinks.jpg">
-                            <h5><a href="#"><?php if(check_lang_ru()):?>Алкогольные напитки<?php else:?>Bauturi alcoolice<?php endif;?></a></h5>
+                            <h5><a href="shop_grid.php?cat=alcool"><?php if(check_lang_ru()):?>Алкогольные напитки<?php else:?>Bauturi alcoolice<?php endif;?></a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="images/categories/prod_alim.jpg">
-                            <h5><a href="#"><?php if(check_lang_ru()):?>Продукты<?php else:?>Produse alimentare<?php endif;?></a></h5>
+                            <h5><a href="shop_grid.php?cat=prod_alim"><?php if(check_lang_ru()):?>Продукты<?php else:?>Produse alimentare<?php endif;?></a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">

@@ -3,8 +3,16 @@
 require "../components/Header.php";
 require "../components/middle.php";
 require "../components/end.php";
-//if($this->categorie==='')
-if ($this->categorie)
+if($this->categorie&&$this->categorie==='b/alcool'){
+    $rs = $this->manager->getProductsBAlcool();
+}
+elseif($this->categorie&&$this->categorie==='alcool'){
+    $rs = $this->manager->getProductsAlcool();
+}
+elseif($this->categorie&&$this->categorie==='prod_alim'){
+    $rs = $this->manager->getProductsAlim();
+}
+elseif ($this->categorie)
     $rs = $this->manager->getProductbyCategory($this->categorie);
 elseif ($this->search)
     $rs = $this->manager->getProductsByStr($this->search);
