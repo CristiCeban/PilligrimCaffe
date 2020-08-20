@@ -111,10 +111,10 @@ require "../components/end.php";
             <form method="post" action="../server/contact_us.php">
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
-                        <input required type="text" name="name" <?php if(check_lang_ru()):?> placeholder="Имя"<?php else:?>  placeholder="nume"<?php endif;?>>
+                        <input required type="text" name="name" <?php if(check_lang_ru()):?> placeholder="Имя"<?php else:?>  placeholder="Nume"<?php endif;?>>
                     </div>
                     <div class="col-lg-6 col-md-6">
-                        <input required type="text" name="mail" <?php if(check_lang_ru()):?> placeholder="Введите свой email"<?php else:?> placeholder="mail"<?php endif;?>>
+                        <input required type="text" name="mail" <?php if(check_lang_ru()):?> placeholder="Введите свой email"<?php else:?> placeholder="Email"<?php endif;?>>
                     </div>
                     <div class="col-lg-12 text-center">
                         <textarea required name="msg" <?php if(check_lang_ru()):?> placeholder="Ваше сообщение" <?php else:?>placeholder="Mesajul tau"<?php endif;?>></textarea>
