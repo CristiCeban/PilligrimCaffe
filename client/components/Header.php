@@ -137,7 +137,8 @@
                         Контакты
                     <?php else:?>
                         Contacte
-                    <?php endif;?></a></li>
+                    <?php endif;?></a>
+            </li>
         </ul>
     </nav>
     <div id="mobile-menu-wrap"></div>
@@ -158,8 +159,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6">
-                    <div class="header__top__left">
-                    </div>
+                    <!-- <div class="header__top__left"> // unused
+                    </div> -->
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="header__top__right">
