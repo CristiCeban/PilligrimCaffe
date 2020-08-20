@@ -19,7 +19,7 @@ elseif ($this->search)
                     <li><a href="#"><?php if(check_lang_ru()):?>Безалкогольные напитки<?php else:?>Bauturi nealcoolice<?php endif;?><i class="fa fa-chevron-down"></i></a>
                         <ul>
                             <li><a href="shop_grid.php?cat=cafea rece"><?php if(check_lang_ru()):?>Холодный кофе<?php else:?>Cafea rece<?php endif;?></a></li>
-                            <li><a href="shop_grid.php?cat=apa"><?php if(check_lang_ru()):?>Вода<?php else:?>Apa potabila<?php endif;?></a></li>
+                            <li><a href="shop_grid.php?cat=apa"><?php if(check_lang_ru()):?>Вода<?php else:?>Apa<?php endif;?></a></li>
                             <li><a href="shop_grid.php?cat=sucuri"><?php if(check_lang_ru()):?>Соки<?php else:?>Sucuri<?php endif;?></a></li>
                             <li><a href="shop_grid.php?cat=energizante"><?php if(check_lang_ru()):?>Энергетики<?php else:?>Energizante<?php endif;?></a></li>
                         </ul>
@@ -52,7 +52,7 @@ elseif ($this->search)
                 
                     <?php if(isset($rs))
                         foreach($rs as $r): ?>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 mb-4">
                         <div class="card h-100">
                             <form>
                                 <div class="img-thumbnail">

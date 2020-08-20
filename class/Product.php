@@ -99,4 +99,9 @@ class Product
         $this->db->bind('substring',$substr);
         return $this->db->resultSet();
     }
+    public function getRandomProducts($nr){
+        $this->db->query('select * from produs ORDER BY RAND() LIMIT :N;');
+        $this->db->bind('N',$nr);
+        return $this->db->resultSet();
+    }
 }
