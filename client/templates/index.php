@@ -96,7 +96,7 @@ if(isset($_GET['contact'])) echo "<script>alertify.success('Mail-ul a fost tranm
             <div class="row">
                 <div class="categories__slider owl-carousel">
                     <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="images/categories/latte_macchiato.jpg">
+                        <div class="categories__item set-bg" data-setbg="images/categories/latte_macchiato.jpg" >
                             <h5><a href="#"><?php if(check_lang_ru()):?>Кофе, чай<?php else:?>Cafea,ceai<?php endif;?></a></h5>
                         </div>
                     </div>
