@@ -103,7 +103,7 @@ ol {
 	right: 0;
 	height: 4px;
 	width: 80px;
-	background: #7fad39;
+	background: rgb(180, 70, 22);
 	content: "";
 	margin: 0 auto;
 }
@@ -1317,7 +1317,7 @@ ol {
 	margin-right: 0;
 } */
 
-.product__details__quantity {
+/* .product__details__quantity {                                                NOT USED
 	display: inline-block;
 	margin-right: 6px;
 }
@@ -1412,19 +1412,19 @@ ol {
 
 .product__details__tab .product__details__tab__desc p {
 	color: #666666;
-}
+} */
 
 /*---------------------
   Shop Details
 -----------------------*/
 
-.related-product {
+/* .related-product {
 	padding-bottom: 30px;
-}
+} */
 
-.related__product__title {
+/* .related__product__title {
 	margin-bottom: 70px;
-}
+} */
 
 /*---------------------
   Shop Cart
