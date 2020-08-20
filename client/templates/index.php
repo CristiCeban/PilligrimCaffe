@@ -18,12 +18,12 @@ if(isset($_GET['contact'])) echo "<script>alertify.success('Mail-ul a fost tranm
                     <div class="contenedor-menu mx-1">
 		                <a href="" class="btnMenu"><?php if(check_lang_ru()):?>Меню<?php else:?>Menu<?php endif;?><i class="fa fa-bars"></i></a>
                         <ul class="menu">
-                            <li><a href="shop_grid.php?cat=bauturi calde"><?php if(check_lang_ru()):?>Кофе, чай<?php else:?>Cafea,ceai<?php endif;?></a></li>
+                            <li><a href="shop_grid.php?cat=bauturi calde"><?php if(check_lang_ru()):?>Горячие Напитки<?php else:?>Bauturi calde<?php endif;?></a></li>
                             <li><a  href="shop_grid.php?cat=Brutarie"><?php if(check_lang_ru()):?>Пекарня<?php else:?>Brutarie<?php endif;?></a></li>
                             <li><a href="#"><?php if(check_lang_ru()):?>Безалкогольные напитки<?php else:?>Bauturi nealcoolice<?php endif;?><i class="fa fa-chevron-down"></i></a>
                                 <ul>
                                     <li><a href="shop_grid.php?cat=cafea rece"><?php if(check_lang_ru()):?>Холодный кофе<?php else:?>Cafea rece<?php endif;?></a></li>
-                                    <li><a href="shop_grid.php?cat=apa"><?php if(check_lang_ru()):?>Вода<?php else:?>Apa potabila<?php endif;?></a></li>
+                                    <li><a href="shop_grid.php?cat=apa"><?php if(check_lang_ru()):?>Вода<?php else:?>Apa<?php endif;?></a></li>
                                     <li><a href="shop_grid.php?cat=sucuri"><?php if(check_lang_ru()):?>Соки<?php else:?>Sucuri<?php endif;?></a></li>
                                     <li><a href="shop_grid.php?cat=energizante"><?php if(check_lang_ru()):?>Энергетики<?php else:?>Energizante<?php endif;?></a></li>
                                 </ul>
@@ -97,12 +97,12 @@ if(isset($_GET['contact'])) echo "<script>alertify.success('Mail-ul a fost tranm
                 <div class="categories__slider owl-carousel">
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="images/categories/latte_macchiato.jpg">
-                            <h5><a href="#"><?php if(check_lang_ru()):?>Кофе, чай<?php else:?>Cafea,ceai<?php endif;?></a></h5>
+                            <h5><a href="shop_grid.php?cat=bauturi calde"><?php if(check_lang_ru()):?>Горячие Напитки<?php else:?>Bauturi Calde<?php endif;?></a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="images/categories/brutarie.jpg">
-                            <h5><a href="#"><?php if(check_lang_ru()):?>Пекарня<?php else:?>Brutarie<?php endif;?></a></h5>
+                            <h5><a href="shop_grid.php?cat=brutarie"><?php if(check_lang_ru()):?>Пекарня<?php else:?>Brutarie<?php endif;?></a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
@@ -122,7 +122,7 @@ if(isset($_GET['contact'])) echo "<script>alertify.success('Mail-ul a fost tranm
                     </div>
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="images/categories/cig.jpg">
-                            <h5><a href="#"><?php if(check_lang_ru()):?>Сигареты<?php else:?>Tigari<?php endif;?></a></h5>
+                            <h5><a href="shop_grid.php?cat=tigari"><?php if(check_lang_ru()):?>Сигареты<?php else:?>Tigari<?php endif;?></a></h5>
                         </div>
                     </div>
                 </div>
@@ -132,9 +132,43 @@ if(isset($_GET['contact'])) echo "<script>alertify.success('Mail-ul a fost tranm
     <!-- Categories Section End -->
 
     <!-- Featured Section Begin -->
-<?php
-require "../components/Featured Products.php"
-?>
+
+<section class="featured spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h2><?php if(check_lang_ru()) echo 'Предложения'; else echo 'Propuneri'; ?></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row container">
+            <?php
+            $this->manager = new Product();
+            $rs = $this->manager->getRandomProducts(8);
+            foreach($rs as $r): ?>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 mb-4">
+                    <div class="card h-100">
+                        <form>
+                            <div class="img-thumbnail">
+                                <img src=<?php echo $r->ImagePath ?>  alt=<?php echo $r->NumeProdus?>>
+                            </div>
+                            <h4><?php if(check_lang_ru()) echo $r->NumeProdusRu;  else echo $r->NumeProdus;?></h4>
+                            <p class="price"><?php echo $r->Pret?> MDL</p>
+                            <label>
+                                <input  type="hidden" name="id" value="<?php echo $r->idProdus;?>"/>
+                            </label>
+                            <button type="button" onclick="setItemToCardList(<?php echo $r->idProdus?>)"><?php if(check_lang_ru()):?>Добавить в корзину<?php else:?>Adaugă în coș<?php endif;?></button>
+                        </form>
+                    </div>
+                </div>
+            <?php
+            endforeach;
+            ?>
+        </div>
+    </div>
+</section>
+<!-- Featured Section End -->
     <!-- Featured Section End -->
 
 

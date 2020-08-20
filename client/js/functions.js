@@ -41,7 +41,8 @@ function setItemToCardList(id){
          let cookie = implode(',',eliminateDuplicates((getCookie('card-list')+id+',').split(',')));
          setCookie('card-list',cookie,1);
     }
-    alertify.success('added with succes');
+    alertify.set('notifier','position', 'top-left');
+    alertify.success('Item Added');
 }
 function getCookie(name) {
     let dc = document.cookie;

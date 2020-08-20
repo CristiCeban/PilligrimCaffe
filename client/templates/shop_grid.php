@@ -3,6 +3,7 @@
 require "../components/Header.php";
 require "../components/middle.php";
 require "../components/end.php";
+//if($this->categorie==='')
 if ($this->categorie)
     $rs = $this->manager->getProductbyCategory($this->categorie);
 elseif ($this->search)
@@ -14,12 +15,12 @@ elseif ($this->search)
             <div class="contenedor-menu mx-1">
                 <a href="" class="btnMenu"><?php if(check_lang_ru()):?>Меню<?php else:?>Menu<?php endif;?><i class="fa fa-bars"></i></a>
                 <ul class="menu">
-                    <li><a href="shop_grid.php?cat=bauturi calde"><?php if(check_lang_ru()):?>Кофе, чай<?php else:?>Cafea,ceai<?php endif;?></a></li>
+                    <li><a href="shop_grid.php?cat=bauturi calde"><?php if(check_lang_ru()):?>Горячие напитки<?php else:?>Bauturi Calde<?php endif;?></a></li>
                     <li><a  href="shop_grid.php?cat=Brutarie"><?php if(check_lang_ru()):?>Пекарня<?php else:?>Brutarie<?php endif;?></a></li>
                     <li><a href="#"><?php if(check_lang_ru()):?>Безалкогольные напитки<?php else:?>Bauturi nealcoolice<?php endif;?><i class="fa fa-chevron-down"></i></a>
                         <ul>
                             <li><a href="shop_grid.php?cat=cafea rece"><?php if(check_lang_ru()):?>Холодный кофе<?php else:?>Cafea rece<?php endif;?></a></li>
-                            <li><a href="shop_grid.php?cat=apa"><?php if(check_lang_ru()):?>Вода<?php else:?>Apa potabila<?php endif;?></a></li>
+                            <li><a href="shop_grid.php?cat=apa"><?php if(check_lang_ru()):?>Вода<?php else:?>Apa<?php endif;?></a></li>
                             <li><a href="shop_grid.php?cat=sucuri"><?php if(check_lang_ru()):?>Соки<?php else:?>Sucuri<?php endif;?></a></li>
                             <li><a href="shop_grid.php?cat=energizante"><?php if(check_lang_ru()):?>Энергетики<?php else:?>Energizante<?php endif;?></a></li>
                         </ul>
@@ -52,7 +53,7 @@ elseif ($this->search)
                 
                     <?php if(isset($rs))
                         foreach($rs as $r): ?>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 mb-4">
                         <div class="card h-100">
                             <form>
                                 <div class="img-thumbnail">
