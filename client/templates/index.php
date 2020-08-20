@@ -169,7 +169,7 @@ if(isset($_GET['contact'])) echo "<script>alertify.success('Mail-ul a fost tranm
     </div>
 </section>
 <!-- Featured Section End -->
-    <!-- Featured Section End -->
+
 
 
     <!-- Footer Section Begin -->
