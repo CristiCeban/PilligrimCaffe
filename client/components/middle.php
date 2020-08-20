@@ -34,7 +34,7 @@
 </div>
 
 
-<div class="bar-options col-lg-1 mr-5 mt-4">
+<div class="bar-options col-lg-1 mr-5 mt-4 contacts">
     <a style=
        "color:black !important;
                                             font-size: 20px;
