@@ -3,6 +3,7 @@
 require "../components/Header.php";
 require "../components/middle.php";
 require "../components/end.php";
+//if($this->categorie==='')
 if ($this->categorie)
     $rs = $this->manager->getProductbyCategory($this->categorie);
 elseif ($this->search)
@@ -14,7 +15,7 @@ elseif ($this->search)
             <div class="contenedor-menu mx-1">
                 <a href="" class="btnMenu"><?php if(check_lang_ru()):?>Меню<?php else:?>Menu<?php endif;?><i class="fa fa-bars"></i></a>
                 <ul class="menu">
-                    <li><a href="shop_grid.php?cat=bauturi calde"><?php if(check_lang_ru()):?>Кофе, чай<?php else:?>Cafea,ceai<?php endif;?></a></li>
+                    <li><a href="shop_grid.php?cat=bauturi calde"><?php if(check_lang_ru()):?>Горячие напитки<?php else:?>Bauturi Calde<?php endif;?></a></li>
                     <li><a  href="shop_grid.php?cat=Brutarie"><?php if(check_lang_ru()):?>Пекарня<?php else:?>Brutarie<?php endif;?></a></li>
                     <li><a href="#"><?php if(check_lang_ru()):?>Безалкогольные напитки<?php else:?>Bauturi nealcoolice<?php endif;?><i class="fa fa-chevron-down"></i></a>
                         <ul>

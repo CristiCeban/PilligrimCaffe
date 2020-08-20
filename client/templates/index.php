@@ -18,7 +18,7 @@ if(isset($_GET['contact'])) echo "<script>alertify.success('Mail-ul a fost tranm
                     <div class="contenedor-menu mx-1">
 		                <a href="" class="btnMenu"><?php if(check_lang_ru()):?>Меню<?php else:?>Menu<?php endif;?><i class="fa fa-bars"></i></a>
                         <ul class="menu">
-                            <li><a href="shop_grid.php?cat=bauturi calde"><?php if(check_lang_ru()):?>Кофе, чай<?php else:?>Cafea,ceai<?php endif;?></a></li>
+                            <li><a href="shop_grid.php?cat=bauturi calde"><?php if(check_lang_ru()):?>Горячие Напитки<?php else:?>Bauturi calde<?php endif;?></a></li>
                             <li><a  href="shop_grid.php?cat=Brutarie"><?php if(check_lang_ru()):?>Пекарня<?php else:?>Brutarie<?php endif;?></a></li>
                             <li><a href="#"><?php if(check_lang_ru()):?>Безалкогольные напитки<?php else:?>Bauturi nealcoolice<?php endif;?><i class="fa fa-chevron-down"></i></a>
                                 <ul>
@@ -97,12 +97,12 @@ if(isset($_GET['contact'])) echo "<script>alertify.success('Mail-ul a fost tranm
                 <div class="categories__slider owl-carousel">
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="images/categories/latte_macchiato.jpg">
-                            <h5><a href="#"><?php if(check_lang_ru()):?>Кофе, чай<?php else:?>Cafea,ceai<?php endif;?></a></h5>
+                            <h5><a href="shop_grid.php?cat=bauturi calde"><?php if(check_lang_ru()):?>Горячие Напитки<?php else:?>Bauturi Calde<?php endif;?></a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="images/categories/brutarie.jpg">
-                            <h5><a href="#"><?php if(check_lang_ru()):?>Пекарня<?php else:?>Brutarie<?php endif;?></a></h5>
+                            <h5><a href="shop_grid.php?cat=brutarie"><?php if(check_lang_ru()):?>Пекарня<?php else:?>Brutarie<?php endif;?></a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
@@ -122,7 +122,7 @@ if(isset($_GET['contact'])) echo "<script>alertify.success('Mail-ul a fost tranm
                     </div>
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="images/categories/cig.jpg">
-                            <h5><a href="#"><?php if(check_lang_ru()):?>Сигареты<?php else:?>Tigari<?php endif;?></a></h5>
+                            <h5><a href="shop_grid.php?cat=tigari"><?php if(check_lang_ru()):?>Сигареты<?php else:?>Tigari<?php endif;?></a></h5>
                         </div>
                     </div>
                 </div>
@@ -132,9 +132,6 @@ if(isset($_GET['contact'])) echo "<script>alertify.success('Mail-ul a fost tranm
     <!-- Categories Section End -->
 
     <!-- Featured Section Begin -->
-<?php
-//require "../components/Featured Products.php"
-//?>
 
 <section class="featured spad">
     <div class="container">

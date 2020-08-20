@@ -11,6 +11,7 @@ function removeCartItem(id) {
     }
     totalSumCheckout.innerHTML = sum.toString() + ' MDL';
     eraseOneItemFromCookie('card-list',id);
+    alertify.set('notifier','position', 'top-left');
     alertify.warning('Item deleted');
 }
 
