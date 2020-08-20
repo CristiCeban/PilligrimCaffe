@@ -680,6 +680,7 @@ ol {
 .categories__item {
 	height: 270px;
 	position: relative;
+	background-size: cover;
 }
 
 .categories__item h5 {
@@ -730,7 +731,7 @@ ol {
   Featured
 -----------------------*/
 
-.featured {
+/* .featured {                                                          NOT USED
 	padding-top: 80px;
 	padding-bottom: 40px;
 }
@@ -767,9 +768,9 @@ ol {
 
 .featured__controls ul li:last-child {
 	margin-right: 0;
-}
+} */
 
-.featured__item {
+/* .featured__item {                                                              NO MORE USED
 	margin-bottom: 50px;
 }
 
@@ -861,7 +862,7 @@ ol {
 .featured__item__text h5 {
 	color: #252525;
 	font-weight: 700;
-}
+} */
 
 /*---------------------
   Breadcrumb
