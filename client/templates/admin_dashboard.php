@@ -20,6 +20,9 @@ require "../components/end.php";
             <li class="nav-item">
                 <a class="nav-link" href="admin_dashboard.php?category=Users">Пользователи</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="admin_dashboard.php?category=History">История доставок</a>
+            </li>
         </ul>
     </div>
     <form class="form-inline">
@@ -103,6 +106,75 @@ require "../components/end.php";
             </tbody>
         </table>
     </div>
+
+
+<?php elseif($this->category === 'History'):?>
+<div class="container" style="padding-top: 50px">
+    <div class="row">
+        <div class="col-sm-5">
+            <h2>Просмотр <b>Истории Покупок</b></h2>
+        </div>
+    </div>
+    <table class="table table-striped" id="table" style="padding-top: 50px">
+        <thead>
+        <tr>
+            <th>Номер Команды</th>
+            <th>Имя закасчика</th>
+            <th>Адресс</th>
+            <th>Мобильный</th>
+            <th>Заказ</th>
+            <th>Сума</th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php foreach($this->historys as $history):?>
+        <tr>
+            <td><?php echo $history->idhistory_delivery;?></td>
+            <td><?php echo $history->nume;?></td>
+            <td><?php echo $history->adresa?></td>
+            <td><?php echo $history->mobile;?></td>
+            <td><?php echo $history->delivery_list;?></td>
+            <td><?php echo $history->pret_total;?></td>
+        </tr>
+        <?php endforeach;?>
+        </tbody>
+    </table>
+</div>
+<?php elseif($this->category === 'Users'):?>
+<div class="container" style="padding-top: 50px">
+    <div class="row">
+        <div class="col-sm-5">
+            <h2>Управление <b>Пользователями</b></h2>
+        </div>
+        <div class="col-sm-2 float-right">
+            <button onClick="addFunction('idUtilizator=true','Add User',600,600)" class="btn btn-success" style="width: 150px">Добавить пользователя</button>
+        </div>
+    </div>
+    <table class="table table-striped" id="table" style="padding-top: 50px">
+        <thead>
+        <tr>
+            <th>Логин</th>
+            <th>Криптованный пароль</th>
+            <th>Эл. Почта</th>
+            <th>Роль</th>
+            <th>Действия</th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php foreach($this->users as $user):?>
+        <tr>
+            <td><?php echo $user->login;?></td>
+            <td><?php echo $user->password;?></td>
+            <td><?php echo $user->email?></td>
+            <td><?php echo $user->role;?></td>
+            <td>
+                <a href="#" style="color: red" onclick="deleteFunction(<?php echo "'idUtilizator=".$user->idUtilizator."'";echo ','; echo "'".$user->login."'"?>);return false">
+                    <i class="fas fa-trash-alt"></i></a></td>
+        </tr>
+        <?php endforeach;?>
+        </tbody>
+    </table>
+</div>
 
 <?php endif ?>
 <?php

@@ -42,11 +42,8 @@ $msg_fields ='';
 foreach ($fields as $key => $value){
     $msg_fields.='<h3><strong>'.$value.'</strong> x ' .$manager->getProduct($key)->NumeProdusRu.' + <u>'.(int)$value*(int)$manager->getProduct($key)->Pret.' MDL</u></h3>';
 }
-
-
-
-
-
+$final_name=$surname.' '.$name;
+$manager->addToHistory($final_name,$address,$mobile,$sum,$msg_fields);
 
 $mail = new PHPMailer(true);
 

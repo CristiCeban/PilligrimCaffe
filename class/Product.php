@@ -117,4 +117,17 @@ class Product
         $this->db->query("select * from produs where categorie = 'Snack-uri' or  categorie = 'Zakuska la bere' or  categorie = 'arahide'  ");
         return $this->db->resultSet();
     }
+    public function getAllHistory(){
+        $this->db->query('select * from history_delivery');
+        return $this->db->resultSet();
+    }
+    public function addToHistory($nume,$adresa,$mobile,$pret,$list){
+        $this->db->query('insert into history_delivery(nume,adresa,mobile,pret_total,delivery_list) values(:nume,:adresa,:mobile,:pret_total,:delivery_list)');
+        $this->db->bind('nume',$nume);
+        $this->db->bind('adresa',$adresa);
+        $this->db->bind('mobile',$mobile);
+        $this->db->bind('pret_total',$pret);
+        $this->db->bind('delivery_list',$list);
+        $this->db->execute();
+    }
 }

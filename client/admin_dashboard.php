@@ -18,6 +18,8 @@ elseif (!isAdmin()) {
         $template->users = $template->manager->getAllUsers();
     } elseif ($template->category === 'Products') {
         $template->products = $template->manager->getAllProducts();
+    } elseif($template->category === 'History'){
+        $template->historys = $template->manager->getAllHistory();
     }
 
     echo $template;
