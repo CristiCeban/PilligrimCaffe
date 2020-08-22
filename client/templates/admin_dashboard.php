@@ -118,7 +118,7 @@ require "../components/Footer.php"
         return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
     }
     function deleteFunction(id,name){
-        if(confirm('Are you sure want to delete '+name)){
+        if(confirm('Вы уверены что хотите удалить '+name + '?')){
             window.location.assign('../server/deleteTool.php?'+id);
         }
     }

@@ -1,6 +1,6 @@
 <?php
 
-setcookie('card-list','', time() - 3600);
+setcookie('card-list','', time() - 3600,'/');
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 
@@ -13,6 +13,24 @@ $mobile = isset($_POST['mobile']) ? $_POST['mobile'] : null;
 $sum = isset($_POST['sum']) ? $_POST['sum'] : null;
 $fields = isset($_POST['fields']) ? json_decode(htmlspecialchars_decode(($_POST['fields']))) : null;
 
+if(!isset($_COOKIE['address_dest'])){
+    setcookie("address_dest", $address, time() + (60*60*24*365),'/');
+}
+if(!isset($_COOKIE['city_dest'])){
+    setcookie("city_dest", $city, time() + (60*60*24*365),'/');
+}
+if(!isset($_COOKIE['supplementary_info'])){
+    setcookie("supplementary_info", $supplementary_info, time() + (60*60*24*365),'/');
+}
+if(!isset($_COOKIE['surname'])){
+    setcookie("surname", $surname, time() + (60*60*24*365),'/');
+}
+if(!isset($_COOKIE['name'])){
+    setcookie("name", $name, time() + (60*60*24*365),'/');
+}
+if(!isset($_COOKIE['mobile'])){
+    setcookie("mobile", $mobile, time() + (60*60*24*365),'/');
+}
 
 require '../phpmail/PHPMailer/src/PHPMailer.php';
 require '../phpmail/PHPMailer/src/Exception.php';
@@ -23,7 +41,6 @@ $manager = new Product();
 $msg_fields ='';
 foreach ($fields as $key => $value){
     $msg_fields.='<h3><strong>'.$value.'</strong> x ' .$manager->getProduct($key)->NumeProdusRu.' + <u>'.(int)$value*(int)$manager->getProduct($key)->Pret.' MDL</u></h3>';
-
 }
 
 
