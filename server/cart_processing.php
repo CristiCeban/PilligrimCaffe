@@ -10,6 +10,7 @@ $supplementary_info = isset($_POST['supplementary_info']) ? $_POST['supplementar
 $surname = isset($_POST['surname']) ? $_POST['surname'] : null;
 $name = isset($_POST['name']) ? $_POST['name'] : null;
 $mobile = isset($_POST['mobile']) ? $_POST['mobile'] : null;
+$plata= isset($_POST['plata']) ? $_POST['plata']: null;
 $sum = isset($_POST['sum']) ? $_POST['sum'] : null;
 $fields = isset($_POST['fields']) ? json_decode(htmlspecialchars_decode(($_POST['fields']))) : null;
 
@@ -31,6 +32,10 @@ if(!isset($_COOKIE['name'])){
 if(!isset($_COOKIE['mobile'])){
     setcookie("mobile", $mobile, time() + (60*60*24*365),'/');
 }
+if(!isset($_COOKIE['plata'])){
+    setcookie("plata", $plata, time() + (60*60*24*365),'/');
+}
+
 
 require '../phpmail/PHPMailer/src/PHPMailer.php';
 require '../phpmail/PHPMailer/src/Exception.php';

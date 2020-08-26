@@ -90,9 +90,17 @@ require "../components/end.php";
                 <input type="hidden" name="sum" value="<?php echo $this->sum;?>">
                 <div class="row mb-2">
                     <div class="col-md-12">
-                        <input  required name="mobile" style="width: 95.5%;margin-top: 30px" type="text" <?php if(check_lang_ru()):?> placeholder="Номер телефона" <?php else:?>placeholder="Numar mobil"  <?php endif;?>
+                        <input  required name="mobile" style="width: 95.5%;margin-top: 30px" type="text" <?php if(check_lang_ru()):?> placeholder="Номер телефона" <?php else:?>placeholder="Numar mobil"<?php endif;?>
                             <?php if(isset($_COOKIE['mobile'])) echo 'value="'.$_COOKIE['mobile'].'"' ?>>
-                    </div>
+                            <div class="mt-3">
+                                <input type="radio" required name="plata" value="cash"
+                                    <?php if(isset($_COOKIE['plata'])) echo 'value="'.$_COOKIE['cash'].'"' ?>>
+                                <label for="cash"><?php if(check_lang_ru()):?>Платеж наличными <?php else:?>Plata cu numerar<?php endif;?></label><br>
+                                <input type="radio" required name="plata" value="card"
+                                    <?php if(isset($_COOKIE['plata'])) echo 'value="'.$_COOKIE['card'].'"' ?>>
+                                <label for="card"><?php if(check_lang_ru()):?>Платеж картой<?php else:?>Plata cu cardul<?php endif;?></label><br>
+                            </div>
+                        </div>
                 </div>
 
             </div>
