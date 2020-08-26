@@ -141,12 +141,12 @@ if(isset($_GET['contact'])) echo "<script>alertify.set('notifier','position', 't
                 </div>
             </div>
         </div>
-        <div class="row container">
+        <div class="row container mr-0 ml-2">
             <?php
             $this->manager = new Product();
             $rs = $this->manager->getRandomProducts(8);
             foreach($rs as $r): ?>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-6 mb-4">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 mb-4 ">
                     <div class="card h-100">
                         <form>
                             <div class="img-thumbnail">
